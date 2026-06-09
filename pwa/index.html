@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Digest">
+  <meta name="theme-color" content="#0F1117">
+  <title>Daily Digest</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loading">
+  <div class="spinner"></div>
+  <p>Loading today's digest…</p>
+</div>
+
+<div id="app" style="display:none">
+  <!-- Header -->
+  <header id="header">
+    <div>
+      <div id="header-date">Tuesday 9 June</div>
+      <div id="header-meta">Loading…</div>
+    </div>
+    <div id="header-right">
+      <button id="refresh-btn" aria-label="Refresh">↻</button>
+    </div>
+  </header>
+
+  <!-- Main scroll -->
+  <main id="main">
+
+    <!-- Articles panel -->
+    <div id="articles-panel" class="panel active">
+
+      <!-- Calendar strip -->
+      <div id="calendar-strip">
+        <div id="calendar-scroll"><!-- injected by JS --></div>
+      </div>
+
+      <!-- View toggle + category filters -->
+      <div id="view-controls">
+        <button class="view-btn active" data-view="day">Day</button>
+        <button class="view-btn" data-view="week">Week</button>
+        <button class="view-btn" data-view="month">Month</button>
+        <div class="filter-sep"></div>
+        <!-- Category filters injected by JS -->
+      </div>
+
+      <!-- Day grid -->
+      <div id="day-view">
+        <div id="cards-grid"><!-- injected --></div>
+      </div>
+
+      <!-- Week/Month grouped view -->
+      <div id="week-month-view" style="display:none">
+        <!-- injected -->
+      </div>
+    </div>
+
+    <!-- Analytics panel -->
+    <div id="analytics-panel" class="panel">
+      <div class="analytics-hero">
+        <div class="streak-num" id="streak-num">0</div>
+        <div class="streak-label">day reading streak 🔥</div>
+        <div class="streak-sub" id="streak-sub">Open the digest daily to keep it going</div>
+      </div>
+
+      <div class="analytics-grid">
+        <div class="stat-card">
+          <div class="stat-value" id="stat-opens-today">0</div>
+          <div class="stat-label">opened today</div>
+          <div class="stat-sub">articles</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-avg">0</div>
+          <div class="stat-label">avg per day</div>
+          <div class="stat-sub">last 30 days</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-fav-source">—</div>
+          <div class="stat-label">favourite source</div>
+          <div class="stat-sub">last 30 days</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-learning-streak">0</div>
+          <div class="stat-label">learning streak</div>
+          <div class="stat-sub">days in a row 📚</div>
+        </div>
+      </div>
+
+      <div class="analytics-section-title">This month by category</div>
+      <div class="cat-bars" id="cat-bars"><!-- injected --></div>
+    </div>
+
+    <!-- Settings panel -->
+    <div id="settings-panel" class="panel">
+      <div class="settings-section">
+        <h2>Display</h2>
+        <div class="settings-row">
+          <div>
+            <div class="settings-row-label">Theme</div>
+            <div class="settings-row-sub">Follows system setting</div>
+          </div>
+          <span style="color:var(--text3);font-size:13px">Auto</span>
+        </div>
+      </div>
+
+      <div class="settings-section">
+        <h2>Data</h2>
+        <div class="settings-row">
+          <div>
+            <div class="settings-row-label">Analytics data</div>
+            <div class="settings-row-sub" id="analytics-size">Calculating…</div>
+          </div>
+        </div>
+        <button class="settings-clear-btn" id="clear-analytics-btn">
+          Clear all analytics data
+        </button>
+      </div>
+
+      <div class="settings-section">
+        <h2>About</h2>
+        <div class="settings-row">
+          <div>
+            <div class="settings-row-label">Daily Digest</div>
+            <div class="settings-row-sub">Personal news aggregator · GitHub Pages</div>
+          </div>
+        </div>
+        <div class="settings-row">
+          <div>
+            <div class="settings-row-label">Last updated</div>
+            <div class="settings-row-sub" id="last-updated">—</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Bottom navigation -->
+  <nav id="bottom-nav">
+    <button class="nav-tab active" data-panel="articles">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h12"/></svg>
+      <span>Articles</span>
+    </button>
+    <button class="nav-tab" data-panel="analytics">
+      <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-8"/></svg>
+      <span>Analytics</span>
+    </button>
+    <button class="nav-tab" data-panel="settings">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      <span>Settings</span>
+    </button>
+  </nav>
+</div>
+
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

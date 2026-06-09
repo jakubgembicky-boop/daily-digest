@@ -1,0 +1,1506 @@
+{
+  "generated_at": "2026-06-09T16:00:26Z",
+  "date": "2026-06-09",
+  "total_stories": 30,
+  "estimated_read_minutes": 15,
+  "top5_ids": [
+    "06bd74ac-785c-4440-b53e-f74b75604d2e",
+    "0b492b1e-bf8a-45da-a59e-bf3a58a0c7d9",
+    "8ac90851-8f87-4cb9-b7f1-b41bdd14b42d",
+    "99972df8-04b0-4347-affd-bac823476292",
+    "49045501-ffeb-4758-a525-1e3d96c535a0"
+  ],
+  "categories": {
+    "czechia": {
+      "label": "Czechia",
+      "emoji": "🇨🇿",
+      "accent": "#B45309",
+      "story_count": 4,
+      "stories": [
+        {
+          "id": "06bd74ac-785c-4440-b53e-f74b75604d2e",
+          "cluster_id": "b7dacc5b7187d403",
+          "topic": "Izraelské stíhačky zůstaly na ranveji. Írán diktuje pravidla",
+          "category": "czechia",
+          "synthesis": "Izraelské stíhačky zůstaly na ranveji. Írán diktuje pravidla",
+          "has_depth": false,
+          "score": 5.05,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": true,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "iDnes.cz",
+              "headline": "Izraelské stíhačky zůstaly na ranveji. Írán diktuje pravidla a vodí si Trumpa",
+              "summary": "Donald Trump se kasal, že íránská vojenská síla je po úspěšných útocích v troskách. Teherán se ale oklepal a pokouší se diktovat pravidla v regionu. Mistrně využívá neshod ve vysněných výsledcích spol",
+              "url": "https://www.idnes.cz/zpravy/zahranicni/usa-iran-izrael-utok-primeri-trump-hizballah.A260609_115145_zahranicni_rtn#utm_source=rss&utm_medium=feed&utm_campaign=idnes&utm_content=main",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T13:23:00+00:00",
+              "image_url": "https://1gr.cz/fotky/idnes/26/061/cl6/IHA7bdc0ac9d8_3741d48e4651fd1927475b_0.jpg",
+              "language": "cs"
+            }
+          ]
+        },
+        {
+          "id": "49045501-ffeb-4758-a525-1e3d96c535a0",
+          "cluster_id": "ec99a90d2407be81",
+          "topic": "Proruské sankce",
+          "category": "czechia",
+          "synthesis": "Proruské sankce",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": true,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "iROZHLAS.cz",
+              "headline": "ONLINE: Nový balík proruských sankcí. Evropská komise je namířila proti energetice a obchodu",
+              "summary": "Evropská komise navrhla nový, 21. balík sankcí proti Rusku, který se zaměřuje na energetiku, obchod – včetně zákazu dovozu ruských a běloruských ryb, ruské banky i takzvanou stínovou flotilu. Oznámila",
+              "url": "https://www.irozhlas.cz/zpravy-svet/online-novy-balik-proruskych-sankci-evropska-komise-je-namirila-proti-energetice_2606091459_kvr",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T12:59:00+00:00",
+              "image_url": "https://www.irozhlas.cz/sites/default/files/styles/zpravy_maly_nahled/public/uploader/zuj_9675_240830-174433_zuj.jpg?itok=QzMFRV4b",
+              "language": "cs"
+            }
+          ]
+        },
+        {
+          "id": "f15297e8-202d-47a7-be44-29487f440cef",
+          "cluster_id": "ab98522bf608682b",
+          "topic": "Drony nad Moskvou",
+          "category": "czechia",
+          "synthesis": "Drony nad Moskvou",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Novinky.cz",
+              "headline": "Ať pocítí, co je válka. Drony budou nadále létat nad Moskvou a Petrohradem, řekl Zelenskyj",
+              "summary": "Ukrajina bude nadále prostřednictvím dronů útočit na Moskvu a Petrohrad, řekl v rozhovoru pro list The Guardian ukrajinský prezident Volodymyr Zelenskyj. Jen ať obyvatelé těchto měst „pocítí, co to je",
+              "url": "https://www.novinky.cz/clanek/valka-na-ukrajine-at-pociti-co-je-valka-drony-budou-nadale-letat-nad-moskvou-a-petrohradem-rekl-zelenskyj-40582348",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T11:30:08+00:00",
+              "image_url": null,
+              "language": "cs"
+            }
+          ]
+        },
+        {
+          "id": "763d0454-70d6-4968-8148-0189c6284a8b",
+          "cluster_id": "40a01e610eb931e6",
+          "topic": "Vztah Kima a Putina",
+          "category": "czechia",
+          "synthesis": "Vztah Kima a Putina",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "iROZHLAS.cz",
+              "headline": "Peking znervózňuje vztah Kima a Putina. Čínský prezident se v KLDR pokoušel ‚vrátit do rovnice‘",
+              "summary": "Na příjezd čínského prezidenta Si Ťin-pchinga čekaly na náměstí v severokorejském Pchjongjangu tisíce lidí. Hrála armádní kapela, děti poskakovaly radostí a lidé mávali vlajkami obou zemí. Uvítání čín",
+              "url": "https://www.irozhlas.cz/zpravy-svet/peking-znervoznuje-vztah-kima-a-putina-cinsky-prezident-se-v-kldr-pokousel_2606091257_jva",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T10:57:00+00:00",
+              "image_url": "https://www.irozhlas.cz/sites/default/files/styles/zpravy_maly_nahled/public/uploader/profimedia-110905219_260609-112404_jva.jpg?itok=KuPGCuQC",
+              "language": "cs"
+            }
+          ]
+        }
+      ]
+    },
+    "europe": {
+      "label": "Europe & Defense",
+      "emoji": "🇪🇺",
+      "accent": "#003399",
+      "story_count": 5,
+      "stories": [
+        {
+          "id": "0b492b1e-bf8a-45da-a59e-bf3a58a0c7d9",
+          "cluster_id": "c5cbfbe9d9a0e914",
+          "topic": "Ukraine updates",
+          "category": "europe",
+          "synthesis": "Ukraine updates",
+          "has_depth": false,
+          "score": 5.05,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": true,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "BBC Europe",
+              "headline": "Russia's fuel crisis intensifies as Ukraine steps up strikes on occupied territories",
+              "summary": "Kyiv has made it difficult for Moscow to provide military and civilian supplies to the territories it occupies.",
+              "url": "https://www.bbc.com/news/articles/cn75l36vdd8o?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-08T23:23:15+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d15c/live/a02730a0-635c-11f1-8e1d-bbbb1017d210.jpg",
+              "language": "en"
+            },
+            {
+              "source": "EUobserver",
+              "headline": "As Crimea faces near total cut-off, panicked Russian tourists cancel plans (Ukraine Battlefield update, Day 1,565)",
+              "summary": "Ukrainian drone strikes choking off fuel, bridges, and trains to Crimea, prompting pro-war Russian bloggers to turn on Putin, while tourists rush to cancel summer holidays on the peninsula.",
+              "url": "https://euobserver.com/220640/as-crimea-risks-near-total-cut-off-panicked-russian-tourists-cancel-plans-ukraine-battlefield-update-day-1565/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-08T14:59:03+00:00",
+              "image_url": "https://static.euobserver.com/2026/06/photo2026-05-3002-30-54-2-e1780309146271-600x380.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "8ac90851-8f87-4cb9-b7f1-b41bdd14b42d",
+          "cluster_id": "01af75f279a9045d",
+          "topic": "Zelensky peace talks",
+          "category": "europe",
+          "synthesis": "Zelensky peace talks",
+          "has_depth": false,
+          "score": 5.05,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": true,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "BBC Europe",
+              "headline": "Zelensky's close European allies set out five conditions for peace talks",
+              "summary": "The Ukrainian president's meeting with his staunchest European allies came as US President Donald Trump's focus shifts to the war with Iran.",
+              "url": "https://www.bbc.com/news/articles/cr7xr1g3nvvo?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-07T21:39:43+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8efc/live/015de090-6302-11f1-b682-cf91850925ea.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "7f0d7378-9eff-463d-b6bb-6380f56e5b89",
+          "cluster_id": "0b6ab8eb2ace2d4b",
+          "topic": "Armenia election",
+          "category": "europe",
+          "synthesis": "Armenia election",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 34,
+          "sources": [
+            {
+              "source": "EUobserver",
+              "headline": "Third term for Pashinyan anchors Armenia’s pro‑EU course, despite Moscow’s interference",
+              "summary": "Incumbent PM Nikol Pashinyan built a campaign on stability and peace in the region. His win is a blow to Russian influence in the South Caucasus, but what happens next?",
+              "url": "https://euobserver.com/220538/third-term-for-pashinyan-anchors-armenias-proeu-course-despite-moscows-interference/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-08T11:41:20+00:00",
+              "image_url": "https://static.euobserver.com/2026/06/DSC_0129-600x401.jpg",
+              "language": "en"
+            },
+            {
+              "source": "BBC Europe",
+              "headline": "Armenia's pro-West government wins election despite Russian pressure",
+              "summary": "Prime Minister Nikol Pashinyan's Civil Contract Party secures nearly 50% of the vote, comfortably beating the other contenders.",
+              "url": "https://www.bbc.com/news/articles/cvgel990n51o?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-08T10:28:40+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1783/live/0075ad00-630e-11f1-89a3-d1f559421220.jpg",
+              "language": "en"
+            },
+            {
+              "source": "The Guardian",
+              "headline": "Pro-western but populist: how Nikol Pashinyan retained power in Armenia",
+              "summary": "PM secured re-election despite devastating military defeat to Azerbaijan and political and economic pressure from Moscow",
+              "url": "https://www.theguardian.com/world/2026/jun/08/pro-western-populist-nikol-pashinyan-retained-power-armenia",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-08T09:05:24Z",
+              "image_url": "https://media.guim.co.uk/ac7f18262cb33cb5f88076f7ef65dd1d2b43f453/192_0_2653_2122/500.jpg",
+              "language": "en"
+            },
+            {
+              "source": "The Guardian",
+              "headline": "Armenia’s pro-Europe party wins election and cements shift away from Russia",
+              "summary": "Result strengthens PM Nikol Pashinyan’s drive for deeper integration with Europe despite warnings from Moscow",
+              "url": "https://www.theguardian.com/world/2026/jun/08/armenia-europe-party-wins-election-russia-nikol-pashinyan",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-08T07:20:04Z",
+              "image_url": "https://media.guim.co.uk/a8d7259952c0f8c3fe17f9b3caab33c117bdd331/0_0_3669_2936/500.jpg",
+              "language": "en"
+            },
+            {
+              "source": "BBC Europe",
+              "headline": "Armenia votes as Russia piles pressure on pro-West government",
+              "summary": "Incumbent Prime Minister Nikol Pashinyan is seeking a third term despite falling domestic support.",
+              "url": "https://www.bbc.com/news/articles/c3626n1epd5o?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-07T17:11:54+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/353c/live/d82787d0-6185-11f1-b682-cf91850925ea.jpg",
+              "language": "en"
+            },
+            {
+              "source": "The Guardian",
+              "headline": "‘It’s time to move forward’: Armenians vote in election closely watched by Russia and EU",
+              "summary": "Voters to choose between pro-Russian opposition and incumbent Nikol Pashinyan, who is more closely aligned with the west",
+              "url": "https://www.theguardian.com/world/2026/jun/07/armenia-vote-election-closely-watched-russia-eu",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-07T09:56:04Z",
+              "image_url": "https://media.guim.co.uk/d58b54dd0a23a8cbb657aa4e487858963f79eef6/345_0_3445_2756/500.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "91b6ba7e-9078-4194-a155-5b75e18c0e66",
+          "cluster_id": "c862b43a194834f5",
+          "topic": "Bulgaria Ukraine aid",
+          "category": "europe",
+          "synthesis": "Bulgaria Ukraine aid",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Politico Europe",
+              "headline": "Bulgaria halts Ukraine military aid",
+              "summary": "Prime Minister Rumen Radev believes the Ukrainian cause is \"doomed.\"",
+              "url": "https://www.politico.eu/article/bulgaria-halts-ukraine-military-aid/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T12:40:56+00:00",
+              "image_url": null,
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "09d87fcc-0e06-4eed-8c75-868ec5103336",
+          "cluster_id": "bcb2f72176e3aa3a",
+          "topic": "Russia economic forum",
+          "category": "europe",
+          "synthesis": "Russia economic forum",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "BBC Europe",
+              "headline": "Steve Rosenberg: Russia's economic forum overshadowed by drone attacks on St Petersburg",
+              "summary": "The BBC's Russia editor saw Putin's flagship economic event overshadowed by Ukrainian drones attacks.",
+              "url": "https://www.bbc.com/news/articles/c9q2gp52rgro?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-07T07:11:18+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/59f4/live/aa950a10-623c-11f1-89a3-d1f559421220.jpg",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    "war": {
+      "label": "Ukraine–Russia War",
+      "emoji": "🔴",
+      "accent": "#CC2222",
+      "story_count": 10,
+      "stories": [
+        {
+          "id": "99972df8-04b0-4347-affd-bac823476292",
+          "cluster_id": "9d1a3a5efbc38aa6",
+          "topic": "Nuclear fuel storage",
+          "category": "war",
+          "synthesis": "Nuclear fuel storage",
+          "has_depth": false,
+          "score": 5.05,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": true,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "The Guardian",
+              "headline": "Russian drone hits building storing spent nuclear fuel near Chornobyl",
+              "summary": "Attack was ‘extremely vile’ and deliberate, says Ukraine’s president Volodymyr Zelenskyy",
+              "url": "https://www.theguardian.com/world/2026/jun/07/russian-drone-hits-building-spent-nuclear-fuel-chornobyl",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-07T19:01:28Z",
+              "image_url": "https://media.guim.co.uk/bd979dfda670cc2ef772c7619deb1e8e4e38603d/186_0_2116_1693/500.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "702348c2-bec5-4b32-8395-b5ccc217a965",
+          "cluster_id": "1f5c4167536cffec",
+          "topic": "EU entry ban",
+          "category": "war",
+          "synthesis": "EU entry ban",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Ukrainska Pravda",
+              "headline": "European Commission proposes EU entry ban for all who fought against Ukraine",
+              "summary": "The European Commission has proposed an addition to the European Union's upcoming 21st sanctions package against Russia, namely an entry ban on all individuals who have fought on Russia's side in the ",
+              "url": "https://www.pravda.com.ua/eng/news/2026/06/09/8038484/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T12:09:00+00:00",
+              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/a/a/845801/aa7edfe4dab53eafa77f5cc717bc7b8c.jpeg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "d681f13e-d3c9-40ad-a33c-8e9624e85e19",
+          "cluster_id": "b6848df6bd358116",
+          "topic": "EU sanctions",
+          "category": "war",
+          "synthesis": "EU sanctions",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Ukrainska Pravda",
+              "headline": "European Commission unveils 21st EU sanctions package against Russia: what it includes",
+              "summary": "The European Commission's proposed 21st package of EU sanctions against Russia, unveiled on 9 June, focuses on energy, financial services and cryptocurrencies, trade and fishery.",
+              "url": "https://www.pravda.com.ua/eng/news/2026/06/09/8038474/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T11:53:00+00:00",
+              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/e/9/845846/e99616aa97448828bb6129ecdfb3eec8.jpeg",
+              "language": "en"
+            },
+            {
+              "source": "Ukrainska Pravda",
+              "headline": "Von der Leyen to present 21st EU sanctions package against Russia on 9 June",
+              "summary": "European Commission President Ursula von der Leyen will present the new EU package of sanctions against Russia on Tuesday 9 June.",
+              "url": "https://www.pravda.com.ua/eng/news/2026/06/09/8038450/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T09:24:00+00:00",
+              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/9/b/845571/9b7dd45d2f9739a729726fa8c1910dba.jpeg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "f362e0b4-78b4-4afc-afd4-b458cd5f7fe4",
+          "cluster_id": "3339aa395b9dbb9b",
+          "topic": "Ceasefire negotiations",
+          "category": "war",
+          "synthesis": "Ceasefire negotiations",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Ukrainska Pravda",
+              "headline": "Zelenskyy insists Europe must take part in ceasefire negotiations",
+              "summary": "President Volodymyr Zelenskyy has said that Europe must take part in any potential leaders' talks on a ceasefire because Russia's war against Ukraine affects the security of the entire continent.",
+              "url": "https://www.pravda.com.ua/eng/news/2026/06/09/8038461/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T10:40:00+00:00",
+              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/4/3/845631/43658a92b585246fcaed2e598a4e501b.jpeg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "292aeb9a-d7db-4919-b06e-8c103d23bede",
+          "cluster_id": "059c7b256e291017",
+          "topic": "EU decisions",
+          "category": "war",
+          "synthesis": "EU decisions",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Ukrainska Pravda",
+              "headline": "Zelenskyy: strong EU political decisions expected this summer",
+              "summary": "President Volodymyr Zelenskyy has announced important European Union political decisions regarding Ukraine's future membership.",
+              "url": "https://www.pravda.com.ua/eng/news/2026/06/09/8038456/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T10:18:00+00:00",
+              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/b/0/845671/b0417edf155cd6ac4258a53e99cfe454.jpeg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "3af596cf-90a5-40a4-be75-38e76afbced8",
+          "cluster_id": "600cfbd0ea601020",
+          "topic": "Zaporizhzhia strike",
+          "category": "war",
+          "synthesis": "Zaporizhzhia strike",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Ukrainska Pravda",
+              "headline": "Number of people injured in Russian strike on Zaporizhzhia rises to 32, two killed – photos",
+              "summary": "The number of people injured in a Russian drone attack on a residential district of Zaporizhzhia on 8 June has risen to 32, including five children, two people were killed.",
+              "url": "https://www.pravda.com.ua/eng/news/2026/06/09/8038419/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T06:13:00+00:00",
+              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/6/0/845444/60992c0da626e4f6fd8bd0b39c3a28fa.jpeg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "d39cc82e-5544-410e-be1b-4f7990972af7",
+          "cluster_id": "411abcfaa56ea086",
+          "topic": "Xi Jinping in Pyongyang",
+          "category": "war",
+          "synthesis": "Xi Jinping in Pyongyang",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 5,
+          "relevance": 3,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "The Guardian",
+              "headline": "Xi Jinping arrives in Pyongyang on trip to revitalise China-North Korea ties",
+              "summary": "Kim Jong-un welcomes Chinese leader on visit to renew relations strained amid Pyongyang’s closeness with Russia",
+              "url": "https://www.theguardian.com/world/2026/jun/08/xi-jinping-kim-jong-un-meeting-north-korea",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-08T10:46:17Z",
+              "image_url": "https://media.guim.co.uk/e9e1a427651f9f7f476801d0fc45909a6af25687/533_154_3130_2504/500.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "9aa90f7b-e4c6-4b24-9f65-baff60d4da32",
+          "cluster_id": "738df5f7985b061b",
+          "topic": "Modified missiles",
+          "category": "war",
+          "synthesis": "Modified missiles",
+          "has_depth": false,
+          "score": 4.15,
+          "importance": 4,
+          "relevance": 3,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Ukrainska Pravda",
+              "headline": "Russia has modified Kalibr missiles used in attacks on Ukraine, Kyiv says – photos",
+              "summary": "Russia has begun equipping Kalibr cruise missiles with cluster warheads and has reverted to using imported electronics after attempting to switch to domestic components, according to a Ukrainian Defen",
+              "url": "https://www.pravda.com.ua/eng/news/2026/06/09/8038464/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T11:24:00+00:00",
+              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/3/2/845712/32da1ce095faa428942630031d02676f.jpeg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "ff1c525b-a294-4321-a6c8-a48ebffb79d4",
+          "cluster_id": "2953e41d77c0e075",
+          "topic": "Drone attacks",
+          "category": "war",
+          "synthesis": "Drone attacks",
+          "has_depth": false,
+          "score": 4.15,
+          "importance": 4,
+          "relevance": 3,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Ukrainska Pravda",
+              "headline": "Ten Russians identified over drone \"safari\" attacks on civilians in Kherson Oblast – video",
+              "summary": "The Security Service of Ukraine's counterintelligence unit has gathered evidence against ten Russian servicemen accused of deliberately using attack drones against civilians in Kherson. Prosecutors ha",
+              "url": "https://www.pravda.com.ua/eng/news/2026/06/09/8038444/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T09:05:00+00:00",
+              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/1/0/845564/10382dda83e716edea8b0e4e1ed1c709.jpeg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "8fd96392-1466-46f8-b04d-de6098aabe83",
+          "cluster_id": "04328216dc98a23f",
+          "topic": "Kharkiv strike",
+          "category": "war",
+          "synthesis": "Kharkiv strike",
+          "has_depth": false,
+          "score": 4.15,
+          "importance": 4,
+          "relevance": 3,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Ukrainska Pravda",
+              "headline": "Russian overnight strike targets business centre and civilian infrastructure in Kharkiv",
+              "summary": "Read more about the aftermath of the Russian large-scale attack on Kharkiv in the Ekonomichna Pravda report.",
+              "url": "https://www.pravda.com.ua/eng/news/2026/06/09/8038421/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T06:39:00+00:00",
+              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/e/7/845448/e7bf3b3f962d85f5ebad286889cbcdd9.jpeg",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    "slovakia": {
+      "label": "Slovakia",
+      "emoji": "🇸🇰",
+      "accent": "#0080C7",
+      "story_count": 5,
+      "stories": [
+        {
+          "id": "1434f5df-512c-4e71-88fe-3eaa806e303a",
+          "cluster_id": "97d751ad7166fe27",
+          "topic": "Trump a Putin",
+          "category": "slovakia",
+          "synthesis": "Trump a Putin",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Aktuality.sk",
+              "headline": "Trump a Putin zatiaľ nebudú rokovať. Kremeľ priznáva pozastavené americké sprostredkovanie vo vojne na Ukrajine",
+              "summary": "Trump a Putin zatiaľ neplánujú telefonát, no americkí vyjednávači sú v kontakte s Moskvou aj Kyjevom. Ich pozastavená misia môže ešte zohrať významnú rolu.",
+              "url": "https://www.aktuality.sk/clanok/VDiMwNt/trump-a-putin-zatial-nebudu-rokovat-kremel-priznava-pozastavene-americke-sprostredkovanie-vo-vojne-na-ukrajine/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T12:48:58+00:00",
+              "image_url": "https://img.aktuality.sk/foto/donald-trump-a-vladimir-putin-na-arch-vnej-fotografii/MTU4eDEwNi9zbWFydC9maWx0ZXJzOmZvcm1hdChqcGcpL2h0dHA6Ly9sb2NhbGhvc3Q6ODEvcHVsc2Ntcy10cmFuc2Zvcm1zLzE=/Z4MktkpTURBXy81NTljOGNkNTg0MTU5OTQ2YmZhZTNkY2UwMmNkNDA3Ni5qcGeSlQMATc0jEs0TupUCzQfQAMLD?st=WGiDgw8eLOaU4eJP-zoIrdaVyY63QKWxVzGTuMD4ClU&amp;ts=1780956000&amp;e=0",
+              "language": "sk"
+            },
+            {
+              "source": "Pravda.sk",
+              "headline": "ONLINE: Trump a Putin nateraz bez telefonátu: Kremeľ hlási ticho na najvyššej úrovni",
+              "summary": "Vojna na Ukrajine trvá už 1 566 dní.",
+              "url": "https://spravy.pravda.sk/svet/clanok/814781-online-pri-ruskych-utokoch-v-charkovskej-oblasti-zomreli-styria-ludia/?utm_source=pravda&utm_medium=rss&utm_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T04:04:00+00:00",
+              "image_url": "https://ipravda.sk/res/2026/06/09/thumbs/russia-ukraine-war-strednaW.jpg",
+              "language": "sk"
+            }
+          ]
+        },
+        {
+          "id": "324a299e-4efc-4874-bc31-219a82149dff",
+          "cluster_id": "4a54dc39255e38a1",
+          "topic": "Ukrajina",
+          "category": "slovakia",
+          "synthesis": "Ukrajina",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Denník N",
+              "headline": "Vývoj bojov (1566. deň): Rusi zastavili prepravu vojenského materiálu po hlavnej ceste na Krym, tvrdí Maďar",
+              "summary": "Ukrajinský veliteľ píše, že Rusi zakázali prepravu vojenského materiálu po kľúčovej ceste na Krym. Ukrajinci druhýkrát za tri dni zasiahli Čongarský most, ktorý spája južnú Ukrajinu s Krymom. Geografi",
+              "url": "https://dennikn.sk/5382157/vyvoj-bojov-1566-den-rusi-zastavili-prepravu-vojenskeho-materialu-po-hlavnej-ceste-na-krym-tvrdi-madar/",
+              "angle": "news",
+              "is_subscription": true,
+              "published": "2026-06-09T12:48:13+00:00",
+              "image_url": "https://img.projektn.sk/wp-static/2026/06/chongardetail.png?w=450&amp;h=300&amp;fit=crop&amp;fm=jpg&amp;q=85",
+              "language": "sk"
+            }
+          ]
+        },
+        {
+          "id": "129a9233-3d15-4720-9216-b9fdd8e35de5",
+          "cluster_id": "69c6d10b33a0827b",
+          "topic": "Izraelské nálety",
+          "category": "slovakia",
+          "synthesis": "Izraelské nálety",
+          "has_depth": false,
+          "score": 4.15,
+          "importance": 4,
+          "relevance": 3,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Pravda.sk",
+              "headline": "Izraelské nálety zasiahli antický Tyros. Trosky padali na poklady UNESCO, Libanon hovorí o barbarstve",
+              "summary": "Izraelská armáda v Libanone pri útokoch vážne poškodila antickú lokalitu Tyros",
+              "url": "https://spravy.pravda.sk/svet/clanok/814709-izraelska-armada-v-libanone-pri-utokoch-vazne-poskodila-anticku-lokalitu-tyros/?utm_source=pravda&utm_medium=rss&utm_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T09:50:00+00:00",
+              "image_url": "https://ipravda.sk/res/2026/06/09/thumbs/sur-tyre-libanon-unesco-strednaW.jpg",
+              "language": "sk"
+            }
+          ]
+        },
+        {
+          "id": "4a0efd3e-f5de-4c54-99aa-251350830595",
+          "cluster_id": "589df80e0e959389",
+          "topic": "Ruský dron",
+          "category": "slovakia",
+          "synthesis": "Ruský dron",
+          "has_depth": false,
+          "score": 4.15,
+          "importance": 4,
+          "relevance": 3,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Pravda.sk",
+              "headline": "Kamera zachytila momenty hrôzy: Ruský dron zasiahol zastávku plnú ľudí",
+              "summary": "Ruská armáda cielila na civilnú infraštruktúru v čase, keď sa ľudia vracali z práce domov.",
+              "url": "https://spravy.pravda.sk/svet/clanok/814871-kamera-zachytila-momenty-hrozy-rusky-dron-zasiahol-zastavku-plnu-ludi/?utm_source=pravda&utm_medium=rss&utm_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T09:27:00+00:00",
+              "image_url": "https://ipravda.sk/res/2026/06/09/thumbs/zastavka-dron-ukrajina-vojna-utok-strednaW.jpg",
+              "language": "sk"
+            }
+          ]
+        },
+        {
+          "id": "25443ed7-ced3-4345-8250-7f9366292256",
+          "cluster_id": "0575931f572db8d1",
+          "topic": "Ruský generál",
+          "category": "slovakia",
+          "synthesis": "Ruský generál",
+          "has_depth": false,
+          "score": 4.15,
+          "importance": 4,
+          "relevance": 3,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Pravda.sk",
+              "headline": "Ďalší ruský generál na odstrel? Pri Moskve explodovalo auto, zomrel vodič",
+              "summary": "Nálož umiestnená pod sedadlom mala silu zodpovedajúcu 300 až 400 gramom trinitrotoluénu.",
+              "url": "https://spravy.pravda.sk/svet/clanok/814837-dalsi-rusky-general-na-odstrel-pri-moskve-explodovalo-auto-zomrel-vodic/?utm_source=pravda&utm_medium=rss&utm_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T08:24:00+00:00",
+              "image_url": "https://ipravda.sk/res/2022/10/10/thumbs/ukrajina-kyjev-uarus-explozie-rusko_05-strednaW.jpg",
+              "language": "sk"
+            }
+          ]
+        }
+      ]
+    },
+    "global": {
+      "label": "Global",
+      "emoji": "🌍",
+      "accent": "#F59E0B",
+      "story_count": 1,
+      "stories": [
+        {
+          "id": "4cfc5f14-cce1-49a8-8b79-36e8684b87cd",
+          "cluster_id": "5683713b248e7e67",
+          "topic": "Middle East crisis",
+          "category": "global",
+          "synthesis": "Middle East crisis",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 5,
+          "relevance": 3,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 51,
+          "sources": [
+            {
+              "source": "The Guardian",
+              "headline": "Middle East crisis live: Lebanese officials says Israeli strikes on Tyre have killed at least eight people",
+              "summary": "IDF earlier issued urgent evacuation order in Lebanon’s fifth biggest city",
+              "url": "https://www.theguardian.com/world/live/2026/jun/09/middle-east-crisis-iran-israel-us-donald-trump-strait-of-hormuz-peace-deal-latest-news-updates",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T13:05:59Z",
+              "image_url": "https://media.guim.co.uk/1b02753e282b02839cc2dc53d69f078645a177c1/446_0_4092_3273/500.jpg",
+              "language": "en"
+            },
+            {
+              "source": "BBC World",
+              "headline": "300 migrants bound for UK kidnapped and threatened with kidney removal",
+              "summary": "The Iraqi Kurds were captured by a militia who demanded a ransom of $5,000 (£3,700) per person.",
+              "url": "https://www.bbc.com/news/articles/c8xwxdgvx8lo?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T05:00:06+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4caa/live/37b2b130-63c9-11f1-8546-8f19e4fe30f4.jpg",
+              "language": "en"
+            },
+            {
+              "source": "WSJ World",
+              "headline": "Lebanon Is Teetering at the Abyss of a New Civil War",
+              "summary": "A ceasefire agreement with Israel requiring the government to dismantle Hezbollah reignites sectarian tensions.",
+              "url": "https://www.wsj.com/world/middle-east/lebanon-civil-war-cb8f63e1",
+              "angle": "news",
+              "is_subscription": true,
+              "published": "2026-06-09T01:00:00+00:00",
+              "image_url": "https://images.wsj.net/im-54934248",
+              "language": "en"
+            },
+            {
+              "source": "FT International",
+              "headline": "Apple unveils ‘Siri AI’ in challenge to rival chatbots",
+              "summary": "Silicon Valley giant promises user privacy as it makes long-delayed overhaul of voice assistant",
+              "url": "https://www.ft.com/content/28205edf-baeb-4b97-a89d-e9f4838ff6ff",
+              "angle": "news",
+              "is_subscription": true,
+              "published": "2026-06-09T00:32:11+00:00",
+              "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F9e974292-bf64-4f25-9549-d052a0370625.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+              "language": "en"
+            },
+            {
+              "source": "WSJ World",
+              "headline": "Iran’s Attack on Israel Reveals New and Aggressive Regional Ambitions",
+              "summary": "The move to protect Hezbollah shows an appetite for risk that didn’t exist before the war.",
+              "url": "https://www.wsj.com/world/middle-east/irans-attack-on-israel-reveals-new-and-aggressive-regional-ambitions-46a63383",
+              "angle": "news",
+              "is_subscription": true,
+              "published": "2026-06-09T00:00:00+00:00",
+              "image_url": "https://images.wsj.net/im-91347325",
+              "language": "en"
+            },
+            {
+              "source": "BBC World",
+              "headline": "Stock market jitters remain amid tech fears and renewed Middle East attacks",
+              "summary": "Markets in Asia are hit by a tech sell-off, and oil is volatile as Iran and Israel launch attacks on each other.",
+              "url": "https://www.bbc.com/news/articles/c78yd5g9qx0o?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-08T20:54:29+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bfa4/live/426f4c70-62e1-11f1-9a4b-dd5933001427.jpg",
+              "language": "en"
+            },
+            {
+              "source": "WSJ World",
+              "headline": "Trump Struggled to Rein In Netanyahu’s Strikes on Iran",
+              "summary": "A climbdown in a phone call with the Israeli leader shows the president’s diminishing control over fighting that threatens his effort to reach a peace deal with Tehran.",
+              "url": "https://www.wsj.com/world/middle-east/trump-and-netanyahus-rift-over-lebanon-is-deepening-df16b6c9",
+              "angle": "news",
+              "is_subscription": true,
+              "published": "2026-06-08T17:21:00+00:00",
+              "image_url": "https://images.wsj.net/im-17297056",
+              "language": "en"
+            },
+            {
+              "source": "WSJ World",
+              "headline": "Iran and Israel Halt Exchanges of Fire",
+              "summary": "In a tumultuous resumption of violence, Iran had fired several volleys of attacks, while Israel’s targets included a major Iranian petrochemical facility.",
+              "url": "https://www.wsj.com/world/middle-east/iran-fires-missiles-at-israel-after-israeli-airstrike-on-beirut-a93b4da7",
+              "angle": "news",
+              "is_subscription": true,
+              "published": "2026-06-08T16:30:00+00:00",
+              "image_url": "https://images.wsj.net/im-52175234",
+              "language": "en"
+            },
+            {
+              "source": "BBC World",
+              "headline": "Iran's strike on Israel suggests the regime's sense of resilience is growing",
+              "summary": "Iran's decision to risk jeopardising peace talks may reflect how its leaders view their current position, writes BBC Persian editor Amir Azimi.",
+              "url": "https://www.bbc.com/news/articles/cly72ryrd1jo?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-08T14:11:22+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d10c/live/6800e1d0-6339-11f1-8546-8f19e4fe30f4.jpg",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    "economy": {
+      "label": "Economy & Finance",
+      "emoji": "📈",
+      "accent": "#6B7280",
+      "story_count": 4,
+      "stories": [
+        {
+          "id": "1f819239-6de5-4734-901c-7968781e9c2a",
+          "cluster_id": "7e3f5f1bdfa7ad53",
+          "topic": "SaaSpocalypse",
+          "category": "economy",
+          "synthesis": "SaaSpocalypse",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "CNBC",
+              "headline": "The 'SaaSpocalypse' is over, says private equity giant Thoma Bravo. Here's why it sees an AI boom for software",
+              "summary": "Thoma Bravo founder Orlando Bravo says AI offers an \"enormous tailwind\" for software companies.",
+              "url": "https://www.cnbc.com/2026/06/09/orlando-bravo-saaspocalypse-over-ai-software.html",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T12:50:10+00:00",
+              "image_url": null,
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "0acfcbe1-1387-481b-9277-5c48cfc1e01b",
+          "cluster_id": "d504afa443bd1336",
+          "topic": "American Dream",
+          "category": "economy",
+          "synthesis": "American Dream",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 5,
+          "relevance": 3,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "CNBC",
+              "headline": "51% of U.S. adults say the American Dream is out of reach for most people right now: CNBC survey",
+              "summary": "In an exclusive CNBC survey, 81% of respondents said the cost of living is their biggest financial hurdle to achieving the American Dream.",
+              "url": "https://www.cnbc.com/2026/06/09/american-dream-out-of-reach-most-people-right-now-cnbc-survey.html",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T12:33:41+00:00",
+              "image_url": null,
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "97f1c972-5266-4f7f-9865-e5149fcdbe05",
+          "cluster_id": "16de1d5b2e7ee488",
+          "topic": "Oracle AI",
+          "category": "economy",
+          "synthesis": "Oracle AI",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 5,
+          "relevance": 3,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "HNonline.sk",
+              "headline": "Eurokomisia navrhla 21. balík sankcií proti Rusku, zameriava sa na banky aj energetiku",
+              "summary": "Európska komisia navrhla nový, 21. balík sankcií proti Rusku, ktorý sa zameriava na energetiku, obchod - vrátane zákazu dovozu ruských a bieloruských rýb, ruskej banky aj takzvanú tieňovú flotilu. Ozn",
+              "url": "https://hnonline.sk/svet/96285565-eurokomisia-navrhla-21-balik-sankcii-proti-rusku-zameriava-sa-na-banky-aj-energetiku",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T11:16:00+00:00",
+              "image_url": "https://static.hnonline.sk/images/slike/2026/06/09/7072171.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "0bac0a8c-3597-4cbb-a853-f3ee3f2efa86",
+          "cluster_id": "288f48b00e835a10",
+          "topic": "US-China relations",
+          "category": "economy",
+          "synthesis": "US-China relations",
+          "has_depth": false,
+          "score": 4.6,
+          "importance": 5,
+          "relevance": 3,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "CNBC",
+              "headline": "Pentagon expands list of China military-linked firms to include Alibaba, Baidu in fresh blow to diplomatic thaw",
+              "summary": "The Pentagon briefly posted a similar expanded list in February, then withdrew it without explanation before Trump's China trip.",
+              "url": "https://www.cnbc.com/2026/06/09/alibaba-baidu-byd-named-on-pentagons-china-military-list-.html",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T08:22:14+00:00",
+              "image_url": null,
+              "language": "en"
+            }
+          ]
+        }
+      ],
+      "market_snapshot": {
+        "EURUSD": {
+          "value": 1.1559,
+          "delta": -0.0063,
+          "pct": -0.54
+        },
+        "EURCZK": {
+          "value": 24.1654,
+          "delta": -0.0168,
+          "pct": -0.07
+        },
+        "SP500": {
+          "value": 7304.96,
+          "delta": -304.82,
+          "pct": -4.01
+        },
+        "DAX": {
+          "value": 24433.06,
+          "delta": -691.11,
+          "pct": -2.75
+        },
+        "BTCUSD": {
+          "value": 61169.8,
+          "delta": 247.132,
+          "pct": 0.41
+        }
+      }
+    },
+    "health": {
+      "label": "Health & Lifestyle",
+      "emoji": "🏃",
+      "accent": "#059669",
+      "story_count": 1,
+      "stories": [
+        {
+          "id": "dd30323c-b440-4129-8a36-7947b9eece21",
+          "cluster_id": "3fed0db1493b2f65",
+          "topic": "Relationship Skills",
+          "category": "health",
+          "synthesis": "Relationship Skills",
+          "has_depth": false,
+          "score": 2.7,
+          "importance": 3,
+          "relevance": 3,
+          "is_breaking": false,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Psychology Today",
+              "headline": "2 Relationship Skills That Every Partner Should Learn",
+              "summary": "Two skills that can take a relationship from surving to thriving.",
+              "url": "https://www.psychologytoday.com/us/blog/social-instincts/202606/2-relationship-skills-that-every-partner-should-learn",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T12:42:15+00:00",
+              "image_url": "https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2026-06/micah-sammie-chaffin-kwvjevj_svw-unsplash.jpg?itok=blj8nXjo",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    "random": {
+      "label": "Random",
+      "emoji": "🎲",
+      "accent": "#EC4899",
+      "story_count": 1,
+      "stories": [
+        {
+          "id": "ce804d9d-d2b6-4d34-a1d7-e035b905c7b3",
+          "topic": "Artist of sympathy and cruelty",
+          "category": "random",
+          "synthesis": "Mozart’s genius lay in writing music of such power that he could draw his audience into morally wrenching predicaments - by Dorian Bandy Read on Aeon",
+          "hook": "A surprising find from outside the usual news stream.",
+          "has_depth": true,
+          "is_breaking": false,
+          "is_top5": false,
+          "score": 0.0,
+          "estimated_seconds": 90,
+          "sources": [
+            {
+              "source": "Aeon",
+              "headline": "Artist of sympathy and cruelty",
+              "summary": "Mozart’s genius lay in writing music of such power that he could draw his audience into morally wrenching predicaments - by Dorian Bandy Read on Aeon",
+              "url": "https://aeon.co/essays/why-mozarts-operas-are-tests-of-moral-character",
+              "angle": "feature",
+              "is_subscription": false,
+              "published": "2026-05-29T10:00:00+00:00",
+              "image_url": "https://images.aeonmedia.co/images/90b00e59-86a7-4c16-b789-392281a07d1a/essay-gettyimages-2164305840.jpg?width=1200&amp;quality=75&amp;format=auto",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    "learning": {
+      "label": "Learning",
+      "emoji": "📚",
+      "accent": "#6366F1",
+      "story_count": 1,
+      "stories": [
+        {
+          "id": "3b20c01d-5f7b-43d9-a583-659e49581b32",
+          "topic": "The Last Straw",
+          "category": "learning",
+          "domain": "behavioral economics",
+          "synthesis": "\"Inside the tiny community of English master thatchers, a fight is unfolding over a tradition that may not survive.\"",
+          "hook": "An interesting concept explained clearly.",
+          "has_depth": true,
+          "is_breaking": false,
+          "is_top5": false,
+          "score": 0.0,
+          "estimated_seconds": 120,
+          "sources": [
+            {
+              "source": "Longreads",
+              "headline": "The Last Straw",
+              "summary": "\"Inside the tiny community of English master thatchers, a fight is unfolding over a tradition that may not survive.\"",
+              "url": "https://longreads.com/2026/06/08/master-thatchers-england/",
+              "angle": "analysis",
+              "is_subscription": false,
+              "published": "2026-06-08T19:24:07+00:00",
+              "image_url": null,
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    "sport": {
+      "label": "Sport",
+      "emoji": "🏒⚽",
+      "accent": "#1DB954",
+      "story_count": 0,
+      "stories": [],
+      "scoreboard": {
+        "nhl": {
+          "results": [],
+          "today": [
+            {
+              "home": "Vegas",
+              "away": "Carolina",
+              "time": "2026-06-10T00:00:00Z"
+            },
+            {
+              "home": "Carolina",
+              "away": "Vegas",
+              "time": "2026-06-12T00:00:00Z"
+            },
+            {
+              "home": "Vegas",
+              "away": "Carolina",
+              "time": "2026-06-15T00:00:00Z"
+            }
+          ],
+          "standings_top6": []
+        },
+        "football": {
+          "PL": {
+            "results": [
+              {
+                "home": "Brighton",
+                "home_score": 0,
+                "away": "Man United",
+                "away_score": 3,
+                "status": "final"
+              },
+              {
+                "home": "Burnley",
+                "home_score": 1,
+                "away": "Wolves",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "C Palace",
+                "home_score": 1,
+                "away": "Arsenal",
+                "away_score": 2,
+                "status": "final"
+              },
+              {
+                "home": "Fulham",
+                "home_score": 2,
+                "away": "Newcastle",
+                "away_score": 0,
+                "status": "final"
+              },
+              {
+                "home": "Liverpool",
+                "home_score": 1,
+                "away": "Brentford",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "Man City",
+                "home_score": 1,
+                "away": "Aston Villa",
+                "away_score": 2,
+                "status": "final"
+              },
+              {
+                "home": "Nottm Forest",
+                "home_score": 1,
+                "away": "Bournemouth",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "Sunderland",
+                "home_score": 2,
+                "away": "Chelsea",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "Spurs",
+                "home_score": 1,
+                "away": "Everton",
+                "away_score": 0,
+                "status": "final"
+              },
+              {
+                "home": "West Ham",
+                "home_score": 3,
+                "away": "Leeds",
+                "away_score": 0,
+                "status": "final"
+              }
+            ],
+            "fixtures": [],
+            "standings": []
+          },
+          "BL1": {
+            "results": [
+              {
+                "home": "Heidenheim",
+                "home_score": 0,
+                "away": "Mainz",
+                "away_score": 2,
+                "status": "final"
+              },
+              {
+                "home": "Union Berlin",
+                "home_score": 4,
+                "away": "Augsburg",
+                "away_score": 0,
+                "status": "final"
+              },
+              {
+                "home": "Leverkusen",
+                "home_score": 1,
+                "away": "Hamburg",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "Bayern",
+                "home_score": 5,
+                "away": "Cologne",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "Gladbach",
+                "home_score": 4,
+                "away": "Hoffenheim",
+                "away_score": 0,
+                "status": "final"
+              },
+              {
+                "home": "Frankfurt",
+                "home_score": 2,
+                "away": "Stuttgart",
+                "away_score": 2,
+                "status": "final"
+              },
+              {
+                "home": "Freiburg",
+                "home_score": 4,
+                "away": "RB Leipzig",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "St. Pauli",
+                "home_score": 1,
+                "away": "Wolfsburg",
+                "away_score": 3,
+                "status": "final"
+              },
+              {
+                "home": "Bremen",
+                "home_score": 0,
+                "away": "Dortmund",
+                "away_score": 2,
+                "status": "final"
+              }
+            ],
+            "fixtures": [],
+            "standings": []
+          },
+          "SA": {
+            "results": [],
+            "fixtures": [
+              {
+                "home": "AS Roma",
+                "away": "Fiorentina",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Atalanta",
+                "away": "Sassuolo",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Bologna",
+                "away": "Lazio",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Frosinone",
+                "away": "Juventus",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Genoa",
+                "away": "Napoli",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Inter Milan",
+                "away": "Monza",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Parma",
+                "away": "Cagliari",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Torino",
+                "away": "Milan",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Udinese",
+                "away": "Como",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Venezia",
+                "away": "Lecce",
+                "time": "2026-08-23T18:00Z"
+              }
+            ],
+            "standings": []
+          },
+          "PD": {
+            "results": [
+              {
+                "home": "Villarreal",
+                "home_score": 5,
+                "away": "Atlético",
+                "away_score": 1,
+                "status": "final"
+              }
+            ],
+            "fixtures": [],
+            "standings": []
+          },
+          "FL1": {
+            "results": [
+              {
+                "home": "Brest",
+                "home_score": 1,
+                "away": "Angers",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "Lille",
+                "home_score": 0,
+                "away": "Auxerre",
+                "away_score": 2,
+                "status": "final"
+              },
+              {
+                "home": "Lorient",
+                "home_score": 0,
+                "away": "Le Havre AC",
+                "away_score": 2,
+                "status": "final"
+              },
+              {
+                "home": "Lyon",
+                "home_score": 0,
+                "away": "Lens",
+                "away_score": 4,
+                "status": "final"
+              },
+              {
+                "home": "Marseille",
+                "home_score": 3,
+                "away": "Rennes",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "Nantes",
+                "home_score": 0,
+                "away": "Toulouse",
+                "away_score": 0,
+                "status": "final"
+              },
+              {
+                "home": "Nice",
+                "home_score": 0,
+                "away": "Metz",
+                "away_score": 0,
+                "status": "final"
+              },
+              {
+                "home": "Paris FC",
+                "home_score": 2,
+                "away": "PSG",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "Strasbourg",
+                "home_score": 5,
+                "away": "Monaco",
+                "away_score": 4,
+                "status": "final"
+              }
+            ],
+            "fixtures": [],
+            "standings": []
+          },
+          "CL": {
+            "results": [
+              {
+                "home": "PSG",
+                "home_score": 1,
+                "away": "Arsenal",
+                "away_score": 1,
+                "status": "final"
+              }
+            ],
+            "fixtures": [],
+            "standings": []
+          },
+          "MLS": {
+            "results": [
+              {
+                "home": "Columbus",
+                "home_score": 2,
+                "away": "Atlanta",
+                "away_score": 0,
+                "status": "final"
+              },
+              {
+                "home": "Miami",
+                "home_score": 6,
+                "away": "Philadelphia",
+                "away_score": 4,
+                "status": "final"
+              },
+              {
+                "home": "LAFC",
+                "home_score": 1,
+                "away": "Seattle",
+                "away_score": 0,
+                "status": "final"
+              }
+            ],
+            "fixtures": [],
+            "standings": []
+          }
+        }
+      }
+    }
+  }
+}

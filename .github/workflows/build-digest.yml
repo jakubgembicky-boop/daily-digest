@@ -1,0 +1,49 @@
+name: Build Daily Digest
+
+on:
+  schedule:
+    - cron: '30 5 * * *'   # 05:30 UTC daily
+  workflow_dispatch:         # manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        run: python scripts/main.py
+        env:
+          GROQ_API_KEY:          ${{ secrets.GROQ_API_KEY }}
+          GUARDIAN_API_KEY:      ${{ secrets.GUARDIAN_API_KEY }}
+
+      - name: Commit digest + stats
+        run: |
+          git config user.name  "digest-bot"
+          git config user.email "bot@daily-digest"
+          git add pwa/digest.json pwa/digests/ monthly_stats.json
+          git diff --cached --quiet || git commit -m "digest: $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./pwa
+          keep_files: true    # preserve pwa/digests/ archive across deploys

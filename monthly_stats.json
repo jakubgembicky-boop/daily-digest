@@ -1,0 +1,27 @@
+{
+  "month": "2026-06",
+  "total_stories": 30,
+  "yesterday_categories": [
+    "czechia",
+    "economy",
+    "europe",
+    "global",
+    "health",
+    "slovakia",
+    "war"
+  ],
+  "by_category": {
+    "slovakia": 5,
+    "czechia": 4,
+    "europe": 5,
+    "war": 10,
+    "sport": 0,
+    "global": 1,
+    "tech": 0,
+    "economy": 4,
+    "hr": 0,
+    "health": 1,
+    "random": 0,
+    "learning": 0
+  }
+}
