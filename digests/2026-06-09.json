@@ -1,0 +1,1513 @@
+{
+  "generated_at": "2026-06-09T22:20:47Z",
+  "date": "2026-06-09",
+  "total_stories": 30,
+  "estimated_read_minutes": 18,
+  "top5_ids": [
+    "2c7a1360-2ad3-4b6d-bd8c-19d60da7a14c",
+    "997e4a7e-8e29-4eeb-9aa9-5b99bc540ec7",
+    "d680c6ad-b0c3-4bd9-be9f-ec2d73756708",
+    "68e95950-429c-4f4e-93af-3fe941a26c8f",
+    "f082ba46-2fd8-43fc-b090-cea40361f31b"
+  ],
+  "categories": {
+    "tech": {
+      "label": "Tech",
+      "emoji": "💻",
+      "accent": "#7C3AED",
+      "story_count": 6,
+      "stories": [
+        {
+          "id": "2c7a1360-2ad3-4b6d-bd8c-19d60da7a14c",
+          "cluster_id": "c988e11851b710e9",
+          "topic": "WWDC 2026",
+          "category": "tech",
+          "synthesis": "At WWDC 2026, Apple announced several updates, with a significant focus on improving the Siri AI experience. The event also covered iOS 27 and Apple Intelligence, highlighting the company's emphasis on AI integration. These announcements aim to enhance the overall user experience across Apple's ecosystem.",
+          "has_depth": true,
+          "score": 6.0,
+          "importance": 5,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": true,
+          "estimated_seconds": 27,
+          "sources": [
+            {
+              "source": "TechCrunch",
+              "headline": "WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more",
+              "summary": "WWDC 2026 featured significant updates to Siri AI, iOS 27, and Apple Intelligence, all of which incorporate a substantial amount of AI. The improvements to Siri are particularly notable, as Apple aims to provide a more seamless and intelligent experience for its users.",
+              "url": "https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T18:04:24+00:00",
+              "image_url": null,
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "68e95950-429c-4f4e-93af-3fe941a26c8f",
+          "cluster_id": "5757bccabaa9d803",
+          "topic": "NASA Artemis III",
+          "category": "tech",
+          "synthesis": "NASA has assigned a crew for the Artemis III mission, which aims to test lunar landing capabilities. However, a recent rocket explosion raises questions about the mission's timing. The crew consists of four new astronauts.",
+          "has_depth": true,
+          "score": 5.55,
+          "importance": 4,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": true,
+          "estimated_seconds": 30,
+          "sources": [
+            {
+              "source": "CNET",
+              "headline": "NASA Names Its Artemis III Crew for Crucial Moon Mission Testing",
+              "summary": "NASA has named the crew for its Artemis III mission, which will test the agency's ability to land humans on the moon. The crew consists of astronauts Victor Glover, Reid Wiseman, Jeremy Hansen and Christina Koch.",
+              "url": "https://www.cnet.com/science/space/nasa-artemis-iii-astronaut-crew-announcement/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T20:39:02+00:00",
+              "image_url": "https://www.cnet.com/a/img/resize/3f8e821d1b05820b851c6871cd99910d23d14149/hub/2026/06/09/5f4d5af7-ac2b-41a4-9a6f-e28813d6444e/nasas-artemis-iii-announcement-46-51-screenshot.png?auto=webp&fit=crop&height=614&width=1092",
+              "language": "en"
+            },
+            {
+              "source": "Ars Technica",
+              "headline": "NASA assigns crew for Artemis III, sets aggressive timeline for flying it",
+              "summary": "NASA has assigned a crew for the Artemis III mission, which will be an extraordinary demonstration of what is possible. The mission will set an aggressive timeline for flying it.",
+              "url": "https://arstechnica.com/space/2026/06/nasa-assigns-crew-for-artemis-iii-sets-aggressive-timeline-for-flying-it/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T18:42:19+00:00",
+              "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/artemis-3-1-1152x648.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "f082ba46-2fd8-43fc-b090-cea40361f31b",
+          "cluster_id": "4af2c8c1f29d117b",
+          "topic": "Claude Fable 5 is here — and it's",
+          "category": "tech",
+          "synthesis": "Claude Fable 5 has been released, based on the Anthropic Mythos-class AI model previously deemed too risky for public release. The model has been modified with stronger safety measures. This marks a significant development in AI research and deployment.",
+          "has_depth": true,
+          "score": 5.55,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": true,
+          "estimated_seconds": 25,
+          "sources": [
+            {
+              "source": "Tom's Guide",
+              "headline": "Claude Fable 5 is here — and it's based on a model Anthropic once deemed too risky for the public",
+              "summary": "Claude Fable 5 is here — and it's based on a model Anthropic once deemed too risky for the public. Months after saying its Mythos-class AI model was too dangerous to release, Anthropic has finally released it with stronger safety measures in place.",
+              "url": "https://www.tomsguide.com/ai/anthropic-once-said-this-ai-model-was-too-powerful-for-the-public-now-it-just-released-a-safer-version",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T21:36:50+00:00",
+              "image_url": "https://cdn.mos.cms.futurecdn.net/UR522pKHaRksu6rV93KXcX-1280-80.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "1384415b-ebc8-4535-84b9-342ca37b3cf5",
+          "cluster_id": "e9884aa672b670d1",
+          "topic": "Miasma worms its way onto GitHub as attack",
+          "category": "tech",
+          "synthesis": "Miasma, a malware tool, has been made open source on GitHub, allowing attackers to use it for malicious purposes. This development raises concerns about the potential for package poisonings. The Miasma tool can be used to exploit vulnerabilities in software.",
+          "has_depth": true,
+          "score": 5.55,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 21,
+          "sources": [
+            {
+              "source": "The Register",
+              "headline": "Miasma worms its way onto GitHub as attack kit goes open source",
+              "summary": "Miasma, a malware tool, has been made open source on GitHub, allowing attackers to use it for malicious purposes. This development raises concerns about the potential for package poisonings.",
+              "url": "https://www.theregister.com/cyber-crime/2026/06/09/miasma-supply-chain-attack-toolkit-goes-public-on-github/5253074",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T18:05:50+00:00",
+              "image_url": "https://image.theregister.com/?imageId=5242669&width=800",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "283089d5-9751-4340-acbb-4558f67dc86a",
+          "cluster_id": "6b033762f0a9b1c6",
+          "topic": "Anthropic AI hacking tool",
+          "category": "tech",
+          "synthesis": "Anthropic has released a public version of its Claude Fable 5 AI model, which is less capable than its Mythos-class model. The company has shared access to the Mythos model with software vendors, including Apple, for enhanced cybersecurity.",
+          "has_depth": true,
+          "score": 5.1,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 59,
+          "sources": [
+            {
+              "source": "Android Authority",
+              "headline": "Anthropic’s too-scary-to-release AI hacking tool is actually coming out — kind of",
+              "summary": "Anthropic's too-scary-to-release AI hacking tool is actually coming out — kind of. Claude Fable 5 is Anthropic’s most capable public model yet, but it won’t find your zero-days.",
+              "url": "https://www.androidauthority.com/claude-mythos-5-3676051/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T21:01:44+00:00",
+              "image_url": "https://www.androidauthority.com/wp-content/uploads/2023/12/claude-homepage.jpg",
+              "language": "en"
+            },
+            {
+              "source": "9to5Mac",
+              "headline": "Anthropic just released public Mythos-class AI model called Claude Fable, details here",
+              "summary": "Anthropic just released public Mythos-class AI model called Claude Fable, details here. Back in April, Anthropic unveiled its Claude Mythos AI model that it said was too powerful to publicly release.",
+              "url": "https://9to5mac.com/2026/06/09/anthropic-just-released-public-mythos-class-ai-model-called-claude-fable-details-here/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T17:19:24+00:00",
+              "image_url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/claude.webp?w=1600",
+              "language": "en"
+            },
+            {
+              "source": "Tom's Hardware",
+              "headline": "Anthropic's warning over AI self-improvement has a hidden message — accelerating development requires more compute before companies ever risk losing control of frontier AI models",
+              "summary": "Anthropic's warning over AI self-improvement has a hidden message — accelerating development requires more compute before companies ever risk losing control of frontier AI models. The company that just a few weeks ago told us that its Mythos model was much too powerful to be released is now saying that we might need to hit the pause button.",
+              "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-warns-ai-self-improvement-could-end-in-lost-human-control",
+              "angle": "analysis",
+              "is_subscription": false,
+              "published": "2026-06-09T17:03:06+00:00",
+              "image_url": "https://cdn.mos.cms.futurecdn.net/Kc5XZJfVxj3uECzne3uBJ3-1280-80.jpg",
+              "language": "en"
+            },
+            {
+              "source": "Wired",
+              "headline": "Anthropic Offers Mythos Upgrade for Cyber Partners and a ‘Safe’ Version for the Rest of You",
+              "summary": "Anthropic Offers Mythos Upgrade for Cyber Partners and a ‘Safe’ Version for the Rest of You. Anthropic is releasing Claude Mythos 5 to trusted organizations and Claude Fable 5 to the public, a version it says can’t be used for cyberattacks.",
+              "url": "https://www.wired.com/story/anthropic-releases-claude-fable-5-mythos-5/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T17:00:46+00:00",
+              "image_url": "https://media.wired.com/photos/6a270618e083d018dff70e49/master/pass/Anthropic-Dangerous-AI-Business-2261854833.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "cad61b7f-6bb5-421f-9113-3b73a9830ac1",
+          "cluster_id": "a9fc8fbbc4fe6a73",
+          "topic": "Linux kernel hack",
+          "category": "tech",
+          "synthesis": "A logic inversion bug in the Linux kernel was discovered due to a single stray character, potentially allowing hackers to crack the system.",
+          "has_depth": true,
+          "score": 5.1,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "TechRadar",
+              "headline": "A single character could be enough to let hackers crack your Linux kernel",
+              "summary": "A logic inversion bug was recently found in Linux, caused by a single stray character. This bug could potentially allow hackers to gain unauthorized access to Linux systems.",
+              "url": "https://www.techradar.com/pro/security/a-single-character-could-be-enough-to-let-hackers-crack-your-linux-kernel",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T19:35:00+00:00",
+              "image_url": "https://cdn.mos.cms.futurecdn.net/4df2346ff72793b08163ca192630a245-1280-80.jpg",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    "hr": {
+      "label": "HR & Management",
+      "emoji": "👥",
+      "accent": "#0891B2",
+      "story_count": 12,
+      "stories": [
+        {
+          "id": "997e4a7e-8e29-4eeb-9aa9-5b99bc540ec7",
+          "cluster_id": "895c790f8c44d4b2",
+          "topic": "Biotech Vision",
+          "category": "hr",
+          "synthesis": "Life Biosciences has initiated a novel therapy to reverse vision loss and cellular aging, with the first human patient receiving a dose of their sight recovery drug. This marks a significant step in the development of the therapy, which aims to address age-related vision decline. The treatment's efficacy will be closely monitored as it progresses through clinical trials.",
+          "has_depth": true,
+          "score": 6.0,
+          "importance": 5,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": true,
+          "estimated_seconds": 23,
+          "sources": [
+            {
+              "source": "Inc. Magazine",
+              "headline": "This Biotech Startup Thinks It Can Reverse Vision Loss and Cellular Aging. It’s Testing a Novel Therapy Now",
+              "summary": "This Biotech Startup Thinks It Can Reverse Vision Loss and Cellular Aging. It’s Testing a Novel Therapy Now",
+              "url": "https://www.inc.com/chloe-aiello/this-biotech-startup-thinks-it-can-reverse-vision-loss-and-cellular-aging-its-testing-a-novel-therapy-now/91358547",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T20:14:28+00:00",
+              "image_url": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/06/life-biosciences-eyesight-restoration-trial-inc-681422890.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "fd8a1b11-cdbf-4d29-90b5-a1c2ccd304ab",
+          "cluster_id": "91bc844f286a083b",
+          "topic": "Google Aviation",
+          "category": "hr",
+          "synthesis": "Google and American Airlines have partnered to address a billion-dollar aviation problem, marking a record-breaking collaboration. The partnership aims to improve the efficiency of air travel, reducing delays and cancellations.",
+          "has_depth": true,
+          "score": 5.55,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Inc. Magazine",
+              "headline": "Why Google and American Airlines Just Partnered to Solve a Billion-Dollar Aviation Problem",
+              "summary": "The collaboration between Google and American Airlines is a record-breaking moment in the aviation industry. The partnership aims to solve a billion-dollar problem by improving the efficiency of air travel.",
+              "url": "https://www.inc.com/moses-jeanfrancois/why-google-and-american-airlines-just-partnered-to-solve-a-billion-dollar-aviation-problem/91358582",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T20:44:49+00:00",
+              "image_url": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/06/american-airlines-google-inc.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "2aae50f0-ed5f-45d3-b7aa-4dddaf663ece",
+          "cluster_id": "00772838eb94f5cc",
+          "topic": "Video Intelligence",
+          "category": "hr",
+          "synthesis": "Plot, a startup backed by Alexis Ohanian, has raised $10 million to develop a 'video intelligence layer' for AI, helping brands find untagged mentions in social video. The company grew almost entirely through inbound. This technology aims to analyze and extract insights from video content.",
+          "has_depth": true,
+          "score": 5.55,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 24,
+          "sources": [
+            {
+              "source": "Inc. Magazine",
+              "headline": "Forget Text: Why Alexis Ohanian Is Backing the Startup Building the ‘Video Intelligence Layer’ for AI",
+              "summary": "Forget Text: Why Alexis Ohanian Is Backing the Startup Building the ‘Video Intelligence Layer’ for AI. Plot, a startup that helps brands find every untagged mention hiding in social video, has raised $10 million.",
+              "url": "https://www.inc.com/ashley-couto/alexis-ohanian-startup-video-intelligence-layer-ai-plot/91357436",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T20:18:47+00:00",
+              "image_url": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/06/alexis-ohanian-ai-inc.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "e3694b69-53b6-4712-a59f-8e9f2fade67c",
+          "cluster_id": "de00a692aceec1df",
+          "topic": "Sunscreen Update",
+          "category": "hr",
+          "synthesis": "The FDA has approved bemotrizinol, a sunscreen ingredient used in Europe for decades, for use in the US. This marks the first time the FDA has added a new active sunscreen ingredient in over 50 years. The approval is expected to lead to more effective sunscreens.",
+          "has_depth": true,
+          "score": 5.55,
+          "importance": 4,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 26,
+          "sources": [
+            {
+              "source": "Fast Company",
+              "headline": "Your sunscreen is outdated. The FDA has finally cleared a path to make it more effective",
+              "summary": "The FDA has finally cleared a path to make sunscreens more effective by approving bemotrizinol, a sunscreen ingredient used in Europe for decades. This marks the first time the FDA has added a new active sunscreen ingredient in over 50 years.",
+              "url": "https://www.fastcompany.com/91556627/your-sunscreen-is-outdated-the-fda-has-finally-cleared-a-path-to-make-it-more-effective",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T19:45:00+00:00",
+              "image_url": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/06/p-1-91556627-fda-new-sunscreen.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "30037ad0-4be4-4335-b7d9-b19cff49d87a",
+          "cluster_id": "d9456cadca5b8fbd",
+          "topic": "Summer Threat",
+          "category": "hr",
+          "synthesis": "A new climate study warns that a hidden summer threat could send twice as many Americans to the hospital due to the increasing heat. Researchers are racing to prepare for the worst-case scenarios of the climate crisis. The study aims to provide a better understanding of the consequences of a hotter planet.",
+          "has_depth": true,
+          "score": 5.55,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 27,
+          "sources": [
+            {
+              "source": "Fast Company",
+              "headline": "A hidden summer threat could soon send twice as many Americans to the hospital",
+              "summary": "A hidden summer threat could soon send twice as many Americans to the hospital. Researchers are racing to peer into the not-too-distant future of the climate crisis to better prepare us for the worst-case scenarios to come.",
+              "url": "https://www.fastcompany.com/91556473/a-hidden-summer-threat-could-soon-send-twice-as-many-americans-to-the-hospital",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T19:15:00+00:00",
+              "image_url": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/06/p-1-91556473-hidden-summer-threat-hospital.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "b93f9a88-c830-4637-9167-fbfb095e62ee",
+          "cluster_id": "f55f0d5fde711950",
+          "topic": "Nvidia Collaboration",
+          "category": "hr",
+          "synthesis": "Nvidia CEO Jensen Huang announced a new multitrillion-dollar AI collaboration with a surprising partner, aiming to integrate humanoids into daily life.",
+          "has_depth": true,
+          "score": 5.55,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Inc. Magazine",
+              "headline": "Nvidia CEO Jensen Huang Just Announced a New Multitrillion-Dollar AI Collaboration With an Unexpected Partner",
+              "summary": "Nvidia CEO Jensen Huang Just Announced a New Multitrillion-Dollar AI Collaboration With an Unexpected Partner. The tech giant wants to integrate humanoids into your day-to-day life.",
+              "url": "https://www.inc.com/moses-jeanfrancois/nvidia-ceo-jensen-huang-announced-a-new-multi-trillion-dollar-collaboration-unexpected-partner/91357915",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T18:05:00+00:00",
+              "image_url": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/06/lg-nvidia-humanoid-robots-inc.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "55c3fb2a-d5ea-4973-9d42-db2adeec6df0",
+          "cluster_id": "d40c1b303b117f68",
+          "topic": "Mythos Model",
+          "category": "hr",
+          "synthesis": "Anthropic has released Claude Fable 5, a public version of its Mythos-Class AI model, with key safeguards in place. This model is more capable than any previous public release and excels in software engineering, knowledge work, and vision tasks.",
+          "has_depth": true,
+          "score": 5.55,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 34,
+          "sources": [
+            {
+              "source": "Inc. Magazine",
+              "headline": "Anthropic Just Released a Powerful Mythos-Class Model to the Public—With Some Key Safeguards",
+              "summary": "Anthropic Just Released a Powerful Mythos-Class Model to the Public—With Some Key Safeguards. The model, called Claude Fable 5, is designed for everyday users and offers a more capable version of the company's previous public releases.",
+              "url": "https://www.inc.com/ben-sherry/anthropic-just-released-claude-fable-5-mythos-class-model-to-the-public-with-key-restrictions/91357769",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T17:00:43+00:00",
+              "image_url": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/06/anthropic-claude-fable-5-mythos-inc-2276530952.jpg",
+              "language": "en"
+            },
+            {
+              "source": "Fast Company",
+              "headline": "Anthropic releases a version of its vaunted Mythos model to developers",
+              "summary": "Anthropic releases a version of its vaunted Mythos model to developers. Claude Fable 5 is more capable than any other model it has released to the public, showing outstanding performance in software engineering, knowledge work, and vision tasks.",
+              "url": "https://www.fastcompany.com/91556393/anthropic-mythos-developer-version",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T17:00:00+00:00",
+              "image_url": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/06/p-91556393-anthropic-releases-a-version-of-its-vaunted-mythos-model-to-developers.png",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "ac2a093c-d301-4662-86e5-a8b514b1560a",
+          "cluster_id": "0b19c19f26b88be6",
+          "topic": "Pentagon Blacklist",
+          "category": "hr",
+          "synthesis": "The Pentagon has added several prominent Chinese businesses, including Alibaba, BYD, and Baidu, to its list of Chinese military companies, preventing them from getting U.S. defense contracts. This move is part of the U.S. government's efforts to restrict Chinese companies' access to sensitive technology. The updated list was published by the Pentagon on Monday.",
+          "has_depth": true,
+          "score": 5.55,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 32,
+          "sources": [
+            {
+              "source": "Fast Company",
+              "headline": "The Pentagon just blacklisted tech giant Alibaba and electric car maker BYD. Here’s why",
+              "summary": "The Pentagon has added several prominent Chinese businesses, including the tech giant Alibaba, electric car maker BYD, and search engine Baidu, to its list of Chinese military companies, preventing them from getting U.S. defense contracts. The list, updated and published Monday by the Pentagon, now includes a total of 59 companies.",
+              "url": "https://www.fastcompany.com/91556345/pentagon-just-blacklisted-tech-giant-alibaba-electric-car-maker-byd-heres-why",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T16:25:06+00:00",
+              "image_url": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/06/AP26159767470394.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "35878f27-9e2d-480e-97fb-b0bbe0f09934",
+          "cluster_id": "03e793b44384b424",
+          "topic": "Impersonation Attacks",
+          "category": "hr",
+          "synthesis": "Companies are unprepared to deal with the increasing threat of impersonation attacks, which are being accelerated by AI, according to a report by Outtake. Businesses are not taking a proactive approach to blocking schemes that spoof their leaders' identities.",
+          "has_depth": true,
+          "score": 5.55,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 21,
+          "sources": [
+            {
+              "source": "HR Dive",
+              "headline": "Companies aren’t prepared for how AI is accelerating impersonation attacks, report shows",
+              "summary": "Companies aren’t prepared for how AI is accelerating impersonation attacks, report shows. Security firm Outtake said businesses generally aren’t taking a proactive enough approach to blocking schemes that spoof their leaders’ identities.",
+              "url": "https://www.hrdive.com/news/ai-executive-impersonation-outtake-survey/822343/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T14:51:00+00:00",
+              "image_url": "https://imgproxy.divecdn.com/8rWbxxMuU-0LZ69udv2DnWkNPUFbRffTdtAgwC83md4/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xMDYxMTk5Mjg4LmpwZw==.webp",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "e1844926-8443-496a-a185-2b7ae5785bcc",
+          "cluster_id": "da6adaaec0ddfec5",
+          "topic": "AI Ban",
+          "category": "hr",
+          "synthesis": "The first company-wide AI ban has been reported, indicating a growing trend of AI buyer's remorse among businesses. This shift in attitude is likely due to the increasing scrutiny of AI's return on investment (ROI).",
+          "has_depth": true,
+          "score": 5.55,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 21,
+          "sources": [
+            {
+              "source": "Inc. Magazine",
+              "headline": "The First Company-Wide AI Ban Just Hit My Inbox. Here’s What It Means",
+              "summary": "The first company-wide AI ban has been reported, with the company citing AI buyer's remorse as the reason. This shift in attitude is likely due to the increasing scrutiny of AI's return on investment (ROI).",
+              "url": "https://www.inc.com/joe-procopio/the-first-company-wide-ai-ban-just-hit-my-inbox-heres-what-it-means/91357535",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T10:00:00+00:00",
+              "image_url": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/06/ai-company-wide-ban-inc-264920423.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "2dcdf17e-dfd7-4000-bf2f-48f7acb6c7df",
+          "cluster_id": "550b5ceb22e40960",
+          "topic": "E-Verify",
+          "category": "hr",
+          "synthesis": "The US government proposes a rule requiring federal grant recipients to participate in E-Verify, an employment eligibility verification system. This move aims to provide an additional safeguard to existing requirements. The rule is expected to impact various industries and organizations.",
+          "has_depth": true,
+          "score": 5.55,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 24,
+          "sources": [
+            {
+              "source": "HR Dive",
+              "headline": "Feds propose mandatory E-Verify participation for federal grant recipients",
+              "summary": "The White House Office of Management and Budget has proposed a rule that would require federal grant recipients to participate in E-Verify, an employment eligibility verification system. The rule would provide an “additional safeguard” to existing employment eligibility requirements.",
+              "url": "https://www.hrdive.com/news/feds-propose-mandatory-e-verify-participation-federal-grant-recipients/822280/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-08T19:37:00+00:00",
+              "image_url": "https://imgproxy.divecdn.com/lPux6XXGy7e4unP56w8IuSpaON-M1uIDCv87NRxuqAE/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy01Njc2NzIzMC5qcGc=.webp",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "8e191780-9969-4629-a8f6-bd40090a0bbc",
+          "cluster_id": "c7c0374e6162a42f",
+          "topic": "Defence Champion",
+          "category": "hr",
+          "synthesis": "A new defence champion is emerging in the Gulf region, driven by the desire of local rulers to reduce their dependence on Western arms. This shift is expected to have significant implications for the global defence industry. The Gulf region's growing military capabilities will be a major factor in shaping regional and international security dynamics.",
+          "has_depth": true,
+          "score": 5.1,
+          "importance": 4,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 29,
+          "sources": [
+            {
+              "source": "The Economist",
+              "headline": "A new defence champion is rising from the Gulf",
+              "summary": "The region's rulers want to reduce their dependence on Western arms, which has led to a surge in domestic defence production. This shift is driven by a desire for greater self-sufficiency and a need to reduce reliance on foreign suppliers.",
+              "url": "https://www.economist.com/business/2026/06/04/a-new-defence-champion-is-rising-from-the-gulf",
+              "angle": "news",
+              "is_subscription": true,
+              "published": "2026-06-04T13:08:12+00:00",
+              "image_url": null,
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    "health": {
+      "label": "Health & Lifestyle",
+      "emoji": "🏃",
+      "accent": "#059669",
+      "story_count": 8,
+      "stories": [
+        {
+          "id": "d680c6ad-b0c3-4bd9-be9f-ec2d73756708",
+          "cluster_id": "e3eeb8fd1498d840",
+          "topic": "Human trafficking",
+          "category": "health",
+          "synthesis": "Survivors of human trafficking are using civil lawsuits to hold businesses accountable and demand justice in a new legal strategy.",
+          "has_depth": true,
+          "score": 5.6667,
+          "importance": 5,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": true,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Psychology Today",
+              "headline": "The Role of Civil Lawsuits in Human Trafficking Cases",
+              "summary": "In a new legal strategy that is reshaping the fight against human trafficking, survivors are using civil lawsuits to hold businesses accountable and demand justice. This approach is providing a new avenue for survivors to seek compensation and hold perpetrators accountable.",
+              "url": "https://www.psychologytoday.com/us/blog/modern-day-slavery/202606/the-role-of-civil-lawsuits-in-human-trafficking-cases",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T20:29:42+00:00",
+              "image_url": "https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2026-06/pexels-didsss-5739355.jpg?itok=j5BLmMhO",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "4e6b456c-eebe-4343-9aa5-8bc559ab6641",
+          "cluster_id": "1a28167fc2c8d680",
+          "topic": "Exercise and brain",
+          "category": "health",
+          "synthesis": "Research suggests that regular physical activity can help reverse brain aging, with even a small amount of exercise today potentially protecting the brain for decades to come.",
+          "has_depth": true,
+          "score": 5.2167,
+          "importance": 4,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Men's Health",
+              "headline": "Yes, Exercise Can Reverse Brain Aging. How Much Is Less Than You Might Think.",
+              "summary": "Yes, Exercise Can Reverse Brain Aging. How Much Is Less Than You Might Think.",
+              "url": "https://www.menshealth.com/health/a71537488/brain-aging-exercise-workout-study/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T19:50:20+00:00",
+              "image_url": "https://hips.hearstapps.com/hmg-prod/images/33f1d11c-a840-410a-80db-79e0837d1344.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "69696076-e6c6-4531-bdd6-922e8373854a",
+          "cluster_id": "6345800d9635b249",
+          "topic": "Artemis III mission",
+          "category": "health",
+          "synthesis": "NASA has announced the crew for the Artemis III mission, a four-man team scheduled to test crucial systems ahead of a planned Moon landing. The mission is a crucial step towards the Artemis V Moon landing in 2028. Luca Parmitano will pilot the all-male crew.",
+          "has_depth": true,
+          "score": 5.2167,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 45,
+          "sources": [
+            {
+              "source": "BBC Science",
+              "headline": "Nasa reveals crew for Artemis III mission",
+              "summary": "The crew, who are all men, are scheduled to blast off in 2027 to test systems ahead of a planned Moon landing. The mission is a crucial step towards the Artemis V Moon landing in 2028.",
+              "url": "https://www.bbc.com/news/videos/cd95n8v8xgyo?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T18:44:57+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b152/live/37408140-6433-11f1-8546-8f19e4fe30f4.jpg",
+              "language": "en"
+            },
+            {
+              "source": "BBC Science",
+              "headline": "Nasa has named the Artemis III crew - what is their mission?",
+              "summary": "Artemis III will help test crucial systems needed for the planned Artemis V Moon landing in 2028. The mission is a crucial step towards the first human landing on the Moon.",
+              "url": "https://www.bbc.com/news/articles/cr5j40ezgz4o?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T17:45:34+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/50dc/live/8ebfb300-2d1f-11f1-b297-95b0a0a8331e.jpg",
+              "language": "en"
+            },
+            {
+              "source": "The Guardian",
+              "headline": "‘Earth’s first starfleet’: Nasa reveals Artemis III crew and project’s next steps",
+              "summary": "Luca Parmitano to pilot all-male crew of four paving way for planned first human landing on Artemis IV in 2028. The Artemis III mission is a crucial step towards establishing a sustainable presence on the Moon.",
+              "url": "https://www.theguardian.com/science/2026/jun/09/artemis-iii-crew-nasa-moon",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T17:07:04Z",
+              "image_url": "https://media.guim.co.uk/da55315b48083fafa3863264afec48313cd38a94/107_0_1196_957/500.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "72b3e48a-0305-4e25-b11f-73711d8a927c",
+          "cluster_id": "9d97bf7679e73d4f",
+          "topic": "Post-traumatic solutions",
+          "category": "health",
+          "synthesis": "Post-traumatic solutions suggest that difficult life experiences may not permanently change a person's identity, offering an alternative perspective on life.",
+          "has_depth": true,
+          "score": 5.2167,
+          "importance": 4,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Psychology Today",
+              "headline": "Post-Traumatic Solutions",
+              "summary": "If you believe that a difficult life experience has permanently changed who you are, there may be another, more helpful way to think about your life. This alternative perspective can help you regain a sense of control and identity.",
+              "url": "https://www.psychologytoday.com/us/blog/divorce-busting/202606/post-traumatic-solutions",
+              "angle": "analysis",
+              "is_subscription": false,
+              "published": "2026-06-09T16:07:32+00:00",
+              "image_url": "https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2026-06/img_0210.jpeg.jpg?itok=b9PU5GIT",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "ce03f2bc-57ef-49ac-a119-099103fd098f",
+          "cluster_id": "10f3802a8e2f4a40",
+          "topic": "Compassion and forgiveness",
+          "category": "health",
+          "synthesis": "Learning simple biological wellness skills can lead to greater social cohesion and statistically significant increases in compassion and forgiveness. This approach can help individuals develop a more empathetic and forgiving mindset.",
+          "has_depth": true,
+          "score": 5.2167,
+          "importance": 4,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Psychology Today",
+              "headline": "Compassion and Forgiveness in a Fractured World",
+              "summary": "Learning simple biological wellness skills can lead to greater social cohesion and statistically significant increases in compassion and forgiveness. This approach can help individuals develop a more empathetic and forgiving mindset.",
+              "url": "https://www.psychologytoday.com/us/blog/building-resiliency-to-trauma/202606/compassion-and-forgiveness-in-a-fractured-world",
+              "angle": "analysis",
+              "is_subscription": false,
+              "published": "2026-06-09T15:23:54+00:00",
+              "image_url": "https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2026-06/shutterstock_2139676821.jpg?itok=2LSOsko1",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "29a350bf-81ce-46c2-8bbd-1a67e28a84c7",
+          "cluster_id": "8d396edacd56b984",
+          "topic": "SpaceX stock",
+          "category": "health",
+          "synthesis": "SpaceX is preparing for a stock market debut that could transform the company, the wider market and Elon Musk's fortune. The move is considered Elon Musk's biggest gamble yet. The stock market debut could have significant implications for the company's future.",
+          "has_depth": true,
+          "score": 5.2167,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 23,
+          "sources": [
+            {
+              "source": "BBC Science",
+              "headline": "SpaceX's stock market blast-off could be Musk's biggest gamble yet",
+              "summary": "SpaceX's stock market debut could be a game-changer for the company, with the potential to raise billions of dollars. The move could also have a significant impact on the wider market and Elon Musk's personal fortune.",
+              "url": "https://www.bbc.com/news/articles/cy8d9e4lzv1o?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-08T23:22:17+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7227/live/3f8dbf70-6325-11f1-b1db-af71d47507d6.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "3bec045b-d4cd-40e7-ba23-8e88b90ff6fd",
+          "cluster_id": "8d22a65b750f668b",
+          "topic": "SpaceX IPO",
+          "category": "health",
+          "synthesis": "SpaceX is planning the biggest stock market launch in history, but experts have raised concerns about potential risks and downsides. The company's IPO will allow investors to buy shares, but they should be aware of the associated risks. Elon Musk's firm is expected to make a significant impact on the stock market.",
+          "has_depth": true,
+          "score": 5.2167,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 26,
+          "sources": [
+            {
+              "source": "The Guardian",
+              "headline": "SpaceX IPO: how can I buy shares, and what are the risks?",
+              "summary": "SpaceX is planning the biggest stock market launch in history, but experts have flagged potential downsides. The company's IPO will allow investors to buy shares, but they should be aware of the associated risks.",
+              "url": "https://www.theguardian.com/science/2026/jun/06/spacex-ipo-buy-shares-elon-musk-stock-market-launch-risks",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-06T13:00:04Z",
+              "image_url": "https://media.guim.co.uk/02a208f7bbca7c9f286ca0255388566115a7089d/165_0_2970_2377/500.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "61a8c967-8312-422c-939c-3aa5ba749e12",
+          "cluster_id": "33137f15a06cfa3b",
+          "topic": "Cancer treatment",
+          "category": "health",
+          "synthesis": "Researchers presented new cancer treatments at the US conference, including a drug that prevents cancer cells from hiding and a breakthrough pill for pancreatic cancer. However, there were also notes of caution. The conference highlighted the ongoing efforts to combat cancer.",
+          "has_depth": true,
+          "score": 5.2167,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 26,
+          "sources": [
+            {
+              "source": "The Guardian",
+              "headline": "Removing ‘invisibility cloaks’ and safely skipping chemo: new weapons in war on cancer shared at US conference",
+              "summary": "Researchers at the Asco conference shared new weapons in the war on cancer, including a drug that stops cancer cells hiding and a breakthrough pill for pancreatic cancer. However, there were also notes of caution about the potential risks and limitations of these new treatments.",
+              "url": "https://www.theguardian.com/science/2026/jun/06/new-weapons-war-on-cancer-asco-conference-takeaways",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-06T05:00:03Z",
+              "image_url": "https://media.guim.co.uk/a9e4f47038b6afc50cf8d17eb0859344e03935d3/551_0_5000_4000/500.jpg",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    "economy": {
+      "label": "Economy & Finance",
+      "emoji": "📈",
+      "accent": "#6B7280",
+      "story_count": 1,
+      "stories": [
+        {
+          "id": "3a08f07e-e45f-4210-b764-782ecf204764",
+          "cluster_id": "ac0c9e766da1fc29",
+          "topic": "Pope AI profiteers",
+          "category": "economy",
+          "synthesis": "Pope Leo XIV rejects the idea that markets alone can shape society's technological future, particularly with regards to AI. He challenges Chicago School economics by recognizing that AI raises questions that prices and profits cannot answer.",
+          "has_depth": true,
+          "score": 5.5,
+          "importance": 5,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 24,
+          "sources": [
+            {
+              "source": "Project Syndicate",
+              "headline": "The Pope and the AI Profiteers",
+              "summary": "In his first encyclical, Pope Leo XIV rightly rejects the idea that markets alone can be trusted to shape society’s technological future. Recognizing that AI raises questions that prices and profits cannot answer, the Chicago-born pope has posed a direct challenge to Chicago School economics.",
+              "url": "https://www.project-syndicate.org/commentary/pope-ai-encyclical-human-choice-dignity-over-profit-by-antara-haldar-2026-06",
+              "angle": "analysis",
+              "is_subscription": false,
+              "published": "2026-06-05T13:24:07+00:00",
+              "image_url": "https://webapi.project-syndicate.org/library/d506ca06cfc9dd3df45a8e9cf89330b5.16-9-xlarge.1.jpg",
+              "language": "en"
+            }
+          ]
+        }
+      ],
+      "market_snapshot": {
+        "EURUSD": {
+          "value": 1.1543,
+          "delta": -0.0079,
+          "pct": -0.68
+        },
+        "EURCZK": {
+          "value": 24.1475,
+          "delta": -0.0347,
+          "pct": -0.14
+        },
+        "SP500": {
+          "value": 7386.65,
+          "delta": -223.13,
+          "pct": -2.93
+        },
+        "DAX": {
+          "value": 24433.06,
+          "delta": -691.11,
+          "pct": -2.75
+        },
+        "BTCUSD": {
+          "value": 61864.0,
+          "delta": 941.332,
+          "pct": 1.55
+        }
+      }
+    },
+    "global": {
+      "label": "Global",
+      "emoji": "🌍",
+      "accent": "#F59E0B",
+      "story_count": 2,
+      "stories": [
+        {
+          "id": "f58a6e06-1954-4aa0-8ea1-0e0b5866a527",
+          "cluster_id": "b8674af54dfedb10",
+          "topic": "AI tool release",
+          "category": "global",
+          "synthesis": "Anthropic has released a version of its AI program, Claude Fable 5, despite concerns that it is too powerful for public use. The AI program, Claude Mythos, has caused a stir among technology, finance, and government leaders. The release of Claude Fable 5 has raised questions about the potential risks and benefits of advanced AI technology.",
+          "has_depth": true,
+          "score": 5.2167,
+          "importance": 4,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 27,
+          "sources": [
+            {
+              "source": "BBC World",
+              "headline": "Version of AI tool 'too powerful for public' released to public",
+              "summary": "A version of the AI tool 'Claude' has been released to the public, despite concerns that it is too powerful. The tool, known as Claude Fable 5, is a version of Anthropic's Claude Mythos.",
+              "url": "https://www.bbc.com/news/articles/ckg701v1dp6o?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T18:35:59+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3a65/live/82edf440-642b-11f1-a08b-a904eba6340c.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "ae5e47ec-ba55-475b-9862-558e04d897fc",
+          "cluster_id": "dc8ca270082154f0",
+          "topic": "Wall Street Is Rushing to Fund the AI",
+          "category": "global",
+          "synthesis": "Wall Street is rapidly investing in AI companies through various means, including large debt deals and initial public offerings (IPOs). This influx of investor cash is fueling the growth of the AI industry. Tech companies are capitalizing on the trend to secure funding.",
+          "has_depth": true,
+          "score": 5.2167,
+          "importance": 4,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 21,
+          "sources": [
+            {
+              "source": "WSJ Markets",
+              "headline": "Wall Street Is Rushing to Fund the AI Bonanza in Every Conceivable Way",
+              "summary": "Wall Street Is Rushing to Fund the AI Bonanza in Every Conceivable Way. From giant debt deals to IPOs, tech companies keep raking in investor cash.",
+              "url": "https://www.wsj.com/finance/investing/global-stocks-markets-dow-news-06-08-2026-aac7c547?mod=rss_markets_main",
+              "angle": "news",
+              "is_subscription": true,
+              "published": "2026-06-09T01:00:00+00:00",
+              "image_url": "https://images.wsj.net/im-39212091",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    "sport": {
+      "label": "Sport",
+      "emoji": "🏒⚽",
+      "accent": "#1DB954",
+      "story_count": 1,
+      "stories": [
+        {
+          "id": "5d9bb36a-2eb9-4ca2-887e-b6d187e756e0",
+          "cluster_id": "121a5fb7020eb8d4",
+          "topic": "World Cup",
+          "category": "sport",
+          "synthesis": "The 2026 World Cup is facing various challenges, including issues with referees, ticket allocations, and fan restrictions, raising concerns about Fifa's control over the event. The tournament is also expected to be the most contentious ever, with a super-sized format and politicized atmosphere. The US is preparing to host the World Cup, but there are concerns about its readiness to handle the pressure.",
+          "has_depth": true,
+          "score": 1.85,
+          "importance": 2,
+          "relevance": 1,
+          "is_breaking": false,
+          "is_top5": false,
+          "estimated_seconds": 96,
+          "sources": [
+            {
+              "source": "BBC Football",
+              "headline": "Does referee case show Fifa has lost control of its own World Cup?",
+              "summary": "With referee Omar Artan denied entry to the United States and worries over staff and supporters being turned back, what does this tell us about the World Cup?",
+              "url": "https://www.bbc.com/sport/football/articles/clyr6drdl79o?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T17:55:45+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2b66/live/c8b5be70-6419-11f1-b8c4-d17e7970dcab.jpg",
+              "language": "en"
+            },
+            {
+              "source": "BBC Football",
+              "headline": "Fifa working to resolve revoked Iran tickets",
+              "summary": "Fifa has said it is working to \"maximise opportunities for Iranian supporters to attend matches\" after the country's World Cup group-stage ticket allocation was revoked just days before the tournament",
+              "url": "https://www.bbc.com/sport/football/articles/c9q2vrdx0ewo?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T17:50:37+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ef46/live/11506fd0-63e9-11f1-bb83-f9b0320ac35b.jpg",
+              "language": "en"
+            },
+            {
+              "source": "BBC Football",
+              "headline": "'Gridlock alert days' and a race for tickets as US prepares to host World Cup",
+              "summary": "Is the US ready to handle the pressure of co-hosting what many see as the biggest global sporting event?",
+              "url": "https://www.bbc.com/sport/football/articles/cx2jk042y7vo?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T16:48:33+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5c5c/live/a3290ea0-640f-11f1-b639-cdbeabf73caa.jpg",
+              "language": "en"
+            },
+            {
+              "source": "The Guardian",
+              "headline": "Knicks fans: share your reaction to the NBA finals",
+              "summary": "We would like to hear from fans in New York and around the world about their reactions to the Knicks’ performance in the NBA finals",
+              "url": "https://www.theguardian.com/sport/2026/jun/09/new-york-knicks-fans-nba-finals-callout",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T15:24:03Z",
+              "image_url": "https://media.guim.co.uk/ebf7162bbe9813aff719e6571ce78eae61e191ed/384_0_3837_3070/500.jpg",
+              "language": "en"
+            },
+            {
+              "source": "BBC Tennis",
+              "headline": "Draper delays comeback and misses Queen's",
+              "summary": "British number three Jack Draper says he hopes to make his return from a knee injury at the Eastbourne Open this month.",
+              "url": "https://www.bbc.com/sport/tennis/articles/cvgldgpr143o?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T15:08:20+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5d44/live/fcace680-6410-11f1-9216-c3eba4acaf31.jpg",
+              "language": "en"
+            },
+            {
+              "source": "BBC Football",
+              "headline": "The flag Iranians are not allowed to wave at the World Cup",
+              "summary": "Iran football fans living in Los Angeles explain why they want to wave Iran's pre-1979 Islamic revolution flag and dismiss the one that is on their team's shirt.",
+              "url": "https://www.bbc.com/sport/articles/c2eykvw3exwo?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T09:27:46+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/df85/live/2d749e00-63af-11f1-9060-6b89482bccd5.jpg",
+              "language": "en"
+            },
+            {
+              "source": "BBC Football",
+              "headline": "Play BBC Sport's new World Cup predictor game",
+              "summary": "Play BBC Sport's new World Cup predictor game to be in with the chance of winning a signed football.",
+              "url": "https://www.bbc.com/sport/football/articles/cn0plqlkl51o?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T08:24:41+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1890/live/daffe870-5f51-11f1-89a3-d1f559421220.jpg",
+              "language": "en"
+            },
+            {
+              "source": "BBC Football",
+              "headline": "'Mazadona', 'Einstein', 'The Ant' - 20 new players to watch at the 2026 World Cup",
+              "summary": "BBC Sport TV and radio commentators pick the players they think could be the breakout stars of the 2026 World Cup.",
+              "url": "https://www.bbc.com/sport/football/articles/cn0p0gkl90go?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T06:42:53+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ec23/live/6345f2d0-60bd-11f1-8b8c-6d33e1d5abb6.jpg",
+              "language": "en"
+            },
+            {
+              "source": "BBC Football",
+              "headline": "Why super-sized and politicised World Cup comes at a cost",
+              "summary": "Whatever one's perspective, it seems certain that away from the on-field spectacle, this super-sized World Cup could be among the most contentious ever.",
+              "url": "https://www.bbc.com/sport/football/articles/cg4wqr2ev33o?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T05:57:24+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ff85/live/b9e236b0-63d5-11f1-b1db-af71d47507d6.jpg",
+              "language": "en"
+            },
+            {
+              "source": "BBC Football",
+              "headline": "Who am I? Guess World Cup star No 2",
+              "summary": "Will you get today's player in as few attempts as possible?",
+              "url": "https://www.bbc.com/sport/football/articles/c202d04y761o?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T05:52:31+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/982b/live/d022e7c0-6309-11f1-89a3-d1f559421220.jpg",
+              "language": "en"
+            },
+            {
+              "source": "BBC Football",
+              "headline": "How to watch the World Cup on the BBC and ITV",
+              "summary": "All the TV and radio details for each of the 2026 World Cup group games.",
+              "url": "https://www.bbc.com/sport/football/articles/c20y4ppqy94o?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-06T20:30:36+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0146/live/1059f7e0-61e6-11f1-8b8c-6d33e1d5abb6.jpg",
+              "language": "en"
+            },
+            {
+              "source": "BBC Football",
+              "headline": "Download your World Cup 2026 wallchart",
+              "summary": "Get your essential piece of kit now by downloading the Fifa World Cup 2026 wallchart.",
+              "url": "https://www.bbc.com/sport/football/articles/c4g51wd9px6o?at_medium=RSS&at_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-02T11:06:39+00:00",
+              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3e2d/live/34955c50-5e7e-11f1-8b8c-6d33e1d5abb6.jpg",
+              "language": "en"
+            }
+          ]
+        }
+      ],
+      "scoreboard": {
+        "nhl": {
+          "results": [],
+          "today": [
+            {
+              "home": "Vegas",
+              "away": "Carolina",
+              "time": "2026-06-10T00:00:00Z"
+            },
+            {
+              "home": "Carolina",
+              "away": "Vegas",
+              "time": "2026-06-12T00:00:00Z"
+            },
+            {
+              "home": "Vegas",
+              "away": "Carolina",
+              "time": "2026-06-15T00:00:00Z"
+            }
+          ],
+          "standings_top6": []
+        },
+        "football": {
+          "PL": {
+            "results": [
+              {
+                "home": "Brighton",
+                "home_score": 0,
+                "away": "Man United",
+                "away_score": 3,
+                "status": "final"
+              },
+              {
+                "home": "Burnley",
+                "home_score": 1,
+                "away": "Wolves",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "C Palace",
+                "home_score": 1,
+                "away": "Arsenal",
+                "away_score": 2,
+                "status": "final"
+              },
+              {
+                "home": "Fulham",
+                "home_score": 2,
+                "away": "Newcastle",
+                "away_score": 0,
+                "status": "final"
+              },
+              {
+                "home": "Liverpool",
+                "home_score": 1,
+                "away": "Brentford",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "Man City",
+                "home_score": 1,
+                "away": "Aston Villa",
+                "away_score": 2,
+                "status": "final"
+              },
+              {
+                "home": "Nottm Forest",
+                "home_score": 1,
+                "away": "Bournemouth",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "Sunderland",
+                "home_score": 2,
+                "away": "Chelsea",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "Spurs",
+                "home_score": 1,
+                "away": "Everton",
+                "away_score": 0,
+                "status": "final"
+              },
+              {
+                "home": "West Ham",
+                "home_score": 3,
+                "away": "Leeds",
+                "away_score": 0,
+                "status": "final"
+              }
+            ],
+            "fixtures": [],
+            "standings": []
+          },
+          "BL1": {
+            "results": [
+              {
+                "home": "Heidenheim",
+                "home_score": 0,
+                "away": "Mainz",
+                "away_score": 2,
+                "status": "final"
+              },
+              {
+                "home": "Union Berlin",
+                "home_score": 4,
+                "away": "Augsburg",
+                "away_score": 0,
+                "status": "final"
+              },
+              {
+                "home": "Leverkusen",
+                "home_score": 1,
+                "away": "Hamburg",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "Bayern",
+                "home_score": 5,
+                "away": "Cologne",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "Gladbach",
+                "home_score": 4,
+                "away": "Hoffenheim",
+                "away_score": 0,
+                "status": "final"
+              },
+              {
+                "home": "Frankfurt",
+                "home_score": 2,
+                "away": "Stuttgart",
+                "away_score": 2,
+                "status": "final"
+              },
+              {
+                "home": "Freiburg",
+                "home_score": 4,
+                "away": "RB Leipzig",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "St. Pauli",
+                "home_score": 1,
+                "away": "Wolfsburg",
+                "away_score": 3,
+                "status": "final"
+              },
+              {
+                "home": "Bremen",
+                "home_score": 0,
+                "away": "Dortmund",
+                "away_score": 2,
+                "status": "final"
+              }
+            ],
+            "fixtures": [],
+            "standings": []
+          },
+          "SA": {
+            "results": [],
+            "fixtures": [
+              {
+                "home": "AS Roma",
+                "away": "Fiorentina",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Atalanta",
+                "away": "Sassuolo",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Bologna",
+                "away": "Lazio",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Frosinone",
+                "away": "Juventus",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Genoa",
+                "away": "Napoli",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Inter Milan",
+                "away": "Monza",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Parma",
+                "away": "Cagliari",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Torino",
+                "away": "Milan",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Udinese",
+                "away": "Como",
+                "time": "2026-08-23T18:00Z"
+              },
+              {
+                "home": "Venezia",
+                "away": "Lecce",
+                "time": "2026-08-23T18:00Z"
+              }
+            ],
+            "standings": []
+          },
+          "PD": {
+            "results": [
+              {
+                "home": "Villarreal",
+                "home_score": 5,
+                "away": "Atlético",
+                "away_score": 1,
+                "status": "final"
+              }
+            ],
+            "fixtures": [],
+            "standings": []
+          },
+          "FL1": {
+            "results": [
+              {
+                "home": "Brest",
+                "home_score": 1,
+                "away": "Angers",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "Lille",
+                "home_score": 0,
+                "away": "Auxerre",
+                "away_score": 2,
+                "status": "final"
+              },
+              {
+                "home": "Lorient",
+                "home_score": 0,
+                "away": "Le Havre AC",
+                "away_score": 2,
+                "status": "final"
+              },
+              {
+                "home": "Lyon",
+                "home_score": 0,
+                "away": "Lens",
+                "away_score": 4,
+                "status": "final"
+              },
+              {
+                "home": "Marseille",
+                "home_score": 3,
+                "away": "Rennes",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "Nantes",
+                "home_score": 0,
+                "away": "Toulouse",
+                "away_score": 0,
+                "status": "final"
+              },
+              {
+                "home": "Nice",
+                "home_score": 0,
+                "away": "Metz",
+                "away_score": 0,
+                "status": "final"
+              },
+              {
+                "home": "Paris FC",
+                "home_score": 2,
+                "away": "PSG",
+                "away_score": 1,
+                "status": "final"
+              },
+              {
+                "home": "Strasbourg",
+                "home_score": 5,
+                "away": "Monaco",
+                "away_score": 4,
+                "status": "final"
+              }
+            ],
+            "fixtures": [],
+            "standings": []
+          },
+          "CL": {
+            "results": [
+              {
+                "home": "PSG",
+                "home_score": 1,
+                "away": "Arsenal",
+                "away_score": 1,
+                "status": "final"
+              }
+            ],
+            "fixtures": [],
+            "standings": []
+          },
+          "MLS": {
+            "results": [
+              {
+                "home": "Columbus",
+                "home_score": 2,
+                "away": "Atlanta",
+                "away_score": 0,
+                "status": "final"
+              },
+              {
+                "home": "Miami",
+                "home_score": 6,
+                "away": "Philadelphia",
+                "away_score": 4,
+                "status": "final"
+              },
+              {
+                "home": "LAFC",
+                "home_score": 1,
+                "away": "Seattle",
+                "away_score": 0,
+                "status": "final"
+              }
+            ],
+            "fixtures": [],
+            "standings": []
+          }
+        }
+      }
+    },
+    "random": {
+      "label": "Random",
+      "emoji": "🎲",
+      "accent": "#EC4899",
+      "story_count": 1,
+      "stories": [
+        {
+          "id": "9a3eb1a4-9a6d-4813-b0c4-aa6dc5a519eb",
+          "topic": "The Strange History of Lorem Ipsum: How Cicero’s Words Became the World’s Favorite Placeholder Text",
+          "category": "random",
+          "synthesis": "Though seldom heard these days, the term “desktop publishing” once opened a great many eyes to the promise of the personal computer. It meant that one could create a publication without owning a press or contracting with an outfit that did. Indeed, the whole process of writing, design, and printing could take place on one’s […]",
+          "hook": "Cicero's words became the world's favorite placeholder text, but how did a 1st-century Roman oration end up in every desktop publishing template?",
+          "has_depth": true,
+          "is_breaking": false,
+          "is_top5": false,
+          "score": 0.0,
+          "estimated_seconds": 90,
+          "sources": [
+            {
+              "source": "Open Culture",
+              "headline": "The Strange History of Lorem Ipsum: How Cicero’s Words Became the World’s Favorite Placeholder Text",
+              "summary": "Cicero's words became the world's favorite placeholder text, but how did a 1st-century Roman oration end up in every desktop publishing template?",
+              "url": "https://www.openculture.com/2026/06/the-strange-history-of-lorem-ipsum.html",
+              "angle": "feature",
+              "is_subscription": false,
+              "published": "2026-06-09T09:00:01+00:00",
+              "image_url": "https://i.ytimg.com/vi/kL1PDqzqhM4/maxresdefault.jpg",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    "learning": {
+      "label": "Learning",
+      "emoji": "📚",
+      "accent": "#6366F1",
+      "story_count": 1,
+      "stories": [
+        {
+          "id": "2e0f69ff-8540-4afd-8af3-196dbe9cfe8a",
+          "topic": "Proven, Better, New: Mark Pincus on the Rules of Innovation",
+          "category": "learning",
+          "domain": "behavioral economics",
+          "synthesis": "Mark Pincus, the creator of Farmville and Words with Friends, shares his rules of innovation, which include being proven, better, and new. This approach can help you think creatively and develop innovative solutions.",
+          "hook": "Learn how to think like an innovator with proven, better, and new mental models that can change how you approach problems and opportunities.",
+          "has_depth": true,
+          "is_breaking": false,
+          "is_top5": false,
+          "score": 0.0,
+          "estimated_seconds": 120,
+          "sources": [
+            {
+              "source": "Farnam Street",
+              "headline": "Proven, Better, New: Mark Pincus on the Rules of Innovation",
+              "summary": "Mark Pincus, the creator of Farmville and Words with Friends, shares his rules of innovation, which include being proven, better, and new. This approach can help you think creatively and develop innovative solutions.",
+              "url": "https://fs.blog/knowledge-project-podcast/mark-pincus/",
+              "angle": "analysis",
+              "is_subscription": false,
+              "published": "2026-05-28T09:50:00+00:00",
+              "image_url": "https://fs.blog/wp-content/uploads/2026/05/Screenshot-2026-06-02-at-8.25.55-AM-300x167.png",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
