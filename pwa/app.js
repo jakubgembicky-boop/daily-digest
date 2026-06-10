@@ -6,33 +6,49 @@
 'use strict';
 
 // ── Constants ──────────────────────────────────────────────────────────────
-const ANALYTICS_KEY = 'digest_analytics';
-const DIGEST_LATEST = 'digest.json';
+const ANALYTICS_KEY  = 'digest_analytics';
+const DIGEST_LATEST  = 'data/digest.json';
 const DIGEST_ARCHIVE = date => `digests/${date}.json`;
+const MARKET_DROP_ALERT = -1.5;   // % move that earns the "!" alert
 
-const CAT_COLORS = {
-  slovakia:'#0080C7', czechia:'#B45309',  europe:'#003399', war:'#CC2222',
-  sport:   '#1DB954', global: '#F59E0B',  tech:  '#7C3AED', economy:'#6B7280',
-  hr:      '#0891B2', health: '#059669',  random:'#EC4899', learning:'#6366F1',
-};
-const CAT_EMOJIS = {
-  slovakia:'🇸🇰', czechia:'🇨🇿', europe:'🇪🇺', war:'🔴',
-  sport:   '🏒',  global: '🌍',  tech:  '💻',  economy:'📈',
-  hr:      '👥',  health: '🏃',  random:'🎲',  learning:'📚',
+// Category metadata (mirrors config.py CATEGORIES — kept in sync manually)
+const CAT_META = {
+  slovakia: { label:'Slovakia',          emoji:'🇸🇰', color:'#0080C7' },
+  czechia:  { label:'Czechia',           emoji:'🇨🇿', color:'#B45309' },
+  europe:   { label:'Europe & Defence',  emoji:'🇪🇺', color:'#003399' },
+  war:      { label:'War & Conflict',    emoji:'🔴',  color:'#CC2222' },
+  sport:    { label:'Sport',             emoji:'🏆',  color:'#1DB954' },
+  global:   { label:'Global',           emoji:'🌍',  color:'#F59E0B' },
+  tech:     { label:'Tech',              emoji:'💻',  color:'#7C3AED' },
+  ai:       { label:'AI',                emoji:'🤖',  color:'#8B5CF6' },
+  economy:  { label:'Economy & Finance', emoji:'📈',  color:'#6B7280' },
+  hr:       { label:'HR & Management',   emoji:'👥',  color:'#0891B2' },
+  health:   { label:'Health & Lifestyle',emoji:'🏃',  color:'#059669' },
+  _wildcard:{ label:'Trending',          emoji:'🌐',  color:'#EC4899' },
 };
 const CAT_ORDER = [
   'slovakia','czechia','europe','war','sport','global',
-  'tech','economy','hr','health','random','learning'
+  'tech','ai','economy','hr','health',
 ];
 
 // ── State ──────────────────────────────────────────────────────────────────
-let digest       = null;   // loaded digest.json
-let currentDate  = null;   // YYYY-MM-DD of displayed digest
-let currentView  = 'day';  // 'day' | 'week' | 'month'
-let activeFilters = new Set(); // empty = all categories shown
-let readSet      = new Set(); // article ids marked read this session
+let digest       = null;
+let currentDate  = null;
+let currentView  = 'day';    // 'day' | 'grouped'
+let activeFilters = new Set();
+let readSet      = new Set();
 
-// ── Analytics helpers ──────────────────────────────────────────────────────
+// Stable story ID: hash of primary URL (avoids depending on Claude generating IDs)
+function storyId(story) {
+  const key = story?.primary?.url || story?.title || Math.random().toString();
+  let h = 0;
+  for (let i = 0; i < key.length; i++) {
+    h = (Math.imul(31, h) + key.charCodeAt(i)) | 0;
+  }
+  return 'S' + Math.abs(h).toString(36);
+}
+
+// ── Analytics ──────────────────────────────────────────────────────────────
 const Analytics = {
   load() {
     try { return JSON.parse(localStorage.getItem(ANALYTICS_KEY) || '[]'); }
@@ -45,40 +61,26 @@ const Analytics = {
   push(event) {
     const events = this.load();
     events.push({ ...event, ts: Date.now() });
-    // Keep last 180 days max
     const cutoff = Date.now() - 180 * 86400_000;
     this.save(events.filter(e => e.ts > cutoff));
   },
-
-  // ── Event logging ────────────────────────────────────────────────────────
-  logDigestOpen() {
-    this.push({ type: 'digest_open' });
-  },
-  logArticleOpen(story, source) {
+  logDigestOpen()                  { this.push({ type:'digest_open' }); },
+  logArticleOpen(story, source)    {
     this.push({
       type: 'article_open',
-      article_id:  story.id,
-      category:    story.category,
-      source:      source.source,
-      is_subscription: source.is_subscription,
+      article_id: storyId(story),
+      category:   story.category,
+      source:     source?.source || '',
+      paid:       source?.paid || false,
     });
   },
-  logSpecialOpen(kind) {
-    this.push({ type: 'special_open', kind });
+  logFeedback(id, category, vote) {
+    this.push({ type:'feedback', article_id:id, category, vote });
   },
-  logFeedback(articleId, category, vote) {
-    this.push({ type: 'feedback', article_id: articleId, category, vote });
-  },
-
-  // ── Computed metrics ─────────────────────────────────────────────────────
   compute() {
     const events = this.load();
-    const now    = Date.now();
-    const d7     = now - 7 * 86400_000;
-    const d30    = now - 30 * 86400_000;
-    const d24    = now - 86400_000;
+    const now = Date.now(), d30 = now - 30*86400_000, d24 = now - 86400_000;
 
-    // Reading streak: consecutive days with digest_open
     const openDays = new Set(
       events.filter(e => e.type === 'digest_open')
             .map(e => new Date(e.ts).toDateString())
@@ -87,47 +89,23 @@ const Analytics = {
     const today = new Date();
     for (let i = 0; i < 365; i++) {
       const d = new Date(today); d.setDate(d.getDate() - i);
-      if (openDays.has(d.toDateString())) streak++;
-      else break;
+      if (openDays.has(d.toDateString())) streak++; else break;
     }
 
-    // Learning streak
-    const learnDays = new Set(
-      events.filter(e => e.type === 'special_open' && e.kind === 'learning')
-            .map(e => new Date(e.ts).toDateString())
-    );
-    let learnStreak = 0;
-    for (let i = 0; i < 365; i++) {
-      const d = new Date(today); d.setDate(d.getDate() - i);
-      if (learnDays.has(d.toDateString())) learnStreak++;
-      else break;
-    }
-
-    // Today's opens
     const opensToday = events.filter(e => e.type === 'article_open' && e.ts > d24).length;
+    const opens30    = events.filter(e => e.type === 'article_open' && e.ts > d30);
+    const avgPerDay  = (opens30.length / 30).toFixed(1);
 
-    // Avg per day (last 30)
-    const openDays30 = new Set(
-      events.filter(e => e.type === 'article_open' && e.ts > d30)
-            .map(e => new Date(e.ts).toDateString())
-    );
-    const totalOpens30 = events.filter(e => e.type === 'article_open' && e.ts > d30).length;
-    const avgPerDay = openDays30.size > 0 ? (totalOpens30 / 30).toFixed(1) : '0';
-
-    // Favourite source (last 30)
     const srcCount = {};
-    events.filter(e => e.type === 'article_open' && e.ts > d30)
-          .forEach(e => { srcCount[e.source] = (srcCount[e.source] || 0) + 1; });
-    const favSource = Object.entries(srcCount).sort((a,b) => b[1]-a[1])[0]?.[0] || '—';
+    opens30.forEach(e => { srcCount[e.source] = (srcCount[e.source]||0) + 1; });
+    const favSource = Object.entries(srcCount).sort((a,b)=>b[1]-a[1])[0]?.[0] || '—';
 
-    // Category breakdown (this month)
-    const monthStart = new Date();
-    monthStart.setDate(1); monthStart.setHours(0,0,0,0);
+    const monthStart = new Date(); monthStart.setDate(1); monthStart.setHours(0,0,0,0);
     const catCount = {};
     events.filter(e => e.type === 'article_open' && e.ts > monthStart.getTime())
-          .forEach(e => { catCount[e.category] = (catCount[e.category] || 0) + 1; });
+          .forEach(e => { catCount[e.category] = (catCount[e.category]||0)+1; });
 
-    return { streak, learnStreak, opensToday, avgPerDay, favSource, catCount };
+    return { streak, opensToday, avgPerDay, favSource, catCount };
   },
 };
 
@@ -144,23 +122,19 @@ function buildCalendar() {
   const strip = document.getElementById('calendar-scroll');
   strip.innerHTML = '';
   const today = new Date();
-
   for (let i = 29; i >= 0; i--) {
-    const d = new Date(today);
-    d.setDate(d.getDate() - i);
+    const d = new Date(today); d.setDate(d.getDate() - i);
     const iso = d.toISOString().slice(0, 10);
-    const dayNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-
+    const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
     const btn = document.createElement('button');
     btn.className = 'cal-day' + (i === 0 ? ' today' : '');
     if (iso === currentDate) btn.classList.add('selected');
     btn.dataset.date = iso;
-    btn.innerHTML = `<span class="day-name">${dayNames[d.getDay()]}</span>
+    btn.innerHTML = `<span class="day-name">${days[d.getDay()]}</span>
                      <span class="day-num">${d.getDate()}</span>`;
     btn.addEventListener('click', () => switchDate(iso));
     strip.appendChild(btn);
   }
-  // Scroll to end (today)
   requestAnimationFrame(() => { strip.scrollLeft = strip.scrollWidth; });
 }
 
@@ -172,154 +146,118 @@ async function switchDate(date) {
     currentDate = date;
     buildCalendar();
     renderArticles();
-  } catch {
-    showToast('No digest for ' + date);
-  } finally {
-    showLoading(false);
-  }
+  } catch { showToast('No digest for ' + date); }
+  finally  { showLoading(false); }
 }
 
 // ── Category filters ───────────────────────────────────────────────────────
 function buildFilters() {
   const ctrl = document.getElementById('view-controls');
-  // Remove old filter buttons
   ctrl.querySelectorAll('.cat-filter,.filter-sep').forEach(el => {
     if (!el.dataset.view) el.remove();
   });
-
   if (!digest) return;
   const sep = document.createElement('div');
   sep.className = 'filter-sep';
   ctrl.appendChild(sep);
 
-  const cats = CAT_ORDER.filter(c => digest.categories[c]);
-  cats.forEach(cat => {
-    const btn = document.createElement('button');
+  CAT_ORDER.filter(c => digest.categories?.[c]).forEach(cat => {
+    const meta  = CAT_META[cat] || {};
+    const btn   = document.createElement('button');
     btn.className = 'cat-filter' + (activeFilters.has(cat) ? ' active' : '');
     btn.dataset.cat = cat;
-    btn.style.setProperty('--cat-active', CAT_COLORS[cat] || '#888');
-    if (activeFilters.has(cat)) btn.style.background = CAT_COLORS[cat];
-    btn.innerHTML = `<span class="filter-dot" style="background:${CAT_COLORS[cat]||'#888'}"></span>
-                     ${CAT_EMOJIS[cat]||''} ${digest.categories[cat].label}`;
-    btn.addEventListener('click', () => toggleFilter(cat));
+    btn.style.setProperty('--cat-active', meta.color || '#888');
+    if (activeFilters.has(cat)) btn.style.background = meta.color;
+    btn.innerHTML = `<span class="filter-dot" style="background:${meta.color||'#888'}"></span>
+                     ${meta.emoji||''} ${meta.label||cat}`;
+    btn.addEventListener('click', () => {
+      if (activeFilters.has(cat)) activeFilters.delete(cat);
+      else activeFilters.add(cat);
+      buildFilters();
+      renderCurrentView();
+    });
     ctrl.appendChild(btn);
   });
-}
-
-function toggleFilter(cat) {
-  if (activeFilters.has(cat)) activeFilters.delete(cat);
-  else activeFilters.add(cat);
-  buildFilters();
-  renderCurrentView();
 }
 
 function visibleStories() {
   if (!digest) return [];
   const all = [];
   CAT_ORDER.forEach(cat => {
-    const block = digest.categories[cat];
-    if (!block) return;
     if (activeFilters.size > 0 && !activeFilters.has(cat)) return;
-    block.stories.forEach(s => all.push({ ...s, category: cat }));
+    const block = digest.categories?.[cat];
+    if (!block) return;
+    (block.stories || []).forEach(s => all.push({ ...s, category: cat }));
   });
+  // Wildcard always appended in flat view if no filter active
+  if (digest.wildcard && activeFilters.size === 0) {
+    all.push({ ...digest.wildcard, category: '_wildcard' });
+  }
   return all;
 }
 
 // ── Card rendering ─────────────────────────────────────────────────────────
 function makeCard(story) {
-  const cat      = story.category;
-  const color    = CAT_COLORS[cat] || '#888';
-  const isRandom   = cat === 'random';
-  const isLearning = cat === 'learning';
-  const isRead   = readSet.has(story.id);
-  const srcCount = story.sources?.length || 0;
-  const primary  = story.sources?.[0] || null;
-  const primaryUrl = primary?.url || null;
+  const cat     = story.category || 'global';
+  const meta    = CAT_META[cat] || {};
+  const color   = meta.color || '#888';
+  const sid     = storyId(story);
+  const isRead  = readSet.has(sid);
+  const primary = story.primary   || {};
+  const secondary = story.secondary || null;
+  const isWild  = cat === '_wildcard';
 
   const card = document.createElement('div');
-  card.className = 'story-card' +
-    (isRandom   ? ' card-random'   : '') +
-    (isLearning ? ' card-learning' : '') +
-    (isRead     ? ' read'          : '');
+  card.className = 'story-card' + (isRead ? ' read' : '') + (isWild ? ' card-wildcard' : '');
   card.style.setProperty('--cat-color', color);
-  card.dataset.id = story.id;
+  card.dataset.id = sid;
 
-  // Special header bars
-  let specialHeader = '';
-  if (isRandom)   specialHeader = `<div class="card-random-header">🎲 Today's Surprise</div>`;
-  if (isLearning) specialHeader = `<div class="card-learning-header">📚 Learn Something</div>`;
+  // Badges row
+  const trendBadge = story.trending
+    ? `<span class="badge badge-trending">🔥 Trending</span>` : '';
+  const wildcardBadge = isWild
+    ? `<span class="badge badge-wildcard">🌐 Outside categories</span>` : '';
 
-  // Badges (no "N sources" badge here — shown in the action row instead)
-  let badges = '';
-  if (story.is_top5)    badges += `<span class="badge badge-top5">⭐ Top Story</span>`;
-  if (story.is_breaking)badges += `<span class="badge badge-breaking">🔴 Breaking</span>`;
+  // Source meta
+  const paidIcon = primary.paid
+    ? `<span class="paid-icon" title="Premium source">💎</span>` : '';
+  const sourceLine = primary.source
+    ? `<div class="card-source-meta">${escHtml(primary.source)}${paidIcon}</div>` : '';
 
-  // Domain pill for learning
-  const domainPill = isLearning && story.domain
-    ? `<span class="card-domain-pill">${escHtml(story.domain)}</span>` : '';
+  // Why line (wildcard only)
+  const whyLine = isWild && story.why
+    ? `<div class="card-why">${escHtml(story.why)}</div>` : '';
 
-  // Hook line
-  const hookLine = (isRandom || isLearning) && story.hook
-    ? `<div class="card-hook">${escHtml(story.hook)}</div>` : '';
-
-  // Source line under the title
-  const sourceMeta = primary
-    ? `<div class="card-source-meta">${escHtml(primary.source)}${primary.is_subscription ? ' 💎' : ''}${srcCount > 1 ? ` · ${srcCount} sources` : ''}</div>`
-    : '';
+  // Trending score (wildcard)
+  const trendScore = isWild && story.trending_score
+    ? `<div class="card-trend-score">Reddit: ${story.trending_score.toLocaleString()} upvotes</div>` : '';
 
   card.innerHTML = `
-    ${specialHeader}
     <div class="card-body">
       <div class="card-cat-row">
         <div class="card-cat-dot"></div>
-        <div class="card-cat-label">${escHtml(digest.categories[cat]?.label || cat)}</div>
-        ${domainPill}
+        <span class="card-cat-label">${escHtml(meta.label || cat)}</span>
+        ${trendBadge}${wildcardBadge}
       </div>
-      <div class="card-title">${escHtml(story.topic)}</div>
-      ${hookLine}
-      ${sourceMeta}
-      ${badges ? `<div class="card-badges">${badges}</div>` : ''}
+      <div class="card-title">${escHtml(story.title)}</div>
+      <div class="card-summary">${escHtml(story.summary || '')}</div>
+      ${whyLine}${trendScore}${sourceLine}
     </div>
     <div class="card-actions">
       <div class="card-action-left">
         <button class="card-open-btn" data-action="open">Read ↗</button>
-        ${srcCount > 1 ? `<button class="card-expand-btn" data-action="expand">${srcCount} sources ▾</button>` : ''}
+        ${secondary ? `<button class="card-secondary-btn" data-action="secondary"
+            title="Also: ${escHtml(secondary.source)}">${escHtml(secondary.source)} ↗</button>` : ''}
       </div>
       <div class="card-like-row">
-        <button class="like-btn" data-action="like" title="Like">👍</button>
-        <button class="dislike-btn" data-action="dislike" title="Dislike">👎</button>
+        <button class="like-btn"    data-action="like"    title="More like this">👍</button>
+        <button class="dislike-btn" data-action="dislike" title="Less like this">👎</button>
       </div>
-    </div>
-    <div class="card-sources-list" id="sources-${story.id}">
-      ${(story.sources || []).map(src => `
-        <div class="source-row">
-          <div class="source-info">
-            <div class="source-name">
-              ${escHtml(src.source)}
-              ${src.is_subscription ? '<span class="sub-icon" title="Subscription">💎</span>' : ''}
-              <span class="source-angle">${escHtml(src.angle || 'news')}</span>
-            </div>
-            <div class="source-summary">${escHtml(src.summary || '')}</div>
-          </div>
-          ${src.url ? `<a class="source-open" href="${escHtml(src.url)}" target="_blank" rel="noopener"
-              data-source="${escHtml(src.source)}" data-story-id="${story.id}">
-              Open ↗
-            </a>` : ''}
-        </div>
-      `).join('')}
     </div>`;
 
-  // Open the primary article (used by tapping the card or the "Read" button)
-  function openPrimary() {
-    if (primaryUrl) window.open(primaryUrl, '_blank', 'noopener');
-    if (primary) Analytics.logArticleOpen(story, primary);
-    if (isRandom)   Analytics.logSpecialOpen('random');
-    if (isLearning) Analytics.logSpecialOpen('learning');
-    markRead();
-  }
   function markRead() {
-    if (readSet.has(story.id)) return;
-    readSet.add(story.id);
+    if (readSet.has(sid)) return;
+    readSet.add(sid);
     card.classList.add('read');
     sinkReadCards();
   }
@@ -328,29 +266,20 @@ function makeCard(story) {
     const action = e.target.closest('[data-action]')?.dataset.action;
 
     if (action === 'like' || action === 'dislike') {
-      const btn = e.target.closest('[data-action]');
-      btn.classList.toggle('voted');
-      Analytics.logFeedback(story.id, cat, action);
+      e.target.closest('[data-action]').classList.toggle('voted');
+      Analytics.logFeedback(sid, cat, action);
       showToast(action === 'like' ? 'More like this 👍' : 'Less like this 👎');
       return;
     }
-    if (action === 'expand') {
-      const list = card.querySelector('.card-sources-list');
-      const btn  = card.querySelector('.card-expand-btn');
-      const open = list.classList.toggle('open');
-      if (btn) btn.textContent = open ? 'Hide sources ▴' : `${srcCount} sources ▾`;
-      return;   // expanding to compare sources does NOT mark read
+    if (action === 'secondary') {
+      if (secondary?.url) window.open(secondary.url, '_blank', 'noopener');
+      Analytics.logArticleOpen(story, secondary);
+      return; // secondary opens do NOT mark as read
     }
-    // Tapped a specific source link — let the <a> open it, just log + mark read.
-    const anchor = e.target.closest('a.source-open');
-    if (anchor) {
-      const src = story.sources?.find(s => s.source === anchor.dataset.source);
-      if (src) Analytics.logArticleOpen(story, src);
-      markRead();
-      return;
-    }
-    // Anywhere else on the card → open the primary article.
-    openPrimary();
+    // Tapping the card body or "Read ↗" → open primary
+    if (primary.url) window.open(primary.url, '_blank', 'noopener');
+    Analytics.logArticleOpen(story, primary);
+    markRead();
   });
 
   return card;
@@ -358,84 +287,91 @@ function makeCard(story) {
 
 function sinkReadCards() {
   const grid = document.getElementById('cards-grid');
-  const cards = [...grid.querySelectorAll('.story-card')];
+  if (!grid) return;
+  const cards  = [...grid.querySelectorAll('.story-card')];
   const unread = cards.filter(c => !c.classList.contains('read'));
   const read   = cards.filter(c =>  c.classList.contains('read'));
   unread.forEach(c => grid.appendChild(c));
-  read.forEach(c  => grid.appendChild(c));
+  read.forEach(c   => grid.appendChild(c));
 }
 
-// ── Day view ───────────────────────────────────────────────────────────────
+// ── Day view (flat shuffled grid) ──────────────────────────────────────────
 function renderDayView() {
   const grid = document.getElementById('cards-grid');
   grid.innerHTML = '';
-  document.getElementById('day-view').style.display   = '';
-  document.getElementById('week-month-view').style.display = 'none';
+  document.getElementById('day-view').style.display          = '';
+  document.getElementById('week-month-view').style.display   = 'none';
 
   const stories = visibleStories();
   if (!stories.length) {
     grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">
       <div class="empty-icon">📭</div>
-      <p>No stories match the current filter</p>
-    </div>`;
-    renderWidgets();   // still show sport/market below an empty grid
+      <p>No stories match the current filter</p></div>`;
+    renderWidgets();
     return;
   }
 
-  // Shuffle within day (per spec), keeping top5 with badge but randomly placed
+  // Shuffle — keeps the browse experience fresh
   const shuffled = [...stories].sort(() => Math.random() - 0.5);
-  shuffled.forEach(story => grid.appendChild(makeCard(story)));
+  shuffled.forEach(s => grid.appendChild(makeCard(s)));
   sinkReadCards();
-
-  // Sport + market live at the BOTTOM of the day view, rendered exactly once.
   renderWidgets();
 }
 
-// Remove any previously-rendered widgets, then append sport + market once,
-// at the bottom of the day view (after the cards grid). This is the single
-// place widgets get inserted — prevents the duplicate-widget bug.
-function renderWidgets() {
-  const dayView = document.getElementById('day-view');
-  dayView.querySelectorAll('.sport-widget, .market-widget').forEach(el => el.remove());
-
-  const sport = makeSportWidget();
-  if (sport) dayView.appendChild(sport);
-
-  const econBlock = digest?.categories?.economy;
-  const market = econBlock?.market_snapshot
-    ? makeMarketWidget(econBlock.market_snapshot) : null;
-  if (market) dayView.appendChild(market);
-}
-
-// ── Week / Month view ──────────────────────────────────────────────────────
+// ── Grouped view (by category, with summaries) ─────────────────────────────
 function renderGroupedView() {
   const container = document.getElementById('week-month-view');
   container.innerHTML = '';
-  document.getElementById('day-view').style.display        = 'none';
-  document.getElementById('week-month-view').style.display = '';
-
+  document.getElementById('day-view').style.display          = 'none';
+  document.getElementById('week-month-view').style.display   = '';
   if (!digest) return;
+
   const cats = CAT_ORDER.filter(c => {
     if (activeFilters.size > 0 && !activeFilters.has(c)) return false;
-    return digest.categories[c]?.stories?.length > 0;
+    return (digest.categories?.[c]?.stories?.length || 0) > 0;
   });
 
   cats.forEach(cat => {
-    const block    = digest.categories[cat];
-    const color    = CAT_COLORS[cat] || '#888';
-    const section  = document.createElement('div');
+    const block = digest.categories[cat];
+    const meta  = CAT_META[cat] || {};
+    const color = meta.color || '#888';
+    const n     = block.stories?.length || 0;
+
+    const section = document.createElement('div');
     section.className = 'cat-section';
+
+    const summaryHtml = block.summary
+      ? `<div class="cat-summary">${escHtml(block.summary)}</div>` : '';
+
     section.innerHTML = `
       <div class="cat-section-header">
         <div class="cat-section-dot" style="background:${color}"></div>
-        <div class="cat-section-title">${CAT_EMOJIS[cat]||''} ${block.label}</div>
-        <div class="cat-section-count">${block.stories.length} stories</div>
+        <div class="cat-section-title">${meta.emoji||''} ${escHtml(meta.label||cat)}</div>
+        <div class="cat-section-count">${n} ${n===1?'story':'stories'}</div>
       </div>
+      ${summaryHtml}
       <div class="cat-section-grid"></div>`;
+
     const grid = section.querySelector('.cat-section-grid');
-    block.stories.forEach(s => grid.appendChild(makeCard({ ...s, category: cat })));
+    (block.stories || []).forEach(s => grid.appendChild(makeCard({ ...s, category: cat })));
     container.appendChild(section);
   });
+
+  // Wildcard at the very bottom if present
+  if (digest.wildcard && activeFilters.size === 0) {
+    const wc = document.createElement('div');
+    wc.className = 'cat-section';
+    wc.innerHTML = `
+      <div class="cat-section-header">
+        <div class="cat-section-dot" style="background:#EC4899"></div>
+        <div class="cat-section-title">🌐 Trending</div>
+        <div class="cat-section-count">1 story</div>
+      </div>
+      <div class="cat-section-grid"></div>`;
+    wc.querySelector('.cat-section-grid')
+      .appendChild(makeCard({ ...digest.wildcard, category: '_wildcard' }));
+    container.appendChild(wc);
+  }
 }
 
 function renderCurrentView() {
@@ -443,9 +379,19 @@ function renderCurrentView() {
   else renderGroupedView();
 }
 
-// ── Market widget ──────────────────────────────────────────────────────────
-const MARKET_DROP_ALERT = -1.5;   // % daily move that earns a "!" warning
+// ── Widget rendering (once, at bottom, no duplicates) ─────────────────────
+function renderWidgets() {
+  const dayView = document.getElementById('day-view');
+  dayView.querySelectorAll('.sport-widget, .market-widget').forEach(el => el.remove());
 
+  const sport  = makeSportWidget();
+  if (sport)  dayView.appendChild(sport);
+
+  const market = digest?.market ? makeMarketWidget(digest.market) : null;
+  if (market) dayView.appendChild(market);
+}
+
+// ── Market widget ──────────────────────────────────────────────────────────
 function makeMarketWidget(snapshot) {
   if (!snapshot || !Object.keys(snapshot).length) return null;
   const LABELS = {
@@ -453,29 +399,30 @@ function makeMarketWidget(snapshot) {
     DAX:'DAX', PX:'PX', BTCUSD:'BTC',
   };
   let anyAlert = false;
-  const div = document.createElement('div');
-  div.className = 'market-widget';
   const cells = Object.entries(snapshot).map(([k, v]) => {
     const pct   = typeof v.pct === 'number' ? v.pct : 0;
     const sign  = v.delta >= 0 ? '+' : '';
-    const cls   = v.delta >= 0 ? 'up' : 'down';
     const alert = pct <= MARKET_DROP_ALERT;
     if (alert) anyAlert = true;
     return `<div class="market-cell${alert ? ' alert' : ''}">
-      <div class="market-name">${LABELS[k] || k}</div>
-      <div class="market-value">${formatNum(v.value, k)}</div>
-      <div class="market-delta ${cls}">${alert ? '! ' : ''}${sign}${pct.toFixed(2)}%</div>
+      <div class="market-name">${LABELS[k]||k}</div>
+      <div class="market-value">${fmtMarketNum(v.value, k)}</div>
+      <div class="market-delta ${v.delta >= 0 ? 'up' : 'down'}">${alert?'! ':''}${sign}${pct.toFixed(2)}%</div>
     </div>`;
   }).join('');
-  div.innerHTML = `<div class="market-widget-title">
+
+  const div = document.createElement('div');
+  div.className = 'market-widget';
+  div.innerHTML = `
+    <div class="market-widget-title">
       Market Snapshot${anyAlert ? ' <span class="market-alert-flag">! sharp drop</span>' : ''}
     </div>
     <div class="market-grid">${cells}</div>`;
   return div;
 }
 
-function formatNum(val, ticker) {
-  if (!val) return '—';
+function fmtMarketNum(val, ticker) {
+  if (!val && val !== 0) return '—';
   if (['EURUSD','EURCZK'].includes(ticker)) return val.toFixed(4);
   if (ticker === 'BTCUSD') return val >= 1000 ? (val/1000).toFixed(1)+'k' : val.toFixed(0);
   return val >= 1000 ? (val/1000).toFixed(1)+'k' : val.toFixed(2);
@@ -499,13 +446,12 @@ function fmtTime(iso) {
   if (isNaN(d)) return '';
   return d.toLocaleTimeString([], { hour:'2-digit', minute:'2-digit' });
 }
-
-function resultRow(home, hs, away, as, date) {
+function resultRow(home, hs, away, as_, date) {
   return `<div class="sport-result">
     ${date ? `<span class="sport-date">${fmtDay(date)}</span>` : ''}
     <span class="sport-team">${escHtml(home)}</span>
-    <span class="sport-score">${hs}–${as}</span>
-    <span class="sport-team" style="text-align:right">${escHtml(away)}</span>
+    <span class="sport-score">${hs}–${as_}</span>
+    <span class="sport-team right">${escHtml(away)}</span>
   </div>`;
 }
 function fixtureRow(home, away, date, time, live) {
@@ -514,33 +460,31 @@ function fixtureRow(home, away, date, time, live) {
     ${date ? `<span class="sport-date">${fmtDay(date)}</span>` : ''}
     <span class="sport-team">${escHtml(home)}</span>
     <span class="sport-score">${when}</span>
-    <span class="sport-team" style="text-align:right">${escHtml(away)}</span>
+    <span class="sport-team right">${escHtml(away)}</span>
   </div>`;
 }
 
 function makeSportWidget() {
-  const sb = digest?.categories?.sport?.scoreboard;
+  // New structure: digest.sport = { nhl: {...}, football: {...} }
+  const sb = digest?.sport;
   if (!sb) return null;
-
   const leagues = [];
 
   // NHL
   if (sb.nhl) {
-    const results = sb.nhl.results || [];
-    const today   = sb.nhl.today   || [];
     let html = '';
-    results.forEach(r => html += resultRow(r.away, r.away_score, r.home, r.home_score, r.date));
-    today.forEach(f => html += fixtureRow(f.away, f.home, f.date, f.time, false));
-    if (html) leagues.push({ name: '🏒 NHL', html });
+    (sb.nhl.results||[]).forEach(r => html += resultRow(r.away, r.away_score, r.home, r.home_score, r.date));
+    (sb.nhl.today ||[]).forEach(f => html += fixtureRow(f.away, f.home, f.date, f.time, false));
+    if (html) leagues.push({ name:'🏒 NHL', html });
   }
 
-  // Football — either tournament mode (World Cup etc.) or club leagues.
+  // Football
   const fb = sb.football;
   if (fb && Array.isArray(fb.sections)) {
     fb.sections.forEach(sec => {
       let html = '';
-      (sec.results  || []).forEach(r => html += resultRow(r.home, r.home_score, r.away, r.away_score, r.date));
-      (sec.fixtures || []).forEach(f => html += fixtureRow(f.home, f.away, f.date, f.time, f.live));
+      (sec.results  ||[]).forEach(r => html += resultRow(r.home, r.home_score, r.away, r.away_score, r.date));
+      (sec.fixtures ||[]).forEach(f => html += fixtureRow(f.home, f.away, f.date, f.time, f.live));
       if (!html) return;
       const name = fb.mode === 'tournament'
         ? `⚽ ${sec.name}`
@@ -548,12 +492,12 @@ function makeSportWidget() {
       leagues.push({ name, html });
     });
   } else if (fb && typeof fb === 'object') {
-    // Backward-compat with the old {CODE: {results}} shape.
+    // Backward compat with old flat shape
     Object.entries(fb).forEach(([code, data]) => {
-      if (!data || !Array.isArray(data.results)) return;
+      if (!data?.results?.length) return;
       let html = '';
-      data.results.slice(0, 5).forEach(r => html += resultRow(r.home, r.home_score, r.away, r.away_score, r.date));
-      if (html) leagues.push({ name: FB_LEAGUE_NAMES[code] || code, html });
+      data.results.slice(0,5).forEach(r => html += resultRow(r.home, r.home_score, r.away, r.away_score, r.date));
+      if (html) leagues.push({ name: FB_LEAGUE_NAMES[code]||code, html });
     });
   }
 
@@ -563,9 +507,13 @@ function makeSportWidget() {
   widget.className = 'sport-widget';
   const banner = fb?.mode === 'tournament' && fb.competition
     ? `<div class="sport-banner">🏆 ${escHtml(fb.competition)}</div>` : '';
+
   widget.innerHTML = banner + leagues.map((l, i) => `
     <div class="sport-league">
-      <div class="sport-league-header" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('.sport-league-toggle').textContent=this.nextElementSibling.classList.contains('open')?'▴':'▾'">
+      <div class="sport-league-header"
+           onclick="this.nextElementSibling.classList.toggle('open');
+                    this.querySelector('.sport-league-toggle').textContent=
+                      this.nextElementSibling.classList.contains('open')?'▴':'▾'">
         <span class="sport-league-name">${l.name}</span>
         <span class="sport-league-toggle">${i===0?'▴':'▾'}</span>
       </div>
@@ -577,39 +525,43 @@ function makeSportWidget() {
   return widget;
 }
 
-// ── Main article renderer ──────────────────────────────────────────────────
+// ── Main renderer ──────────────────────────────────────────────────────────
 function renderArticles() {
   if (!digest) return;
 
   // Header
-  const genAt = new Date(digest.generated_at);
+  const dateStr = digest.date || digest.generated_at || '';
+  const d = new Date(dateStr);
   const opts = { weekday:'long', day:'numeric', month:'long' };
   document.getElementById('header-date').textContent =
-    genAt.toLocaleDateString(undefined, opts);
+    isNaN(d) ? dateStr : d.toLocaleDateString(undefined, opts);
+
+  const totalStories = Object.values(digest.categories || {})
+    .reduce((sum, cat) => sum + (cat.stories?.length || 0), 0);
+  const mins = digest.estimated_read_minutes || Math.ceil(totalStories * 1.5);
   document.getElementById('header-meta').textContent =
-    `~${digest.estimated_read_minutes} min · ${digest.total_stories} stories · ` +
-    genAt.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
-  document.getElementById('last-updated').textContent =
-    genAt.toLocaleString();
+    `~${mins} min · ${totalStories} stories`;
+  document.getElementById('last-updated').textContent = isNaN(d) ? dateStr : d.toLocaleString();
 
   buildFilters();
-  renderCurrentView();   // renderDayView() appends sport + market widgets itself
-
+  renderCurrentView();
   Analytics.logDigestOpen();
 }
 
-// ── Analytics panel renderer ───────────────────────────────────────────────
+// ── Analytics panel ────────────────────────────────────────────────────────
 function renderAnalytics() {
   const m = Analytics.compute();
-  document.getElementById('streak-num').textContent        = m.streak;
-  document.getElementById('streak-sub').textContent        = m.streak === 0
+  document.getElementById('streak-num').textContent   = m.streak;
+  document.getElementById('streak-sub').textContent   = m.streak === 0
     ? 'Open the digest daily to build your streak'
     : `${m.streak} day${m.streak!==1?'s':''} in a row — keep going!`;
-  document.getElementById('stat-opens-today').textContent  = m.opensToday;
-  document.getElementById('stat-avg').textContent          = m.avgPerDay;
-  document.getElementById('stat-fav-source').textContent   = m.favSource.length > 12
-    ? m.favSource.slice(0,11)+'…' : m.favSource;
-  document.getElementById('stat-learning-streak').textContent = m.learnStreak;
+  document.getElementById('stat-opens-today').textContent = m.opensToday;
+  document.getElementById('stat-avg').textContent         = m.avgPerDay;
+  document.getElementById('stat-fav-source').textContent  =
+    m.favSource.length > 14 ? m.favSource.slice(0,13)+'…' : m.favSource;
+  // learning streak no longer tracked — hide or zero that element if it exists
+  const learnEl = document.getElementById('stat-learning-streak');
+  if (learnEl) learnEl.textContent = '—';
 
   const barsEl = document.getElementById('cat-bars');
   barsEl.innerHTML = '';
@@ -617,21 +569,18 @@ function renderAnalytics() {
   CAT_ORDER.forEach(cat => {
     const count = m.catCount[cat] || 0;
     const pct   = (count / maxCount * 100).toFixed(1);
-    const color = CAT_COLORS[cat] || '#888';
-    const emoji = CAT_EMOJIS[cat] || '';
-    const catMeta = digest?.categories?.[cat];
+    const meta  = CAT_META[cat] || {};
     barsEl.innerHTML += `
       <div class="cat-bar-row">
-        <div class="cat-bar-emoji">${emoji}</div>
-        <div class="cat-bar-label truncate">${catMeta?.label || cat}</div>
+        <div class="cat-bar-emoji">${meta.emoji||''}</div>
+        <div class="cat-bar-label truncate">${meta.label||cat}</div>
         <div class="cat-bar-track">
-          <div class="cat-bar-fill" style="width:${pct}%;background:${color}"></div>
+          <div class="cat-bar-fill" style="width:${pct}%;background:${meta.color||'#888'}"></div>
         </div>
         <div class="cat-bar-count">${count}</div>
       </div>`;
   });
 
-  // Analytics data size
   const raw = localStorage.getItem(ANALYTICS_KEY) || '[]';
   const kb  = (new Blob([raw]).size / 1024).toFixed(1);
   document.getElementById('analytics-size').textContent = `${kb} KB stored locally`;
@@ -639,7 +588,7 @@ function renderAnalytics() {
 
 // ── Settings ───────────────────────────────────────────────────────────────
 function initSettings() {
-  document.getElementById('clear-analytics-btn').addEventListener('click', () => {
+  document.getElementById('clear-analytics-btn')?.addEventListener('click', () => {
     if (!confirm('Clear all analytics data? This cannot be undone.')) return;
     localStorage.removeItem(ANALYTICS_KEY);
     renderAnalytics();
@@ -656,10 +605,8 @@ function initPullToRefresh() {
   }, { passive: true });
   main.addEventListener('touchmove', e => {
     if (!pulling) return;
-    const delta = e.touches[0].clientY - startY;
-    if (delta > 60) {
+    if (e.touches[0].clientY - startY > 60)
       document.getElementById('ptr-indicator')?.classList.add('visible');
-    }
   }, { passive: true });
   main.addEventListener('touchend', async () => {
     if (!pulling) return;
@@ -675,11 +622,8 @@ async function refreshDigest() {
     digest = await loadDigest(currentDate);
     renderArticles();
     showToast('Digest refreshed');
-  } catch (err) {
-    showToast('Could not refresh');
-  } finally {
-    showLoading(false);
-  }
+  } catch { showToast('Could not refresh'); }
+  finally  { showLoading(false); }
 }
 
 // ── Navigation ─────────────────────────────────────────────────────────────
@@ -704,7 +648,7 @@ function initNav() {
     });
   });
 
-  document.getElementById('refresh-btn').addEventListener('click', refreshDigest);
+  document.getElementById('refresh-btn')?.addEventListener('click', refreshDigest);
 }
 
 // ── Utilities ──────────────────────────────────────────────────────────────
@@ -729,7 +673,6 @@ function showToast(msg) {
   toastTimer = setTimeout(() => el.classList.remove('show'), 2200);
 }
 
-// ── Service Worker ─────────────────────────────────────────────────────────
 function registerSW() {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(() => {});
@@ -752,7 +695,7 @@ async function init() {
     if (digest.date) currentDate = digest.date;
     buildCalendar();
     renderArticles();
-  } catch (err) {
+  } catch {
     document.getElementById('loading').innerHTML = `
       <div class="empty-state">
         <div class="empty-icon">📭</div>

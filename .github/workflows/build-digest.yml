@@ -32,16 +32,16 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run pipeline
-        run: python scripts/main.py
+        run: python scripts/build.py
         env:
-          GROQ_API_KEY:          ${{ secrets.GROQ_API_KEY }}
-          GUARDIAN_API_KEY:      ${{ secrets.GUARDIAN_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GUARDIAN_API_KEY:  ${{ secrets.GUARDIAN_API_KEY }}
 
-      - name: Commit digest + stats
+      - name: Commit digest
         run: |
           git config user.name  "digest-bot"
           git config user.email "bot@daily-digest"
-          git add pwa/digest.json pwa/digests/ monthly_stats.json
+          git add pwa/data/digest.json pwa/digests/
           git diff --cached --quiet || git commit -m "digest: $(date -u +%Y-%m-%d)"
           git push
 

@@ -1,130 +1,220 @@
 """
-Phase 9 — Assemble digest.json and archive it.
+Daily Digest — Claude Routine orchestrator.
 
-Takes all processed data and writes two files:
-  pwa/digest.json                 — the "latest" file the PWA defaults to
-  pwa/digests/YYYY-MM-DD.json     — dated archive for the calendar history view
+Pipeline:
+  1. Fetch articles            (fetch.py)
+  2. Fetch trending data       (trending.py)
+  3. Build sport + market      (widgets.py)
+  4. Call Claude               (Anthropic API — ANTHROPIC_API_KEY env var)
+  5. Parse + validate JSON
+  6. Merge widget data
+  7. Write pwa/data/digest.json + archive copy
 
-digest.json schema matches the spec exactly. Stories are grouped by category;
-random and learning each appear as their own single-story category.
+Usage:
+  python build.py              # full run
+  python build.py --dry-run    # fetch only, no Claude call (test sources)
+  python build.py --model claude-3-5-sonnet-20241022   # override model
 """
 from __future__ import annotations
 
+import argparse
 import json
-import math
 import os
-from collections import defaultdict
+import sys
+import time
 from datetime import datetime, timezone
-from typing import Any
+from pathlib import Path
 
-_PWA_DIR      = os.path.join(os.path.dirname(__file__), "..", "pwa")
-_DIGESTS_DIR  = os.path.join(_PWA_DIR, "digests")
-_DIGEST_LATEST = os.path.join(_PWA_DIR, "digest.json")
+import anthropic
 
-_WORDS_PER_MINUTE = 200
+# Ensure scripts/ is on the path when invoked directly
+sys.path.insert(0, str(Path(__file__).parent))
 
+from fetch    import fetch_all_articles
+from trending import fetch_trending
+from widgets  import build_sport_widget, build_market_snapshot
+from config   import USER_PROFILE, TRENDING_WILDCARD_MIN_SCORE
 
-def _total_read_minutes(stories: list[dict[str, Any]]) -> int:
-    total_seconds = sum(s.get("estimated_seconds", 60) for s in stories)
-    return max(1, math.ceil(total_seconds / 60))
+_SCRIPTS = Path(__file__).parent
+_PWA     = _SCRIPTS.parent / "pwa"
+_PROMPT  = _SCRIPTS / "prompt.md"
 
-
-def _category_meta(cat: str) -> dict[str, str]:
-    from config import CATEGORIES
-    m = CATEGORIES.get(cat, {})
-    return {
-        "label":  m.get("label",  cat.title()),
-        "emoji":  m.get("emoji",  "📰"),
-        "accent": m.get("accent", "#6B7280"),
-    }
-
-
-def build_digest(
-    stories: list[dict[str, Any]],
-    sport_widget:   dict[str, Any],
-    market_widget:  dict[str, Any],
-    random_item:    dict[str, Any],
-    learning_item:  dict[str, Any],
-) -> dict[str, Any]:
-    """Assemble and return the full digest dict."""
-    now      = datetime.now(timezone.utc)
-    date_str = now.strftime("%Y-%m-%dT%H:%M:%SZ")
-
-    # All stories including special cards (for read-time + top5)
-    all_stories = stories + [random_item, learning_item]
-    top5_ids    = [s["id"] for s in stories if s.get("is_top5")]
-
-    # Group main stories by category
-    by_cat: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    for s in stories:
-        by_cat[s["category"]].append(s)
-
-    # Build category blocks
-    categories: dict[str, Any] = {}
-    for cat, cat_stories in by_cat.items():
-        meta  = _category_meta(cat)
-        block: dict[str, Any] = {
-            **meta,
-            "story_count": len(cat_stories),
-            "stories":     cat_stories,
-        }
-        if cat == "sport":
-            block["scoreboard"] = sport_widget
-        if cat == "economy":
-            block["market_snapshot"] = market_widget
-        categories[cat] = block
-
-    # Random and Learning always present (even if empty fallback)
-    for item in (random_item, learning_item):
-        cat  = item["category"]
-        meta = _category_meta(cat)
-        categories[cat] = {
-            **meta,
-            "story_count": 1,
-            "stories":     [item],
-        }
-
-    # If sport/economy had no scored stories, still attach widget data
-    if "sport" not in categories:
-        meta = _category_meta("sport")
-        categories["sport"] = {
-            **meta,
-            "story_count": 0,
-            "stories":     [],
-            "scoreboard":  sport_widget,
-        }
-    if "economy" not in categories:
-        meta = _category_meta("economy")
-        categories["economy"] = {
-            **meta,
-            "story_count":    0,
-            "stories":        [],
-            "market_snapshot": market_widget,
-        }
-
-    return {
-        "generated_at":          date_str,
-        "date":                  now.strftime("%Y-%m-%d"),
-        "total_stories":         len(stories),
-        "estimated_read_minutes": _total_read_minutes(all_stories),
-        "top5_ids":              top5_ids,
-        "categories":            categories,
-    }
+# Default model — haiku is fast and cheap; use sonnet for richer summaries
+_DEFAULT_MODEL = "claude-3-5-haiku-20241022"
+_MAX_TOKENS    = 8192
+# Trim article list to this many chars to avoid blowing the context window
+_MAX_ARTICLES_CHARS = 120_000
 
 
-def write_digest(digest: dict[str, Any]) -> None:
-    """Write digest.json (latest) and pwa/digests/YYYY-MM-DD.json (archive)."""
-    os.makedirs(_DIGESTS_DIR, exist_ok=True)
+def _format_articles(articles: list[dict]) -> str:
+    lines = []
+    for i, a in enumerate(articles, 1):
+        tags = []
+        if a.get("paid_partner"):
+            tags.append("[PAID_PARTNER]")
+        if a.get("paywall_only"):
+            tags.append("[PAYWALL]")
+        lang = a.get("lang", "en")
+        if lang in ("sk", "cs"):
+            tags.append(f"[{lang.upper()}]")
+        tag_str    = " ".join(tags)
+        source_str = f"{a['source']}{(' ' + tag_str) if tag_str else ''}"
+        lines.append(
+            f"{i}. [{source_str}] {a['title']}\n"
+            f"   URL: {a['url']}\n"
+            f"   Published: {a.get('published', 'unknown')}"
+        )
+    text = "\n\n".join(lines)
+    if len(text) > _MAX_ARTICLES_CHARS:
+        text = text[:_MAX_ARTICLES_CHARS] + "\n\n[... list trimmed for length ...]"
+    return text
 
-    payload = json.dumps(digest, indent=2, ensure_ascii=False)
 
-    # Latest
-    with open(_DIGEST_LATEST, "w", encoding="utf-8") as f:
-        f.write(payload)
-    print(f"  Written: {_DIGEST_LATEST}")
+def _format_trending(trending: list[dict]) -> str:
+    if not trending:
+        return "No geo-relevant trending stories found today."
+    lines = []
+    for t in trending[:25]:
+        lines.append(
+            f"- r/{t['subreddit']} (score {t['score']:,}): {t['title']}\n"
+            f"  URL: {t['url']}"
+        )
+    return "\n".join(lines)
 
-    # Dated archive
-    dated = os.path.join(_DIGESTS_DIR, f"{digest['date']}.json")
-    with open(dated, "w", encoding="utf-8") as f:
-        f.write(payload)
-    print(f"  Archived: {dated}")
+
+def _build_prompt(articles: list[dict], trending: list[dict], today: str) -> str:
+    template = _PROMPT.read_text(encoding="utf-8")
+    return (
+        template
+        .replace("{{DATE}}", today)
+        .replace("{{USER_PROFILE}}", USER_PROFILE)
+        .replace("{{ARTICLES}}", _format_articles(articles))
+        .replace("{{TRENDING}}", _format_trending(trending))
+        .replace("{{WILDCARD_MIN_SCORE}}", str(TRENDING_WILDCARD_MIN_SCORE))
+    )
+
+
+def _extract_json(raw: str) -> str:
+    """Strip markdown code fences if Claude wrapped the output."""
+    raw = raw.strip()
+    if raw.startswith("```"):
+        parts = raw.split("```")
+        content = parts[1] if len(parts) > 1 else raw
+        if content.startswith("json"):
+            content = content[4:]
+        return content.strip()
+    return raw
+
+
+def _call_claude(prompt: str, model: str) -> dict:
+    client  = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    message = client.messages.create(
+        model=model,
+        max_tokens=_MAX_TOKENS,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    raw = message.content[0].text
+    return json.loads(_extract_json(raw))
+
+
+def _retry_claude(prompt: str, model: str, max_attempts: int = 3) -> dict:
+    last_err: Exception | None = None
+    for attempt in range(1, max_attempts + 1):
+        try:
+            return _call_claude(prompt, model)
+        except (json.JSONDecodeError, KeyError, IndexError) as e:
+            last_err = e
+            print(f"  Attempt {attempt}/{max_attempts} failed: {type(e).__name__}: {e}")
+            if attempt < max_attempts:
+                time.sleep(3 * attempt)
+    raise RuntimeError(f"Claude failed after {max_attempts} attempts: {last_err}")
+
+
+def _validate(digest: dict) -> None:
+    if "categories" not in digest:
+        raise ValueError("Missing 'categories' key in Claude output")
+    for cat, data in digest["categories"].items():
+        if not isinstance(data.get("stories"), list):
+            raise ValueError(f"Category '{cat}' missing stories list")
+
+
+def _write_digest(digest: dict) -> None:
+    # pwa/data/digest.json  (served by PWA)
+    data_dir = _PWA / "data"
+    data_dir.mkdir(parents=True, exist_ok=True)
+    out = data_dir / "digest.json"
+    out.write_text(json.dumps(digest, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"  Written:  {out}")
+
+    # pwa/digests/YYYY-MM-DD.json  (calendar archive)
+    archive_dir = _PWA / "digests"
+    archive_dir.mkdir(parents=True, exist_ok=True)
+    archive = archive_dir / f"{digest['date']}.json"
+    archive.write_text(json.dumps(digest, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"  Archived: {archive}")
+
+
+def main(dry_run: bool = False, model: str = _DEFAULT_MODEL) -> None:
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    print(f"=== Daily Digest — {today} (model: {model}) ===")
+
+    # Force UTF-8 on Windows terminals
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+    # 1. Fetch articles
+    print("\n[1/4] Fetching articles...")
+    articles = fetch_all_articles()
+
+    if dry_run:
+        print(f"\n[dry-run] {len(articles)} articles fetched. Stopping before Claude call.")
+        for a in articles[:8]:
+            pp = "💎" if a["paid_partner"] else ("🔒" if a["paywall_only"] else "  ")
+            print(f"  {pp} [{a['source']}] {a['title'][:65]}")
+        return
+
+    # 2. Fetch trending
+    print("\n[2/4] Fetching trending...")
+    trending = fetch_trending()
+
+    # 3. Build widgets
+    print("\n[3/4] Building widgets...")
+    sport  = build_sport_widget()
+    market = build_market_snapshot()
+
+    # 4. Call Claude
+    print(f"\n[4/4] Calling Claude ({model})...")
+    prompt = _build_prompt(articles, trending, today)
+    print(f"  Prompt: ~{len(prompt):,} chars (~{len(prompt)//4:,} tokens)")
+
+    digest = _retry_claude(prompt, model)
+    _validate(digest)
+
+    # Inject metadata + widget data (Claude does not produce these)
+    digest["date"]   = today
+    digest["sport"]  = sport
+    digest["market"] = market
+
+    _write_digest(digest)
+
+    # Summary
+    cats   = digest.get("categories", {})
+    total  = sum(len(v.get("stories", [])) for v in cats.values())
+    print(f"\n=== Done — {total} stories across {len(cats)} categories ===")
+    for cat, data in cats.items():
+        n          = len(data.get("stories", []))
+        trending_n = sum(1 for s in data.get("stories", []) if s.get("trending"))
+        suffix     = f"  ({trending_n} trending)" if trending_n else ""
+        print(f"  {cat:<12} {n} stories{suffix}")
+    if digest.get("wildcard"):
+        print(f"  wildcard     1 story  (Reddit score: {digest['wildcard'].get('trending_score','?')})")
+
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser(description="Daily Digest builder")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="Fetch articles only — no Claude call")
+    ap.add_argument("--model", default=_DEFAULT_MODEL,
+                    help=f"Anthropic model (default: {_DEFAULT_MODEL})")
+    args = ap.parse_args()
+    main(dry_run=args.dry_run, model=args.model)

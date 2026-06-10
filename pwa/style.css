@@ -30,8 +30,8 @@
   --c-economy:  #6B7280;
   --c-hr:       #0891B2;
   --c-health:   #059669;
-  --c-random:   #EC4899;
-  --c-learning: #6366F1;
+  --c-ai:       #8B5CF6;
+  --c-wildcard: #EC4899;
 }
 
 @media (prefers-color-scheme: light) {
@@ -227,15 +227,26 @@ body {
   display: -webkit-box; -webkit-line-clamp: 4;
   -webkit-box-orient: vertical; overflow: hidden;
 }
+.card-summary {
+  font-size: 11.5px; color: var(--text2); line-height: 1.45;
+  display: -webkit-box; -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; overflow: hidden;
+}
+.card-why {
+  font-size: 10px; color: var(--text3); font-style: italic; margin-top: 2px;
+}
+.card-trend-score {
+  font-size: 10px; color: var(--text3); margin-top: 2px;
+}
 
 .card-badges { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 2px; }
 .badge {
   font-size: 10px; font-weight: 600; padding: 2px 6px;
   border-radius: 4px; letter-spacing: 0.03em;
 }
-.badge-top5    { background: rgba(245,158,11,0.15); color: #F59E0B; }
-.badge-breaking{ background: rgba(204,34,34,0.15);  color: #FF4444; }
-.badge-sources { background: var(--bg3); color: var(--text3); }
+.badge-trending  { background: rgba(245,158,11,0.15); color: #F59E0B; }
+.badge-wildcard  { background: rgba(236,72,153,0.15); color: #EC4899; }
+.paid-icon { font-size: 10px; vertical-align: middle; }
 
 /* Card actions */
 .card-actions {
@@ -251,11 +262,14 @@ body {
   display: flex; align-items: center; gap: 3px;
 }
 .card-open-btn:active { opacity: 0.6; }
-.card-expand-btn {
-  font-size: 11px; font-weight: 600; color: var(--text3);
-  background: none; border: none; cursor: pointer; padding: 2px 0;
+.card-secondary-btn {
+  font-size: 10px; font-weight: 600; color: var(--text3);
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 6px; cursor: pointer; padding: 3px 7px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  max-width: 110px;
 }
-.card-expand-btn:active { color: var(--text); }
+.card-secondary-btn:active { color: var(--text); }
 .card-like-row { display: flex; gap: 6px; }
 .like-btn, .dislike-btn {
   background: none; border: none; cursor: pointer;
@@ -271,56 +285,32 @@ body {
 }
 .story-card.read .card-title { color: var(--text2); }
 
-/* ── Special card: Random 🎲 ────────────────────────────────────────────── */
-.story-card.card-random {
+/* ── Special card: Wildcard / Trending 🌐 ──────────────────────────────── */
+.story-card.card-wildcard {
   background: linear-gradient(135deg, #1a0d14 0%, var(--surface) 60%);
   border-color: rgba(236,72,153,0.3);
 }
-.story-card.card-random::before { background: #EC4899; width: 4px; }
-.card-random-header {
-  background: rgba(236,72,153,0.12);
-  padding: 6px 10px 6px 13px;
-  font-size: 10px; font-weight: 700; color: #EC4899;
-  letter-spacing: 0.08em; text-transform: uppercase;
-  display: flex; align-items: center; gap: 5px;
-}
-.card-random .card-title { font-style: italic; }
-.card-hook {
-  font-size: 11px; color: var(--text2); line-height: 1.4;
-  font-style: italic;
-}
+.story-card.card-wildcard::before { background: #EC4899; width: 4px; }
 
-/* ── Special card: Learning 📚 ──────────────────────────────────────────── */
-.story-card.card-learning {
-  background: linear-gradient(135deg, #0f0f1a 0%, var(--surface) 60%);
-  border-color: rgba(99,102,241,0.3);
-}
-.story-card.card-learning::before { background: #6366F1; width: 4px; }
-.card-learning-header {
-  background: rgba(99,102,241,0.12);
-  padding: 6px 10px 6px 13px;
-  font-size: 10px; font-weight: 700; color: #6366F1;
-  letter-spacing: 0.08em; text-transform: uppercase;
-  display: flex; align-items: center; gap: 5px;
-}
-.card-learning .card-title { color: #A5B4FC; }
-.card-domain-pill {
-  display: inline-flex; align-items: center;
-  background: rgba(99,102,241,0.15); color: #6366F1;
-  font-size: 10px; font-weight: 600; padding: 2px 7px;
-  border-radius: 20px; letter-spacing: 0.04em;
-}
-
-/* ── Week / Month view ───────────────────────────────────────────────────── */
+/* ── Category grouped view (week-month) ───────────────────────────────────── */
 #week-month-view { padding: 12px 10px; }
 .cat-section { margin-bottom: 24px; }
 .cat-section-header {
   display: flex; align-items: center; gap: 8px;
-  padding: 0 4px; margin-bottom: 10px;
+  padding: 0 4px; margin-bottom: 8px;
 }
 .cat-section-dot { width: 10px; height: 10px; border-radius: 50%; }
 .cat-section-title { font-size: 14px; font-weight: 700; }
 .cat-section-count { font-size: 12px; color: var(--text3); margin-left: auto; }
+
+/* Category morning briefing — 2-3 sentence summary above the cards */
+.cat-summary {
+  font-size: 12.5px; color: var(--text2); line-height: 1.55;
+  background: var(--surface); border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  padding: 10px 12px; margin-bottom: 10px;
+}
+
 .cat-section-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
 }
@@ -450,7 +440,8 @@ body {
   font-size: 10px; color: var(--text3); font-weight: 600;
   width: 44px; flex-shrink: 0;
 }
-.sport-team   { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sport-team       { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sport-team.right { text-align: right; }
 .sport-score  { font-weight: 700; padding: 0 8px; color: var(--text2); flex-shrink: 0; }
 .sport-result.fixture { opacity: 0.7; }
 .sport-result.fixture .sport-score { font-size: 11px; font-weight: 600; }
@@ -482,32 +473,7 @@ body {
 .empty-state p { font-size: 14px; color: var(--text2); }
 .empty-state small { font-size: 12px; color: var(--text3); }
 
-/* ── Expanded card overlay (sources list) ───────────────────────────────── */
-.card-sources-list {
-  padding: 0 10px 10px 13px;
-  display: none; flex-direction: column; gap: 6px;
-}
-.card-sources-list.open { display: flex; }
-.source-row {
-  display: flex; align-items: flex-start; justify-content: space-between;
-  gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--border);
-}
-.source-row:last-child { border-bottom: none; }
-.source-info { flex: 1; min-width: 0; }
-.source-name {
-  font-size: 12px; font-weight: 600; color: var(--text);
-  display: flex; align-items: center; gap: 4px;
-}
-.sub-icon { font-size: 10px; }
-.source-angle { font-size: 10px; color: var(--text3); margin-left: 4px; }
-.source-summary { font-size: 12px; color: var(--text2); line-height: 1.45; margin-top: 2px; }
-.source-open {
-  flex-shrink: 0; font-size: 11px; font-weight: 600;
-  color: var(--text3); background: var(--bg3); border: none;
-  border-radius: 6px; padding: 5px 8px; cursor: pointer; white-space: nowrap;
-  text-decoration: none; display: inline-flex; align-items: center; gap: 3px;
-}
-.source-open:active { color: var(--text); }
+/* (source-list overlay removed — replaced by primary + secondary buttons on card) */
 
 /* ── Toasts ──────────────────────────────────────────────────────────────── */
 #toast {
