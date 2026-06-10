@@ -6,17 +6,21 @@ on:
   workflow_dispatch:         # manual trigger from GitHub UI
 
 permissions:
-  contents: write
+  contents: write   # to commit digest.json + monthly_stats.json back to the repo
+  pages: write      # to deploy to GitHub Pages
+  id-token: write   # required by actions/deploy-pages
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -41,9 +45,11 @@ jobs:
           git diff --cached --quiet || git commit -m "digest: $(date -u +%Y-%m-%d)"
           git push
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./pwa
-          keep_files: true    # preserve pwa/digests/ archive across deploys
+          path: ./pwa
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
