@@ -39,8 +39,8 @@ _SCRIPTS = Path(__file__).parent
 _PWA     = _SCRIPTS.parent / "pwa"
 _PROMPT  = _SCRIPTS / "prompt.md"
 
-# Default model — haiku is fast and cheap; use sonnet for richer summaries
-_DEFAULT_MODEL = "claude-3-5-haiku-20241022"
+# Default model — sonnet gives quality summaries at a reasonable cost
+_DEFAULT_MODEL = "claude-sonnet-4-5"
 _MAX_TOKENS    = 8192
 # Trim article list to this many chars to avoid blowing the context window
 _MAX_ARTICLES_CHARS = 120_000
