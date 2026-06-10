@@ -1,31 +1,29 @@
 {
   "month": "2026-06",
-  "total_stories": 94,
+  "total_stories": 126,
   "yesterday_categories": [
     "czechia",
+    "economy",
     "europe",
     "global",
-    "health",
     "hr",
     "learning",
     "random",
     "slovakia",
-    "sport",
-    "tech",
-    "war"
+    "tech"
   ],
   "by_category": {
-    "slovakia": 12,
-    "czechia": 10,
-    "europe": 6,
+    "slovakia": 24,
+    "czechia": 16,
+    "europe": 9,
     "war": 13,
     "sport": 2,
-    "global": 8,
-    "tech": 10,
-    "economy": 5,
-    "hr": 13,
+    "global": 10,
+    "tech": 12,
+    "economy": 6,
+    "hr": 17,
     "health": 11,
-    "random": 2,
-    "learning": 2
+    "random": 3,
+    "learning": 3
   }
 }

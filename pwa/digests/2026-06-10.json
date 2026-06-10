@@ -1,247 +1,16 @@
 {
-  "generated_at": "2026-06-10T06:48:26Z",
+  "generated_at": "2026-06-10T09:21:52Z",
   "date": "2026-06-10",
   "total_stories": 30,
-  "estimated_read_minutes": 17,
+  "estimated_read_minutes": 16,
   "top5_ids": [
-    "3983f894-8e16-4b32-b1c6-d9ddc68b8fd3",
-    "944d6092-f93f-4564-aef6-68b8a440c698",
-    "ab45450c-f1fb-406f-a1b1-c9e0523179b2",
-    "09d9e6de-872a-4c57-bb09-e8c244b02f3d",
-    "b1258533-65a0-4c40-9b6f-f542e9ed80c6"
+    "d720c199-3d59-494e-bbbe-f7bf21b29d52",
+    "e6eaea2f-ad0a-49c8-930c-e11f4817be74",
+    "418e470d-ea26-4230-96ae-0473b625d0da",
+    "f285cb53-dbd4-4500-a6de-97d53efb261a",
+    "b63c68d4-6b22-4c09-aef0-4611f7c65d3f"
   ],
   "categories": {
-    "global": {
-      "label": "Global",
-      "emoji": "🌍",
-      "accent": "#F59E0B",
-      "story_count": 5,
-      "stories": [
-        {
-          "id": "3983f894-8e16-4b32-b1c6-d9ddc68b8fd3",
-          "cluster_id": "eafc2785e8d36f9b",
-          "topic": "Iran US conflict",
-          "category": "global",
-          "synthesis": "The US and Iran have exchanged strikes following the downing of a US helicopter, with Iran targeting US military facilities in Jordan, Kuwait, and Bahrain. The US Central Command said it used precision munitions to hit Iranian radar sites and ground control stations.",
-          "has_depth": true,
-          "score": 5.5161,
-          "importance": 5,
-          "relevance": 5,
-          "is_breaking": true,
-          "is_top5": true,
-          "estimated_seconds": 82,
-          "sources": [
-            {
-              "source": "The Guardian",
-              "headline": "Middle East crisis live: Iran launches broad retaliatory attacks after US strikes over downed helicopter",
-              "summary": "Iran has launched broad retaliatory attacks after US strikes over downed helicopter. IRGC says it has targeted an airbase in Jordan hosting US forces, as well as Kuwait and Bahrain.",
-              "url": "https://www.theguardian.com/world/live/2026/jun/10/iran-war-updates-missile-strikes-trump-us-retaliation-middle-east-crisis-war-live",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T06:17:39Z",
-              "image_url": "https://media.guim.co.uk/f42874504a03c6ee45f62b4e4112d4a7aba46b16/1324_283_4493_3595/500.jpg",
-              "language": "en"
-            },
-            {
-              "source": "FT International",
-              "headline": "US and Iran exchange strikes after downing of American helicopter",
-              "summary": "The US and Iran have exchanged strikes after the downing of an American helicopter. Tehran says it targeted US military facilities in Jordan and Bahrain following the latest barrage.",
-              "url": "https://www.ft.com/content/ceb10e74-9ff1-4cf6-82e0-70161c6f1f09",
-              "angle": "news",
-              "is_subscription": true,
-              "published": "2026-06-10T06:04:30+00:00",
-              "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fc51a9f63-0462-4fcd-b684-e13510f963a3.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-              "language": "en"
-            },
-            {
-              "source": "BBC World",
-              "headline": "US strikes Iran in response to downing of military helicopter",
-              "summary": "President Donald Trump earlier accused Iran of shooting down the US helicopter over the Strait of Hormuz and vowed to respond. US strikes Iran in response to downing of military helicopter.",
-              "url": "https://www.bbc.com/news/articles/cze9359gglyo?at_medium=RSS&at_campaign=rss",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T05:29:47+00:00",
-              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b309/live/8431d0d0-6429-11f1-a614-bb0f90cd931c.jpg",
-              "language": "en"
-            },
-            {
-              "source": "The Guardian",
-              "headline": "Tehran launches retaliatory attacks on Bahrain and Kuwait – as it happened",
-              "summary": "Tehran launches retaliatory attacks on Bahrain and Kuwait – as it happened. This blog has now closed.",
-              "url": "https://www.theguardian.com/world/live/2026/jun/09/middle-east-crisis-iran-israel-us-donald-trump-strait-of-hormuz-peace-deal-latest-news-updates",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T03:08:10Z",
-              "image_url": "https://media.guim.co.uk/80f093b38e71a917cfec07964a41bac68f1683d0/876_0_6880_5504/500.jpg",
-              "language": "en"
-            },
-            {
-              "source": "WSJ World",
-              "headline": "U.S. Launches Strikes on Iran in Response to Downed Apache Helicopter",
-              "summary": "U.S. Launches Strikes on Iran in Response to Downed Apache Helicopter. Jet fighters used precision munitions to hit Iranian radar sites and ground control stations in an attack that lasted several hours.",
-              "url": "https://www.wsj.com/world/middle-east/apache-helicopter-crash-coast-oman-4de26c6d",
-              "angle": "news",
-              "is_subscription": true,
-              "published": "2026-06-10T03:04:00+00:00",
-              "image_url": "https://images.wsj.net/im-47128149",
-              "language": "en"
-            },
-            {
-              "source": "BBC World",
-              "headline": "Nasa names next astronauts for Artemis Moon programme",
-              "summary": "Nasa names next astronauts for Artemis Moon programme. Nasa names its next Artemis crew, though they will not be walking on the Moon or even going anywhere near it.",
-              "url": "https://www.bbc.com/news/articles/cdejn0gj12go?at_medium=RSS&at_campaign=rss",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-09T17:46:55+00:00",
-              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/698c/live/e95091f0-6432-11f1-8546-8f19e4fe30f4.jpg",
-              "language": "en"
-            },
-            {
-              "source": "WSJ World",
-              "headline": "Iran’s Attack on Israel Reveals New and Aggressive Regional Ambitions",
-              "summary": "Iran’s Attack on Israel Reveals New and Aggressive Regional Ambitions. The move to protect Hezbollah shows an appetite for risk that didn’t exist before the war.",
-              "url": "https://www.wsj.com/world/middle-east/irans-attack-on-israel-reveals-new-and-aggressive-regional-ambitions-46a63383",
-              "angle": "analysis",
-              "is_subscription": true,
-              "published": "2026-06-09T00:00:00+00:00",
-              "image_url": "https://images.wsj.net/im-91347325",
-              "language": "en"
-            },
-            {
-              "source": "WSJ World",
-              "headline": "Trump Struggled to Rein In Netanyahu’s Strikes on Iran",
-              "summary": "Trump Struggled to Rein In Netanyahu’s Strikes on Iran. A climbdown in a phone call with the Israeli leader shows the president’s diminishing control over fighting that threatens his effort to reach a peace deal with Tehran.",
-              "url": "https://www.wsj.com/world/middle-east/trump-and-netanyahus-rift-over-lebanon-is-deepening-df16b6c9",
-              "angle": "analysis",
-              "is_subscription": true,
-              "published": "2026-06-08T17:21:00+00:00",
-              "image_url": "https://images.wsj.net/im-17297056",
-              "language": "en"
-            }
-          ]
-        },
-        {
-          "id": "944d6092-f93f-4564-aef6-68b8a440c698",
-          "cluster_id": "da8163ef4fe94715",
-          "topic": "Taiwan missile",
-          "category": "global",
-          "synthesis": "Taiwan has test-fired a U.S.-supplied missile launcher towards China as part of invasion-defense drills. The exercise marks the first use of the Himars system on the Taiwan Strait. This move is seen as a significant development in the island's defense capabilities.",
-          "has_depth": true,
-          "score": 5.5161,
-          "importance": 5,
-          "relevance": 5,
-          "is_breaking": true,
-          "is_top5": true,
-          "estimated_seconds": 23,
-          "sources": [
-            {
-              "source": "WSJ World",
-              "headline": "Taiwan Test-Fires U.S.-Supplied Missile Launcher Toward China",
-              "summary": "Taiwan has test-fired a U.S.-supplied missile launcher toward China as part of invasion-defense drills. The island staged the first use of Himars on the Taiwan Strait, marking a significant development in its defense capabilities.",
-              "url": "https://www.wsj.com/world/china/taiwan-test-fires-u-s-supplied-missile-launcher-toward-china-c23b4f44",
-              "angle": "news",
-              "is_subscription": true,
-              "published": "2026-06-10T03:26:00+00:00",
-              "image_url": "https://images.wsj.net/im-44617403",
-              "language": "en"
-            }
-          ]
-        },
-        {
-          "id": "70e60d5f-06ec-4613-9d40-6a354af52a5b",
-          "cluster_id": "f90709505fbfffac",
-          "topic": "Johannesburg shooting",
-          "category": "global",
-          "synthesis": "At least 12 people were killed and nine others injured in a mass shooting in Johannesburg, according to the police. The incident occurred at an informal settlement in Cleveland late on Tuesday.",
-          "has_depth": false,
-          "score": 5.0661,
-          "importance": 5,
-          "relevance": 4,
-          "is_breaking": true,
-          "is_top5": false,
-          "estimated_seconds": 20,
-          "sources": [
-            {
-              "source": "BBC World",
-              "headline": "Twelve killed in mass shooting in Johannesburg, police say",
-              "summary": "Twelve people have been killed in a mass shooting in Johannesburg, police say. Another nine people were injured at an informal settlement in Cleveland late on Tuesday.",
-              "url": "https://www.bbc.com/news/articles/c79yzqw0z0wo?at_medium=RSS&at_campaign=rss",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T06:25:34+00:00",
-              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1a2d/live/537ff930-6139-11ee-b101-6f93d6dfbcc2.png",
-              "language": "en"
-            }
-          ]
-        },
-        {
-          "id": "eb29fdcd-4553-4cfd-b683-990d1e721469",
-          "cluster_id": "653c38bd60a63825",
-          "topic": "Belfast unrest",
-          "category": "global",
-          "synthesis": "Unrest broke out in Belfast after a Sudanese man was charged with attempted murder in a knife attack, prompting anti-immigration protests that turned violent. The incident has been seized upon by far-right groups as a 'trigger event' to mobilize internationally. Social media played a pivotal role in spreading footage of the attack.",
-          "has_depth": true,
-          "score": 5.0661,
-          "importance": 5,
-          "relevance": 4,
-          "is_breaking": true,
-          "is_top5": false,
-          "estimated_seconds": 38,
-          "sources": [
-            {
-              "source": "The Guardian",
-              "headline": "Anti-immigration protesters in Belfast set bins and vehicles on fire amid unrest over knife attack – live",
-              "summary": "Anti-immigration protesters in Belfast set bins and vehicles on fire amid unrest over knife attack – live. The unrest began after a Sudanese man was charged with attempted murder in a knife attack in the city.",
-              "url": "https://www.theguardian.com/politics/live/2026/jun/09/labour-badenoch-equality-duty-nowak-starmer-burnham-healey-lammy-latest-news-updates",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T00:45:35Z",
-              "image_url": "https://media.guim.co.uk/9526346723d08f6c487b76241d920e6fa5ca92e6/284_0_2835_2268/500.jpg",
-              "language": "en"
-            },
-            {
-              "source": "The Guardian",
-              "headline": "How Belfast knife attack became the latest far-right ‘trigger event’",
-              "summary": "The rapid spread of footage shows how social media is pivotal in enabling far-right agitators to mobilise internationally. The knife attack in Belfast has become the latest 'trigger event' for far-right groups to mobilize and spread hate online.",
-              "url": "https://www.theguardian.com/politics/2026/jun/09/how-belfast-knife-attack-became-the-latest-far-right-trigger-event",
-              "angle": "analysis",
-              "is_subscription": false,
-              "published": "2026-06-09T18:57:20Z",
-              "image_url": "https://media.guim.co.uk/948759e5c9c97d979fb0b1740b2ddbac80bb5f38/355_0_5000_4000/500.jpg",
-              "language": "en"
-            }
-          ]
-        },
-        {
-          "id": "b5a48b6d-b359-4711-b65b-e160caccae3e",
-          "cluster_id": "3275057ea59d74ca",
-          "topic": "Israeli air strikes",
-          "category": "global",
-          "synthesis": "Israeli air strikes hit the Lebanese city of Tyre, despite an Iranian warning to stop attacks on its Lebanese ally Hezbollah. The warning was issued on Monday, threatening to resume hostilities if attacks do not cease.",
-          "has_depth": true,
-          "score": 5.0661,
-          "importance": 5,
-          "relevance": 4,
-          "is_breaking": true,
-          "is_top5": false,
-          "estimated_seconds": 21,
-          "sources": [
-            {
-              "source": "BBC World",
-              "headline": "Israeli air strikes hit Lebanese city of Tyre despite Iranian warning to stop attacks",
-              "summary": "Iran warned Israel on Monday that it could resume hostilities if attacks on its Lebanese ally Hezbollah do not stop. Israeli air strikes have hit the Lebanese city of Tyre, despite the warning.",
-              "url": "https://www.bbc.com/news/articles/c36y16nkr5no?at_medium=RSS&at_campaign=rss",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-09T17:47:41+00:00",
-              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9266/live/1ca8b8b0-641b-11f1-9216-c3eba4acaf31.jpg",
-              "language": "en"
-            }
-          ]
-        }
-      ]
-    },
     "czechia": {
       "label": "Czechia",
       "emoji": "🇨🇿",
@@ -249,185 +18,185 @@
       "story_count": 6,
       "stories": [
         {
-          "id": "ab45450c-f1fb-406f-a1b1-c9e0523179b2",
-          "cluster_id": "7bfeef39653a21ac",
-          "topic": "Ukrajina a EU",
+          "id": "d720c199-3d59-494e-bbbe-f7bf21b29d52",
+          "cluster_id": "b1a74ba213afa4e5",
+          "topic": "Jaroslav Strnad",
           "category": "czechia",
-          "synthesis": "Ukraine is expected to soon receive formal approval to open the first chapters of accession talks with the European Union, following a long-awaited breakthrough after Hungary lifted its veto. The agreement was reached on a 100,000-strong Hungarian minority living in Ukraine. This development is seen as a significant step towards Ukraine's EU membership.",
+          "synthesis": "Jaroslav Strnad, founder of CE Industries and Helicopter Alliance, has opened a new fund called CE INDUSTRIES & AEROSPACE SICAV to investors. The fund aims to raise 100 to 200 million EUR in its first phase for further growth and acquisitions. This move is expected to support the expansion of Strnad's holding companies.",
           "has_depth": true,
           "score": 5.5,
           "importance": 5,
           "relevance": 5,
           "is_breaking": true,
           "is_top5": true,
-          "estimated_seconds": 21,
+          "estimated_seconds": 29,
           "sources": [
             {
-              "source": "iROZHLAS.cz",
-              "headline": ",Celý Brusel na to čekal.‘ Ukrajina se blíží cestě do Evropské unie, pomohla dohoda o maďarské menšině",
-              "summary": "Celý Brusel na to čekal. 'Ukrajina se blíží cestě do Evropské unie, pomohla dohoda o maďarské menšině.'",
-              "url": "https://www.irozhlas.cz/zpravy-svet/madarsko-ukrajina-vztahy-vstup-eu_2606100700_ula",
+              "source": "iDnes.cz",
+              "headline": "Jaroslav Strnad otevírá brány svých holdingů investorům: Vznikl nový fond",
+              "summary": "Fond kvalifikovaných investorů CE INDUSTRIES & AEROSPACE SICAV je od dnešního dne otevřen novým partnerům. Zakladatel Jaroslav Strnad, majitel skupin CE Industries a Helicopter Alliance, očekává, že v první fázi fond získá 100 až 200 milionů EUR na financování dalšího růstu a akvizic.",
+              "url": "https://www.idnes.cz/ekonomika/domaci/jaroslav-strnad-ce-industries-aerospace-fond-vznik.A260609_200908_ekonomika_vok#utm_source=rss&utm_medium=feed&utm_campaign=idnes&utm_content=main",
               "angle": "news",
               "is_subscription": false,
-              "published": "2026-06-10T05:00:00+00:00",
-              "image_url": "https://www.irozhlas.cz/sites/default/files/styles/zpravy_maly_nahled/public/uploader/zuj_7994_240829-225128_zuj.jpg?itok=CJaiNojZ",
+              "published": "2026-06-10T08:30:00+00:00",
+              "image_url": "https://1gr.cz/fotky/idnes/26/061/cl6/VOKa8c9317d80_vrtulnik.jpeg",
               "language": "cs"
             }
           ]
         },
         {
-          "id": "876fd70a-22e1-42ed-b74f-54fd5a0e94eb",
-          "cluster_id": "f8a49843ea5e56ee",
-          "topic": "Útok v Belfastu",
+          "id": "e6eaea2f-ad0a-49c8-930c-e11f4817be74",
+          "cluster_id": "15e66268596cd72e",
+          "topic": "Bojů Blízký východ",
           "category": "czechia",
-          "synthesis": "A Sudanese asylum seeker was arrested in Belfast after a violent attack, sparking protests in the city. The victim was seriously injured in the attack, which occurred on the street.",
+          "synthesis": "The Middle East has witnessed its most intense clashes since the Persian Gulf ceasefire agreement, with Israel and Iran engaging in a series of airstrikes and rocket attacks.",
+          "has_depth": true,
+          "score": 5.5,
+          "importance": 5,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": true,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Novinky.cz",
+              "headline": "Eskalace bojů na Blízkém východě",
+              "summary": "Blízký východ zažil nejtvrdší střety od dohody na relativním klidu zbraní v Perském zálivu. Na Izrael opět letěly balistické rakety, Írán pak čelil izraelským a následně i americkým náletům.",
+              "url": "https://www.novinky.cz/clanek/podcasty-zbytecna-valka-eskalace-boju-na-blizkem-vychode-40582456",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-10T08:05:22+00:00",
+              "image_url": null,
+              "language": "cs"
+            }
+          ]
+        },
+        {
+          "id": "418e470d-ea26-4230-96ae-0473b625d0da",
+          "cluster_id": "0f92edb5fe7da236",
+          "topic": "Rusko Ukrajina",
+          "category": "czechia",
+          "synthesis": "Russia launched 26 attacks on the Ukrainian city of Kharkiv, resulting in five wounded, while Ukraine continued to strike Russian targets, leading to a fire at a refinery in Samara.",
+          "has_depth": false,
+          "score": 5.5,
+          "importance": 5,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": true,
+          "estimated_seconds": 22,
+          "sources": [
+            {
+              "source": "iROZHLAS.cz",
+              "headline": "ONLINE: Rusko v noci podniklo 26 útoků na Charkov. Po ukrajinském útoku hoří samarská rafinérie",
+              "summary": "Ruské síly v noci na středu podnikly 26 útoků na ukrajinské město Charkov, které si podle místních úřadů vyžádaly pět zraněných. Také Ukrajina pokračovala v úderech na ruské cíle, po jednom z nich vypukl požár v Kujbyševské ropné rafinérii ve městě Samara.",
+              "url": "https://www.irozhlas.cz/zpravy-svet/online-rusko-v-noci-podniklo-26-utoku-na-charkov-po-ukrajinskem-utoku-hori_2606100840_jos",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-10T06:40:00+00:00",
+              "image_url": "https://www.irozhlas.cz/sites/default/files/styles/zpravy_maly_nahled/public/uploader/profimedia-109944976_260516-170554_ako.jpg?itok=jH4NFVLi",
+              "language": "cs"
+            }
+          ]
+        },
+        {
+          "id": "2beb29c6-4c9a-42ce-a234-1a7cbb6b203e",
+          "cluster_id": "ceb83d524e475c8c",
+          "topic": "Nepokoje Belfast",
+          "category": "czechia",
+          "synthesis": "Anti-immigration riots broke out in Belfast after a video of a brutal knife attack went viral, resulting in widespread violence and destruction.",
+          "has_depth": true,
+          "score": 5.05,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 29,
+          "sources": [
+            {
+              "source": "iDnes.cz",
+              "headline": "Belfastem zmítají protiimigrační nepokoje. Útočník chtěl oběti na ulici uříznout hlavu",
+              "summary": "Belfastem zmítají protiimigrační nepokoje. Útočník chtěl oběti na ulici uříznout hlavu",
+              "url": "https://www.idnes.cz/zpravy/zahranicni/britanie-severni-irsko-utok-napadeni-nepokoje-sudanec-policie.A260610_101148_zahranicni_dtt#utm_source=rss&utm_medium=feed&utm_campaign=idnes&utm_content=main",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-10T08:39:00+00:00",
+              "image_url": "https://1gr.cz/fotky/idnes/26/062/cl6/DTT572e90425e_4a048f7bf79f59c9878c835.jpg",
+              "language": "cs"
+            },
+            {
+              "source": "Novinky.cz",
+              "headline": "FOTO: Nepokoje v Belfastu",
+              "summary": "Útok muže původem ze Súdánu rozpoutal velké nepokoje v hlavním městě Severního Irska. V Belfastu během posledních dní hořelo několik aut i domy, má jít hlavně o majetek přistěhovalců, při útocích se má ozývat „cizinci, ven!“. ",
+              "url": "https://www.novinky.cz/clanek/zahranicni-evropa-foto-belfast-v-plamenech-40582488",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-10T08:36:45+00:00",
+              "image_url": null,
+              "language": "cs"
+            },
+            {
+              "source": "Novinky.cz",
+              "headline": "Piloty sestřeleného Apache zachránil námořní dron",
+              "summary": "Bezposádkový robotický člun amerického námořnictva Corsair zachránil v úterý dva členy posádky amerického bitevního vrtulníku AH-64 Apache, který byl sestřelen v oblasti Hormuzského průlivu u pobřeží Ománu.",
+              "url": "https://www.novinky.cz/clanek/zahranicni-blizky-a-stredni-vychod-piloty-sestreleneho-apache-zachranil-namorni-dron-40582465",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-10T08:02:59+00:00",
+              "image_url": null,
+              "language": "cs"
+            }
+          ]
+        },
+        {
+          "id": "957c8f95-cc1f-40df-9a39-2cfc5f3caf5c",
+          "cluster_id": "f9fbc88eaf7b5e21",
+          "topic": "Ukrajina Rusko",
+          "category": "czechia",
+          "synthesis": "Ukrainian forces are reportedly winning the war against Russia, according to former US military officials, citing advancements in Ukrainian drone capabilities as a key factor.",
+          "has_depth": true,
+          "score": 5.05,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Novinky.cz",
+              "headline": "Ukrajina vítězí nad Ruskem, tvrdí američtí generálové",
+              "summary": "Ukrajina vítězí nad Ruskem, tvrdí američtí generálové. Bývalí zástupci amerických ozbrojených sil vidí jako hlavní faktor pokrok ve schopnostech a množství ukrajinských dronových náletů na cíle za frontou.",
+              "url": "https://www.novinky.cz/clanek/valka-na-ukrajine-ukrajina-vitezi-nad-ruskem-tvrdi-americti-generalove-40582477",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-10T08:28:51+00:00",
+              "image_url": null,
+              "language": "cs"
+            }
+          ]
+        },
+        {
+          "id": "1f518a10-f55c-47eb-82a5-399c107712a0",
+          "cluster_id": "4c718c9ae9493622",
+          "topic": "Střelba Jihoafrická",
+          "category": "czechia",
+          "synthesis": "At least 12 people died and nine were injured in a shooting in a South African slum near Johannesburg, with police searching for the perpetrators.",
           "has_depth": false,
           "score": 5.05,
           "importance": 5,
           "relevance": 4,
           "is_breaking": true,
           "is_top5": false,
-          "estimated_seconds": 21,
-          "sources": [
-            {
-              "source": "Aktuálně.cz",
-              "headline": "Policie zatkla Súdánce po útoku v Belfastu, ve městě vypukly násilné protesty",
-              "summary": "Policie zatkla Súdánce po útoku v Belfastu, ve městě vypukly násilné protesty. Pachatel, který je podle informací agentury AP žadatelem o azyl, pobodal na ulici muže, který skončil v nemocnici s vážným poraněním v oblasti očí a obličeje.",
-              "url": "https://zpravy.aktualne.cz/zahranici/policie-zatkla-sudance-po-utoku-v-belfastu-ve-meste-vypukly-nasilne-protesty/r~aaa2979f89aeb5ab89f82422f193bc83/",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T04:59:00+00:00",
-              "image_url": "https://media.eco-files.cz/economia/production/files/2026/06/10/04/47/33/c675cda5-0f7b-4c85-9756-9500025b2555/P2026060909327.jpg",
-              "language": "cs"
-            }
-          ]
-        },
-        {
-          "id": "67e0618a-8cb5-49de-8b20-2c0e7a317922",
-          "cluster_id": "25d4c2267ef374b8",
-          "topic": "Írán a USA",
-          "category": "czechia",
-          "synthesis": "The US launched retaliatory strikes on Iran after an American Apache helicopter was shot down, prompting Iran to respond with missile attacks on US military bases in the Persian Gulf region.",
-          "has_depth": true,
-          "score": 5.05,
-          "importance": 5,
-          "relevance": 4,
-          "is_breaking": true,
-          "is_top5": false,
-          "estimated_seconds": 30,
-          "sources": [
-            {
-              "source": "iROZHLAS.cz",
-              "headline": "V odvetě za sestřelený vrtulník USA cílily na radary a protivzdušnou obranu. Írán vyslal balistické rakety",
-              "summary": "Spojené státy dokončily odvetné údery na Írán za sestřelení amerického vrtulníku Apache nad Hormuzským průlivem. Íránská média uvádí, že Írán vyslal balistické rakety na americké vojenské základny v regionu Perského zálivu.",
-              "url": "https://www.irozhlas.cz/zpravy-svet/v-odvete-za-sestreleny-vrtulnik-usa-cilily-na-radary-a-protivzdusnou-obranu-iran_2606100655_kvr",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T04:55:00+00:00",
-              "image_url": "https://www.irozhlas.cz/sites/default/files/styles/zpravy_maly_nahled/public/uploader/2026-05-01t103455z_9_260506-061111_mst.JPG?itok=_vVNuipb",
-              "language": "cs"
-            },
-            {
-              "source": "Novinky.cz",
-              "headline": "USA v noci zaútočily na Írán, ten odpověděl",
-              "summary": "Spojené státy v noci na středu provedly několik úderů na Írán jako odvetu za sestřelení vojenského vrtulníku Apache nad Hormuzským průlivem. V reakci na nové útoky Írán zaútočil na americké vojenské základny v regionu Perského zálivu.",
-              "url": "https://www.novinky.cz/clanek/zahranicni-blizky-a-stredni-vychod-usa-v-noci-zautocily-na-iran-za-sestreleni-vrtulniku-teheran-ohlasil-protiutoky-40582438",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T04:07:10+00:00",
-              "image_url": null,
-              "language": "cs"
-            }
-          ]
-        },
-        {
-          "id": "d806a22a-2e48-4129-bd00-24000d2bd77e",
-          "cluster_id": "824e6b618c94b226",
-          "topic": "Pákistán a Afghánistán",
-          "category": "czechia",
-          "synthesis": "Pákistán conducted airstrikes in Afghanistan, resulting in at least 13 deaths and 14 injuries, mostly children, according to the Taliban spokesperson. The airstrikes occurred in three provinces in Afghanistan.",
-          "has_depth": true,
-          "score": 5.05,
-          "importance": 5,
-          "relevance": 4,
-          "is_breaking": true,
-          "is_top5": false,
           "estimated_seconds": 20,
           "sources": [
             {
               "source": "Aktuálně.cz",
-              "headline": "Pákistán zaútočil v Afghánistánu. Vzdušné údery mají 13 obětí, většina z nich jsou děti",
-              "summary": "Pákistán zaútočil v Afghánistánu. Vzdušné údery mají 13 obětí, většina z nich jsou děti",
-              "url": "https://zpravy.aktualne.cz/zahranici/pakistan-zautocil-v-afghanistanu-vzdusne-udery-maji-13-obeti-vetsina-z-nich-jsou-deti/r~aaa298e25534f5a64ba74cff9ef55ae0/",
+              "headline": "Střelba v jihoafrickém slumu si vyžádala nejméně 12 obětí, policie pátrá po útočnících",
+              "summary": "Nejméně 12 lidí přišlo o život a devět bylo zraněno v Jihoafrické republice, když skupina mužů v noci na středu začala střílet ve slumu poblíž Johannesburgu. Policie po útočnících pátrá.",
+              "url": "https://zpravy.aktualne.cz/zahranici/strelba-v-jihoafrickem-slumu-si-vyzadala-nejmene-12-obeti-policie-patra-po-utocnicich/r~aaa2935d2bb922fce72a47fb1872526c/",
               "angle": "news",
               "is_subscription": false,
-              "published": "2026-06-10T04:19:00+00:00",
-              "image_url": "https://media.eco-files.cz/economia/production/files/2026/06/10/04/18/37/afffe0ee-4768-41a8-a95d-a34599f4b707/1397da727c7f326c9dc6eadb466451f9.jpg",
-              "language": "cs"
-            },
-            {
-              "source": "iDnes.cz",
-              "headline": "Pákistánské nálety v Afghánistánu zabily 13 lidí, většinou děti, uvedl Talibán",
-              "summary": "Pákistánské nálety v Afghánistánu zabily 13 lidí, většinou děti, uvedl Talibán",
-              "url": "https://www.idnes.cz/zpravy/zahranicni/pakistan-afghanistan-taliban-boje.A260610_061916_zahranicni_pluh#utm_source=rss&utm_medium=feed&utm_campaign=idnes&utm_content=main",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T04:19:00+00:00",
-              "image_url": "https://1gr.cz/fotky/idnes/26/032/cl6/ILU7d0c5ec352_73_afghanistan_pakistan.jpg",
-              "language": "cs"
-            }
-          ]
-        },
-        {
-          "id": "b427f591-0f60-4d65-ad7b-e778673c0a26",
-          "cluster_id": "7e26e8d73093b6ae",
-          "topic": "Írán a nová strategie",
-          "category": "czechia",
-          "synthesis": "Iran has presented a new aggressive strategy, as evident from the recent conflict with Israel. The strategy views attacks on its allies, such as Hezbollah, as direct attacks on Iran.",
-          "has_depth": true,
-          "score": 5.05,
-          "importance": 5,
-          "relevance": 4,
-          "is_breaking": true,
-          "is_top5": false,
-          "estimated_seconds": 20,
-          "sources": [
-            {
-              "source": "Novinky.cz",
-              "headline": "Írán představil novou agresivnější strategii",
-              "summary": "Poslední střet mezi Íránem a Izraelem ukazuje na změnu politiky Teheránu. Vypálením balistických raket odpověděl na izraelské útoky na svého libanonského spojence z Hizballáhu.",
-              "url": "https://www.novinky.cz/clanek/zahranicni-blizky-a-stredni-vychod-iran-predstavil-novou-agresivnejsi-strategii-40582292",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T03:52:00+00:00",
-              "image_url": null,
-              "language": "cs"
-            }
-          ]
-        },
-        {
-          "id": "ce370505-4e1a-45f6-9b64-e3b87e2209fb",
-          "cluster_id": "54bd78d564fd1cbf",
-          "topic": "Češi na MS ve fotbale. Sledujte dění ze",
-          "category": "czechia",
-          "synthesis": "The Czech national football team is returning to the FIFA World Cup after 20 years. Fans can follow the team's progress through exclusive content from iDNES.cz and MF DNES. A special offer allows fans to access iDNES Premium for two months for just 1 Kč.",
-          "has_depth": true,
-          "score": 5.05,
-          "importance": 5,
-          "relevance": 4,
-          "is_breaking": true,
-          "is_top5": false,
-          "estimated_seconds": 23,
-          "sources": [
-            {
-              "source": "iDnes.cz",
-              "headline": "Češi na MS ve fotbale. Sledujte dění ze zámoří a čtěte exkluzivní prémiový obsah",
-              "summary": "Češi se po 20 letech vrací na fotbalové mistrovství světa. Redakce iDNES.cz a MF DNES budou u toho a přímo z USA i Mexika přinesou exkluzivní rozhovory, reportáže i prémiový retroseriál.",
-              "url": "https://www.idnes.cz/fotbal/mistrovstvi-sveta-ve-fotbale/mistrovstvi-sveta-fotbal-idnes-premium-obsah.A260605_120109_premium-sluzby_malu#utm_source=rss&utm_medium=feed&utm_campaign=idnes&utm_content=main",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T04:00:00+00:00",
-              "image_url": "https://1gr.cz/fotky/idnes/26/061/cl6/BHA8d8a9de1a2_ms_ve_fotbale_kolaz_cr.jpg",
+              "published": "2026-06-10T06:46:00+00:00",
+              "image_url": "https://media.eco-files.cz/economia/production/files/2026/06/10/06/37/08/eb624dab-da2e-485e-9fc0-77d33bbdaa3a/c6f5e87a597f307f971764dbf000c6b2.jpg",
               "language": "cs"
             }
           ]
@@ -438,171 +207,323 @@
       "label": "Slovakia",
       "emoji": "🇸🇰",
       "accent": "#0080C7",
-      "story_count": 7,
+      "story_count": 12,
       "stories": [
         {
-          "id": "09d9e6de-872a-4c57-bb09-e8c244b02f3d",
-          "cluster_id": "f194ca8c1e96fb12",
-          "topic": "Ukrajina a superveľmoci",
+          "id": "f285cb53-dbd4-4500-a6de-97d53efb261a",
+          "cluster_id": "7c83cc633c23683b",
+          "topic": "Ukrajina a Rusko",
           "category": "slovakia",
-          "synthesis": "Ukraine has shown superpowers that conquering a country solely through military force is no longer possible, as the ongoing war in Ukraine fundamentally changes the perspective on global conflicts and reveals the limitations of previous superpowers.",
+          "synthesis": "Ukraine's war against Russia is changing the global perspective on conflicts and revealing the limitations of current superpowers. The country is moving closer to NATO and the EU, despite the ongoing war. Economies in the region, including Slovakia, are struggling to recover.",
           "has_depth": true,
           "score": 5.5,
           "importance": 5,
           "relevance": 5,
           "is_breaking": true,
           "is_top5": true,
-          "estimated_seconds": 20,
+          "estimated_seconds": 35,
           "sources": [
             {
               "source": "Pravda.sk",
               "headline": "ONLINE: Dávid proti Goliášovi. Ukrajina ukázala superveľmociam, že dobytie krajiny len silou zbraní už nie je možné",
-              "summary": "Ukrajina ukázala superveľmociam, že dobytie krajiny len silou zbraní už nie je možné. Vojna na Ukrajine zásadne mení pohľad na globálne konflikty a odhaľuje limity doterajších superveľmocí.",
+              "summary": "Ukrajina ukázala superveľmociam, že dobytie krajiny len silou zbraní už nie je možné. Americký denník priniesol analýzu, podľa ktorej vojna na Ukrajine zásadne mení pohľad na globálne konflikty.",
               "url": "https://spravy.pravda.sk/svet/clanok/815109-online-david-proti-goliasovi-ukrajina-ukazala-supervelmociam-ze-dobytie-krajiny-len-silou-zbrani-uz-nie-je-mozne/?utm_source=pravda&utm_medium=rss&utm_campaign=rss",
-              "angle": "news",
+              "angle": "analysis",
               "is_subscription": false,
               "published": "2026-06-10T05:58:00+00:00",
               "image_url": "https://ipravda.sk/res/2026/06/10/thumbs/aptopix-russia-ukraine-war-strednaW.jpg",
+              "language": "sk"
+            },
+            {
+              "source": "Denník N",
+              "headline": "Ekonomický newsfilter: Nie je čas na letnú pauzu, odkazujú vláde firmy",
+              "summary": "Nie je čas na letnú pauzu, odkazujú vláde firmy. Premiér si pomáha aj tým, že sa stáva jasné, že Slovensko na tom nie je až tak zle.",
+              "url": "https://e.dennikn.sk/5385085/ekonomicky-newsfilter-nie-je-cas-na-letnu-pauzu-odkazuju-vlade-firmy/",
+              "angle": "news",
+              "is_subscription": true,
+              "published": "2026-06-10T04:31:40+00:00",
+              "image_url": "https://img.projektn.sk/wp-static/2025/10/20252110nrsr40rozpocet02166845.jpg?w=450&amp;h=300&amp;fit=crop&amp;fm=jpg&amp;q=85",
+              "language": "sk"
+            },
+            {
+              "source": "Pravda.sk",
+              "headline": "ONLINE: Silný odkaz zo severu: Ukrajina smeruje nezvratne do NATO, v EÚ ju chcú čo najskôr",
+              "summary": "Ukrajina smeruje nezvratne do NATO, v EÚ ju chcú čo najskôr. Vojna na Ukrajine trvá už 1 566 dní.",
+              "url": "https://spravy.pravda.sk/svet/clanok/814781-online-pri-ruskych-utokoch-v-charkovskej-oblasti-zomreli-styria-ludia/?utm_source=pravda&utm_medium=rss&utm_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T04:04:00+00:00",
+              "image_url": "https://ipravda.sk/res/2026/06/09/thumbs/severske-a-pobaltske-krajiny-zelenskyj-strednaW.jpg",
               "language": "sk"
             }
           ]
         },
         {
-          "id": "b1258533-65a0-4c40-9b6f-f542e9ed80c6",
-          "cluster_id": "7bbb35f3e3adab56",
-          "topic": "Zemetrasenie na Filipínach",
+          "id": "b63c68d4-6b22-4c09-aef0-4611f7c65d3f",
+          "cluster_id": "957eebaa69c597b8",
+          "topic": "Útoky USA na Irán",
           "category": "slovakia",
-          "synthesis": "A 7.8 magnitude earthquake on the southern Philippines has resulted in at least 46 deaths and hundreds of injuries, with rescue teams still searching for missing people.",
+          "synthesis": "The United States has launched attacks on Iran in response to the downing of an American drone, escalating tensions in the region. The move has sparked protests and violence in Northern Ireland, where a group of masked radicals called for the removal of foreigners. The situation is further complicated by Europe's efforts to develop its own military capabilities.",
+          "has_depth": true,
+          "score": 5.5,
+          "importance": 5,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": true,
+          "estimated_seconds": 33,
+          "sources": [
+            {
+              "source": "Pravda.sk",
+              "headline": "Európa sa učí hovoriť jazykom sily. Kritici: Ani lietadlo nevie postaviť",
+              "summary": "Mal to byť projekt, ktorý posunie Európu na vojensko-technologickú špičku. Dočká sa starý kontinent stíhačky šiestej generácie?",
+              "url": "https://spravy.pravda.sk/svet/clanok/814991-europa-sa-uci-hovorit-jazykom-sily-kritici-ani-lietadlo-nevie-postavit/?utm_source=pravda&utm_medium=rss&utm_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-10T04:00:00+00:00",
+              "image_url": "https://ipravda.sk/res/2026/06/09/thumbs/f-35-strednaW.jpg",
+              "language": "sk"
+            },
+            {
+              "source": "Pravda.sk",
+              "headline": "Blízky východ sa opäť otriasal: Američania v odvete udreli na Irán, zasiahli radary i PVO",
+              "summary": "Americká armáda spustila útoky na Irán v reakcii na zostrelenie vrtuľníka. Američania zasiahli radary i PVO.",
+              "url": "https://spravy.pravda.sk/svet/clanok/815085-spojene-staty-vykonavaju-udery-na-iran-utocia-po-strate-vrtulnika/?utm_source=pravda&utm_medium=rss&utm_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T21:39:00+00:00",
+              "image_url": "https://ipravda.sk/res/2026/03/09/thumbs/iran-us-izrael-strednaW.jpg",
+              "language": "sk"
+            },
+            {
+              "source": "Pravda.sk",
+              "headline": "„Dostaneme odtiaľto cudzincov“. Útok nožom spustil výbuch hnevu: V Severnom Írsku vypukli nepokoje",
+              "summary": "Skupina maskovaných radikálov sa vydala na pochod východnou časťou Belfastu za volania „dostaneme odtiaľto cudzincov“. Útok nožom spustil výbuch hnevu.",
+              "url": "https://spravy.pravda.sk/svet/clanok/815083-dostaneme-odtialto-cudzincov-utok-nozom-spustil-vybuch-hnevu-v-severnom-irsku-po-brutalnom-utoku-horeli-auta-aj-autobus/?utm_source=pravda&utm_medium=rss&utm_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T21:35:00+00:00",
+              "image_url": "https://ipravda.sk/res/2026/06/09/thumbs/belfast-irsko-utok-nozom-nepokoje-strednaW.jpg",
+              "language": "sk"
+            }
+          ]
+        },
+        {
+          "id": "7da61ea1-5375-4130-ae14-308f470619f9",
+          "cluster_id": "f9408dceffdb1971",
+          "topic": "Irán a USA",
+          "category": "slovakia",
+          "synthesis": "Iran claims a US Apache helicopter crashed due to a technical issue, while the US is expected to retaliate, according to Trump.",
           "has_depth": false,
           "score": 5.5,
           "importance": 5,
           "relevance": 5,
           "is_breaking": true,
-          "is_top5": true,
+          "is_top5": false,
           "estimated_seconds": 20,
           "sources": [
             {
-              "source": "Aktuality.sk",
-              "headline": "Zemetrasenie na Filipínach si vyžiadalo už 46 mŕtvych. Hlásia stovky zranených a desiatky nezvestných",
-              "summary": "Zemetrasenie na Filipínach si vyžiadalo už 46 mŕtvych. Hlásia stovky zranených a desiatky nezvestných.",
-              "url": "https://www.aktuality.sk/clanok/DS7sqrP/zemetrasenie-na-filipinach-si-vyziadalo-uz-46-mrtvych-hlasia-stovky-zranenych-a-desiatky-nezvestnych/",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T05:11:00+00:00",
-              "image_url": "https://img.aktuality.sk/foto/trosky-budovy-po-silnom-zemetrasen-v-meste-general-santos-na-ostrove-mindanao-na-juhu-filip-n-v-pondelok-8-j-na-2026/MTU4eDEwNi9zbWFydC9maWx0ZXJzOmZvcm1hdChqcGcpL2h0dHA6Ly9sb2NhbGhvc3Q6ODEvcHVsc2Ntcy10cmFuc2Zvcm1zLzE=/T1KktkpTURBXy9iZjJlYzcxNzVkMzA3NjgzMjE1MmE1ZDBmNTA4MDIxMi5qcGeSlQMAcs0OQM0IBJUCzQfQAMLD?st=daZTIyqg1iPje4K3QdBSJ70_jSB3vCO5NvegTs1nit0&amp;ts=1781042400&amp;e=0",
-              "language": "sk"
-            }
-          ]
-        },
-        {
-          "id": "390b82a8-e8a1-4ae9-8b75-08a79aa34a10",
-          "cluster_id": "eb46194d3b187f6a",
-          "topic": "Irán a dronové údery",
-          "category": "slovakia",
-          "synthesis": "Iran has launched drone attacks on US targets in Bahrain and Jordan, warning of a stronger retaliation, while the US has announced the end of attacks on Iran. The incident follows a previous incident where Iran shot down a US Apache helicopter, prompting a potential US retaliation.",
-          "has_depth": true,
-          "score": 5.5,
-          "importance": 5,
-          "relevance": 5,
-          "is_breaking": true,
-          "is_top5": false,
-          "estimated_seconds": 32,
-          "sources": [
-            {
-              "source": "Aktuality.sk",
-              "headline": "Irán podnikol dronové údery na americké ciele v Bahrajne a Jordánsku",
-              "summary": "Iránske gardy dronmi zasiahli americké ciele v Bahrajne a Jordánsku. Varujú pred tvrdšou odvetou, kým USA medzitým hlásia ukončenie útokov na Irán.",
-              "url": "https://www.aktuality.sk/clanok/Gi7MLp7/iran-podnikol-dronove-udery-na-americke-ciele-v-bahrajne-a-jordansku/",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T04:19:00+00:00",
-              "image_url": "https://img.aktuality.sk/foto/ir-nski-vojaci-ilustra-n-foto/MTU4eDEwNi9zbWFydC9maWx0ZXJzOmZvcm1hdChqcGcpL2h0dHA6Ly9sb2NhbGhvc3Q6ODEvcHVsc2Ntcy10cmFuc2Zvcm1zLzE=/y9CktkpTURBXy9iNmI0OWY5MzA5ZTU5MmJkMWIzZjMwMGM1ODhjOWE2OS5qcGeSlQMAzKfNFN7NC7yVAs0H0ADCww?st=B26VlKJf5uYbgPbpPd7Q2BRLZDn23e8AnfSbu4acM5I&amp;ts=1781042400&amp;e=0",
-              "language": "sk"
-            },
-            {
-              "source": "Pravda.sk",
-              "headline": "ONLINE: Irán odpovedal na útoky USA, zasiahol americké základne v Bahrajne a Jordánsku",
-              "summary": "Iránske Revolučné gardy reagovali tak na americké útoky na islamskú republiku a upozornili na „tvrdšiu odvetu“.",
-              "url": "https://spravy.pravda.sk/svet/clanok/815099-online-iran-odpovedal-na-utoky-usa-zasiahol-americke-zakladne-v-bahrajne-a-jordansku/?utm_source=pravda&utm_medium=rss&utm_campaign=rss",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T04:05:00+00:00",
-              "image_url": "https://ipravda.sk/res/2026/03/05/thumbs/iran-usa-izrael-utok-strednaW.jpg",
-              "language": "sk"
-            },
-            {
               "source": "Pravda.sk",
               "headline": "Irán zostrelil americký vrtuľník Apache, vyhlásil Trump a avizuje odvetu. Bola to havária, znie z Teheránu",
-              "summary": "Iránske gardy v noci na utorok zostrelili americký vrtuľník Apache a Spojené štáty na to budú musieť odpovedať, uviedol Trump.",
+              "summary": "Irán v noci na utorok zostrelil americký vrtuľník Apache a Spojené štáty na to budú musieť odpovedať, uviedol Trump. Bola to havária, znie z Teheránu.",
               "url": "https://spravy.pravda.sk/svet/clanok/815045-iran-zostrelil-americky-vrtulnik-apache-vyhlasil-trump-a-avizuje-odvetu/?utm_source=pravda&utm_medium=rss&utm_campaign=rss",
               "angle": "news",
               "is_subscription": false,
               "published": "2026-06-09T16:59:00+00:00",
               "image_url": "https://ipravda.sk/res/2025/12/20/thumbs/vrtulnik-ah-64d-longbow-apache-strednaW.jpg",
               "language": "sk"
-            }
-          ]
-        },
-        {
-          "id": "b97bd331-fc75-4313-a39c-99a6b7c0fcac",
-          "cluster_id": "8f11f8fb2cc1e8b6",
-          "topic": "Zelenskyj a Putin",
-          "category": "slovakia",
-          "synthesis": "Ukrainian President Volodymyr Zelenskyj announced that he sent multiple letters to Russian President Vladimir Putin within a month, achieving the desired outcome.",
-          "has_depth": false,
-          "score": 5.5,
-          "importance": 5,
-          "relevance": 5,
-          "is_breaking": true,
-          "is_top5": false,
-          "estimated_seconds": 20,
-          "sources": [
+            },
             {
               "source": "Pravda.sk",
-              "headline": "Zelenskyj o liste Putinovi: Dosiahol som výsledok, ktorý som potreboval",
-              "summary": "Ukrajinský prezident Volodymyr Zelenskyj vyhlásil, že v priebehu jedného mesiaca poslal viacero listov. Dosiahol tak výsledok, ktorý sa mu podarilo dosiahnuť.",
-              "url": "https://spravy.pravda.sk/svet/clanok/815035-zelenskyj-o-liste-putinovi-dosiahol-som-vysledok-ktory-som-potreboval/?utm_source=pravda&utm_medium=rss&utm_campaign=rss",
+              "headline": "Progresívci vytiahli Ficov výrok. Pri kauze jeho syna by mal vraj odstúpiť. Smer im pripomína vlastnú firmu",
+              "summary": "Agentúra Smer je v skutočnosti len akousi opačnou práčkou na štátne zdroje, tvrdia progresívci. Smer im pripomína vlastnú firmu.",
+              "url": "https://spravy.pravda.sk/domace/clanok/815023-cakame-na-demisiu-ps-vytiahlo-ficov-vlastny-vyrok-pri-kauze-jeho-syna-by-mal-vraj-odstupit/?utm_source=pravda&utm_medium=rss&utm_campaign=rss",
               "angle": "news",
               "is_subscription": false,
-              "published": "2026-06-09T16:00:00+00:00",
-              "image_url": "https://ipravda.sk/res/2026/06/09/thumbs/ukrajinsky-prezident-volodymyr-zelenskyj-kyjev-strednaW.jpg",
+              "published": "2026-06-09T15:09:00+00:00",
+              "image_url": "https://ipravda.sk/res/2026/02/22/thumbs/michal-simecka-a-robert-fico-strednaW.jpg",
               "language": "sk"
             }
           ]
         },
         {
-          "id": "7b4019cd-7f7f-4e6c-9098-b3d293388782",
-          "cluster_id": "f417a8a09fef3915",
-          "topic": "Trump a mier",
+          "id": "63fdcd96-4e04-492e-9c0a-48a28c33edb8",
+          "cluster_id": "4fdecfd16d438808",
+          "topic": "Hongkonské požiari",
           "category": "slovakia",
-          "synthesis": "US President Donald Trump claims to have a plan to bring peace within three days, stating he will stop the conflict between Israel and Iran and open the Strait of Hormuz.",
+          "synthesis": "Hong Kong authorities have charged seven individuals and two companies in connection with the November fire at the Wang Fuk Court complex, which resulted in 168 deaths. The charges involve 25 criminal offenses. The investigation into the fire is ongoing.",
           "has_depth": false,
-          "score": 5.5,
+          "score": 5.05,
           "importance": 5,
-          "relevance": 5,
+          "relevance": 4,
           "is_breaking": true,
           "is_top5": false,
           "estimated_seconds": 20,
           "sources": [
             {
-              "source": "Pravda.sk",
-              "headline": "ONLINE: Trump sľubuje mier do troch dní. Tvrdí, že zastaví konflikt Izraela s Iránom a otvorí Hormuzský prieliv",
-              "summary": "Trump sľubuje mier do troch dní. Tvrdí, že zastaví konflikt Izraela s Iránom a otvorí Hormuzský prieliv.",
-              "url": "https://spravy.pravda.sk/svet/clanok/814787-online-pri-hormuzskom-prielive-sa-zrutil-americky-vrtulnik-posadku-zachranili/?utm_source=pravda&utm_medium=rss&utm_campaign=rss",
+              "source": "Aktuality.sk",
+              "headline": "Hongkonské úrady obvinili sedem ľudí a dve spoločnosti po novembrovom požiari",
+              "summary": "Hongkonské úrady obvinili sedem ľudí a dve spoločnosti po novembrovom požiari. Úrady hovoria o 25 trestných činoch.",
+              "url": "https://www.aktuality.sk/clanok/TLf832d/hongkonske-urady-obvinili-sedem-ludi-a-dve-spolocnosti-po-novembrovom-poziari/",
               "angle": "news",
               "is_subscription": false,
-              "published": "2026-06-09T05:00:00+00:00",
-              "image_url": "https://ipravda.sk/res/2026/06/09/thumbs/iran-strednaW.jpg",
+              "published": "2026-06-10T08:51:00+00:00",
+              "image_url": "https://img.aktuality.sk/foto/po-iar-bytov-ho-domu-v-hongkongu/MTU4eDEwNi9zbWFydC9maWx0ZXJzOmZvcm1hdChqcGcpL2h0dHA6Ly9sb2NhbGhvc3Q6ODEvcHVsc2Ntcy10cmFuc2Zvcm1zLzE=/lRPktkpTURBXy9mMWQ3NmRhMGY3YThkOWJiOTcyMGJlMTE5MzcyYjZlZC5qcGeSlQMAzPXNHnDNER-VAs0H0ADCww?st=oEI8jIaA5CpNz7zoq8kecVcsjkjNL619T6-8-0jtWKo&amp;ts=1781042400&amp;e=0",
               "language": "sk"
             }
           ]
         },
         {
-          "id": "e40aa5de-3820-41fe-84bf-030f321f9b29",
+          "id": "53c9494f-5148-423b-85c2-21deb46c98fd",
+          "cluster_id": "29d39aaa38c1934d",
+          "topic": "Americký hraničný múr",
+          "category": "slovakia",
+          "synthesis": "The US government plans to complete the border wall with Mexico by the end of 2027, with a promise of a massive barrier equipped with modern technologies.",
+          "has_depth": false,
+          "score": 5.05,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Aktuality.sk",
+              "headline": "Americká vláda počíta s dokončením hraničného múru s Mexikom do konca 2027",
+              "summary": "Americká vláda počíta s dokončením hraničného múru s Mexikom do konca 2027. Šéf amerických colníkov sľubuje masívnu bariéru doplnenú modernými technológiami.",
+              "url": "https://www.aktuality.sk/clanok/vnMj5IR/americka-vlada-pocita-s-dokoncenim-hranicneho-muru-s-mexikom-do-konca-2027/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-10T08:24:00+00:00",
+              "image_url": "https://img.aktuality.sk/foto/americk-m-r-na-hraniciach-s-mexikom/MTU4eDEwNi9zbWFydC9maWx0ZXJzOmZvcm1hdChqcGcpL2h0dHA6Ly9sb2NhbGhvc3Q6ODEvcHVsc2Ntcy10cmFuc2Zvcm1zLzE=/_GfktkuTURBXy8wYzczMTNmOS04MDg5LTQzZmMtYTgxMS0zMDBiYTVhM2QzMTQuanBlZ5KVAwAWzQQHzQJDlQLNB9AAwsM?st=tUM2-JNcUKHCGzoes0MHSHHFq-CrluZxNsgrK3LvVoY&amp;ts=1781042400&amp;e=0",
+              "language": "sk"
+            }
+          ]
+        },
+        {
+          "id": "0a4c0014-52ab-451d-a0d6-060a65970e6e",
+          "cluster_id": "bf6fad8d407291de",
+          "topic": "Masová streľba v Johannesburgu",
+          "category": "slovakia",
+          "synthesis": "At least 12 people were killed and nine others injured in a mass shooting in Johannesburg, South Africa. The motive behind the attack is currently unknown. Police are searching for more than ten suspects.",
+          "has_depth": false,
+          "score": 5.05,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 21,
+          "sources": [
+            {
+              "source": "Pravda.sk",
+              "headline": "Masová streľba v Johannesburgu. Zomrelo 12 ľudí, deväť je ranených",
+              "summary": "Masová streľba v Johannesburgu. Zomrelo 12 ľudí, deväť je ranených. Motív útoku zatiaľ nie je známy.",
+              "url": "https://spravy.pravda.sk/svet/clanok/815139-jar-johannesburg-strelba-vrazda-obete/?utm_source=pravda&utm_medium=rss&utm_campaign=rss",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-10T08:05:00+00:00",
+              "image_url": "https://ipravda.sk/res/2023/04/19/thumbs/mimoriadne1-strelba-vrazda-prepadnutie-zbran-naboj-vystrel-nabojnica-strednaW.jpg",
+              "language": "sk"
+            },
+            {
+              "source": "Aktuality.sk",
+              "headline": "Streľba na predmestí Johannesburgu si vyžiadala 12 obetí",
+              "summary": "Streľba na predmestí Johannesburgu si vyžiadala 12 obetí. Najmenej 12 mŕtvych a deväť zranených po masakri v neregistrovanej osade pri Johannesburgu.",
+              "url": "https://www.aktuality.sk/clanok/TNANzv1/strelba-na-predmesti-johannesburgu-si-vyziadala-12-obeti/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-10T07:33:00+00:00",
+              "image_url": "https://img.aktuality.sk/foto/johannesburg-ju-n-afrika/MTU4eDEwNi9zbWFydC9maWx0ZXJzOmZvcm1hdChqcGcpL2h0dHA6Ly9sb2NhbGhvc3Q6ODEvcHVsc2Ntcy10cmFuc2Zvcm1zLzE=/IRrktkpTURBXy85YzhhMTQ4ZTE0ZWZiZThmMTA1OGFiYjhlZWJhNjMxOC5qcGeSlQMAIM0D6M0CMpUCzQfQAMLD?st=AGDUyJgbofV1x9EKSj3Ze-IdYYh7O2DgtvqF7ysJ1zU&amp;ts=1781042400&amp;e=0",
+              "language": "sk"
+            }
+          ]
+        },
+        {
+          "id": "467a11af-8712-49e3-aa00-f2a224efde30",
+          "cluster_id": "575137f73c727602",
+          "topic": "Streľba v Johannesburgu",
+          "category": "slovakia",
+          "synthesis": "A shooting occurred in Johannesburg, but details about the incident are not provided in the given source.",
+          "has_depth": false,
+          "score": 5.05,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Aktuality.sk",
+              "headline": "Prečo sa cystitída zhoršuje v lete počas dovolenky",
+              "summary": "Letné obdobie sa považuje za jedno z najčastejších období, kedy dochádza k vzniku alebo zhoršeniu infekcií močových ciest. Počas cestovania, zmien podnebia, kúpania vo vodných nádržiach a dlhého pobytu na slnku sa zvyšuje riziko zápalu sliznice močového mechúra.",
+              "url": "https://www.aktuality.sk/clanok/6KcRsLj/preco-sa-cystitida-zhorsuje-v-lete-pocas-dovolenky/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-10T07:30:00+00:00",
+              "image_url": "https://img.aktuality.sk/foto/ilustra-n-foto/MTU4eDEwNi9zbWFydC9maWx0ZXJzOmZvcm1hdChqcGcpL2h0dHA6Ly9sb2NhbGhvc3Q6ODEvcHVsc2Ntcy10cmFuc2Zvcm1zLzE=/0QQktkpTURBXy82MjQ2MmNlMzA5Mzk1YzAxOWUwNjYyNjgzODE3NmU4NC5qcGeSlQMAzJfNB9DNBGWVAs0H0ADCww?st=t5dkIC1fbNYCX_isjkW2RYeO1OldnCe_jWO3uUCx908&amp;ts=1781042400&amp;e=0",
+              "language": "sk"
+            }
+          ]
+        },
+        {
+          "id": "3228be18-7b38-4178-9469-bf174285c068",
+          "cluster_id": "8fffeee0733efad5",
+          "topic": "Demokrati v boji o Senát",
+          "category": "slovakia",
+          "synthesis": "Russia has deployed veterans from private military companies to protect its shadow fleet, including sanctioned tankers. The move has been revealed by international media outlets. This development highlights concerns about Russia's military activities.",
+          "has_depth": true,
+          "score": 5.05,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Aktuality.sk",
+              "headline": "Moskva na ochranu tieňovej flotily verbovalo žoldnierov s bojovými skúsenosťami",
+              "summary": "Moskva na ochranu tieňovej flotily verbovalo žoldnierov s bojovými skúsenosťami. Medzinárodné médiá teraz odhaľujú ich identitu.",
+              "url": "https://www.aktuality.sk/clanok/C1j52C4/moskva-na-ochranu-tienovej-flotily-verbovalo-zoldnierov-s-bojovymi-skusenostami/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-10T07:08:00+00:00",
+              "image_url": "https://img.aktuality.sk/foto/est-nske-n-morn-ctvo-zadr-alo-rusk-ropn-tanker-kiwala-z-tie-ovej-flotily/MTU4eDEwNi9zbWFydC9maWx0ZXJzOmZvcm1hdChqcGcpL2h0dHA6Ly9sb2NhbGhvc3Q6ODEvcHVsc2Ntcy10cmFuc2Zvcm1zLzE=/eLzktkpTURBXy9hODAxZDIyYjg1Y2IxNmYxNWIxODkyNWYzMzYxOTdiOS5qcGeSlQMAfM0Pgs0IuZUCzQfQAMLD?st=mMxuU-yiBpeziBRK5q9f1BnA5n9AN8CMnRsyX_A0h64&amp;ts=1781042400&amp;e=0",
+              "language": "sk"
+            }
+          ]
+        },
+        {
+          "id": "54bc29c5-c8dc-401d-9b01-91924baf092c",
+          "cluster_id": "0441cdf64b63102d",
+          "topic": "Moskva a žoldnierov",
+          "category": "slovakia",
+          "synthesis": "The US Congress has approved 70 billion dollars for Donald Trump's tough immigration policy, securing funds for ICE and border patrol until the end of the presidential term.",
+          "has_depth": false,
+          "score": 5.05,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "Aktuality.sk",
+              "headline": "Kongres USA schválil 70 miliárd dolárov na Trumpovu imigračnú politiku",
+              "summary": "Kongres USA schválil 70 miliárd dolárov na Trumpovu imigračnú politiku. Balík zaisťuje peniaze pre ICE a pohraničnú stráž až do konca mandátu prezidenta.",
+              "url": "https://www.aktuality.sk/clanok/QvNpETR/kongres-usa-schvalil-70-miliard-dolarov-na-trumpovu-imigracnu-politiku/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-10T07:01:00+00:00",
+              "image_url": "https://img.aktuality.sk/foto/agenti-ice-v-minneapolis/MTU4eDEwNi9zbWFydC9maWx0ZXJzOmZvcm1hdChqcGcpL2h0dHA6Ly9sb2NhbGhvc3Q6ODEvcHVsc2Ntcy10cmFuc2Zvcm1zLzE=/uhfktkpTURBXy81MDY5YTg3ZWMxZDBkMGRhOTJiZGNmY2RhYjI1NzI2OC5qcGeSlQMAzPHNHjHNEPuVAs0H0ADCww?st=03MhzkqXW7jGn_UnlxU14R9aJYbACuqj5A2IltUN2d8&amp;ts=1781042400&amp;e=0",
+              "language": "sk"
+            }
+          ]
+        },
+        {
+          "id": "95d69f0d-ee4f-4bd6-a979-916c2e7eda75",
           "cluster_id": "2edb4b03be541e6f",
           "topic": "Ruskí oligarchovia",
           "category": "slovakia",
-          "synthesis": "Russian oligarchs are facing a wave of nationalization as the Russian state seizes their assets, totaling nearly 13 billion euros, in a move seen as part of a broader crackdown on corruption.",
+          "synthesis": "Russian oligarchs are facing panic as the state seizes their assets, with a total value of nearly 13 billion euros, in a move related to corruption cases.",
           "has_depth": true,
           "score": 5.05,
           "importance": 5,
@@ -625,15 +546,15 @@
           ]
         },
         {
-          "id": "98b62afb-39a3-4b0d-837e-bc655b4af25b",
+          "id": "41b90278-2557-40ae-ac7f-37f1a97b7160",
           "cluster_id": "c5fcf3a60ac34575",
-          "topic": "Afganistan práva žien",
+          "topic": "Demonštrácia v Afganistane",
           "category": "slovakia",
-          "synthesis": "Protesty v Afganistane proti zásahom Talibanu voči ženám prerástli do násilností, polícia musela demonštráciu rozohnať.",
+          "synthesis": "Protesters in Herat, Afghanistan, demonstrated against the Taliban's moral police crackdown on women's rights, with the situation escalating into violence.",
           "has_depth": true,
           "score": 5.05,
-          "importance": 4,
-          "relevance": 5,
+          "importance": 5,
+          "relevance": 4,
           "is_breaking": true,
           "is_top5": false,
           "estimated_seconds": 20,
@@ -641,7 +562,7 @@
             {
               "source": "Aktuality.sk",
               "headline": "Polícia v Afganistane rozohnala demonštráciu za práva žien v Heráte",
-              "summary": "Muži v afganskom Heráte demonštrovali proti zásahu mravnostnej polície Talibanu voči ženám bez čádoru či burky. Protest podľa svedkov prerástol do násilností.",
+              "summary": "Polícia v Afganistane rozohnala demonštráciu za práva žien v Heráte. Protest podľa svedkov prerástol do násilností.",
               "url": "https://www.aktuality.sk/clanok/QAWfG18/policia-v-afganistane-rozohnala-demonstraciu-za-prava-zien-v-herate/",
               "angle": "news",
               "is_subscription": false,
@@ -650,264 +571,206 @@
               "language": "sk"
             }
           ]
-        }
-      ]
-    },
-    "war": {
-      "label": "Ukraine–Russia War",
-      "emoji": "🔴",
-      "accent": "#CC2222",
-      "story_count": 3,
-      "stories": [
-        {
-          "id": "7be1f8a3-c249-443a-9191-5b4099679e29",
-          "cluster_id": "17d636cf8ee9574a",
-          "topic": "Russian drone attack",
-          "category": "war",
-          "synthesis": "Russian drone attacks on Ukraine resulted in significant damage and casualties. Ukrainian air defences destroyed a large number of drones, but some managed to hit residential buildings and critical infrastructure.",
-          "has_depth": true,
-          "score": 5.5,
-          "importance": 5,
-          "relevance": 5,
-          "is_breaking": true,
-          "is_top5": false,
-          "estimated_seconds": 47,
-          "sources": [
-            {
-              "source": "Ukrainska Pravda",
-              "headline": "Ukrainian air defences downs over 180 out of 207 Russian drones, hits recorded at 14 locations",
-              "summary": "Ukrainian air defences downs over 180 out of 207 Russian drones, hits recorded at 14 locations. The attack was part of a large-scale overnight operation.",
-              "url": "https://www.pravda.com.ua/eng/news/2026/06/10/8038586/",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T05:17:00+00:00",
-              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/5/c/846151/5cfc14f1e16d3eee89282bf81865f111.jpeg",
-              "language": "en"
-            },
-            {
-              "source": "Ukrainska Pravda",
-              "headline": "Russian drones strike residential buildings in Odesa: apartment destroyed, civilians injured – photos",
-              "summary": "Russian drones strike residential buildings in Odesa: apartment destroyed, civilians injured – photos. The attack caused significant damage to the city's infrastructure.",
-              "url": "https://www.pravda.com.ua/eng/news/2026/06/10/8038573/",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-09T23:32:00+00:00",
-              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/3/6/846107/3659b2f4381fa531b3d5f3c609bd18d5.jpeg",
-              "language": "en"
-            },
-            {
-              "source": "Ukrainska Pravda",
-              "headline": "Two men injured in Russian drone attack on Kherson",
-              "summary": "Two men injured in Russian drone attack on Kherson. The attack occurred in the city's Tsentralnyi (Central) district.",
-              "url": "https://www.pravda.com.ua/eng/news/2026/06/10/8038569/",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-09T21:14:00+00:00",
-              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/2/1/846077/217f348c64550de39cc640e9d986e5b6.jpeg",
-              "language": "en"
-            },
-            {
-              "source": "Ukrainska Pravda",
-              "headline": "Russian drone kills woman in civilian car in Kharkiv Oblast",
-              "summary": "Russian drone kills woman in civilian car in Kharkiv Oblast. The attack occurred between the settlements of Ruska Lozova and Pytomnyk.",
-              "url": "https://www.pravda.com.ua/eng/news/2026/06/09/8038532/",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-09T16:11:00+00:00",
-              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/6/6/845994/66765efc25557b380eddc7d0cd99025a.jpeg",
-              "language": "en"
-            },
-            {
-              "source": "Ukrainska Pravda",
-              "headline": "Russian drone destroys Holy Dormition Church in Dnipropetrovsk Oblast",
-              "summary": "Russian drone destroys Holy Dormition Church in Dnipropetrovsk Oblast. The church caught fire as a result of the attack.",
-              "url": "https://www.pravda.com.ua/eng/news/2026/06/09/8038524/",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-09T15:05:00+00:00",
-              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/a/7/845947/a722c977598281657307733ee262da78.jpeg",
-              "language": "en"
-            },
-            {
-              "source": "The Guardian",
-              "headline": "Russian drone hits building storing spent nuclear fuel near Chornobyl",
-              "summary": "Russian drone hits building storing spent nuclear fuel near Chornobyl. The attack was described as 'extremely vile' by Ukraine's president Volodymyr Zelenskyy.",
-              "url": "https://www.theguardian.com/world/2026/jun/07/russian-drone-hits-building-spent-nuclear-fuel-chornobyl",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-07T19:01:28Z",
-              "image_url": "https://media.guim.co.uk/bd979dfda670cc2ef772c7619deb1e8e4e38603d/186_0_2116_1693/500.jpg",
-              "language": "en"
-            }
-          ]
         },
         {
-          "id": "997f6cb9-330b-423e-af23-f435c391356d",
-          "cluster_id": "5c591fefabcda3b2",
-          "topic": "Russian attack",
-          "category": "war",
-          "synthesis": "Russian forces have launched attacks on multiple settlements in Ukraine, causing injuries and damage to civilian infrastructure. The attacks targeted areas in Zaporizhzhia Oblast and Kharkiv, with several explosions reported.",
-          "has_depth": false,
-          "score": 5.5,
-          "importance": 5,
-          "relevance": 5,
-          "is_breaking": true,
-          "is_top5": false,
-          "estimated_seconds": 26,
-          "sources": [
-            {
-              "source": "Ukrainska Pravda",
-              "headline": "Russian forces attack 46 settlements in Zaporizhzhia Oblast, 10 people injured and infrastructure facilities damaged",
-              "summary": "Російські сили атакували 46 поселень у Запорізькій області, 10 осіб поранені та пошкоджені інфраструктурні об'єкти.",
-              "url": "https://www.pravda.com.ua/eng/news/2026/06/10/8038582/",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T04:16:00+00:00",
-              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/d/3/846119/d3a3950f8beb14896b16540ea94ae694.jpeg",
-              "language": "en"
-            },
-            {
-              "source": "Ukrainska Pravda",
-              "headline": "Russians launched 26 strikes on Kharkiv at dawn, people injured",
-              "summary": "Росіяни розпочали 26 повітряних ударів по Харкові вранці, люди поранені.",
-              "url": "https://www.pravda.com.ua/eng/news/2026/06/10/8038577/",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T01:46:00+00:00",
-              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/4/0/846194/4043b16bbb9fbe4865f86b2800eadd55.jpeg",
-              "language": "en"
-            },
-            {
-              "source": "Ukrainska Pravda",
-              "headline": "Family with young children injured in Russian attack on Zaporizhzhia district",
-              "summary": "Російські сили атакували Вільнянськ у Запорізькому районі 9 червня, поранені 4 людини, серед яких 2 дітей.",
-              "url": "https://www.pravda.com.ua/eng/news/2026/06/09/8038559/",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-09T19:22:00+00:00",
-              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/e/4/846048/e4b04c0e1ddf276f77f43a354a129b9c.jpeg",
-              "language": "en"
-            },
-            {
-              "source": "Ukrainska Pravda",
-              "headline": "Casualties reported as Russian forces attack Kharkiv, with several explosions heard",
-              "summary": "Російські сили атакували Харків ввечері 9 червня, повідомлено про поранених осіб та декілька вибухів.",
-              "url": "https://www.pravda.com.ua/eng/news/2026/06/09/8038523/",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-09T18:24:00+00:00",
-              "image_url": "https://uimg.pravda.com.ua/buckets/upstatic/images/doc/0/b/845952/0b770ae20baab6477e0ae1f4b381de23.jpeg",
-              "language": "en"
-            }
-          ]
-        },
-        {
-          "id": "73503985-9edc-4ff2-bb7b-5c52a40c9e0e",
-          "cluster_id": "11310f099612633f",
-          "topic": "Moscow car bomb",
-          "category": "war",
-          "synthesis": "A car bomb in Moscow killed the Russian ammunition chief, amid ongoing Ukrainian attacks that have caused panic buying of fuel in Russia.",
+          "id": "e8a2df54-352d-492f-8efd-e5ef1706eacb",
+          "cluster_id": "73cc46a6bc5f5700",
+          "topic": "Putinov pád",
+          "category": "slovakia",
+          "synthesis": "Russian neighbors are preparing for chaos following Putin's potential downfall, with uncertainty surrounding distant allies.",
           "has_depth": true,
-          "score": 5.5,
+          "score": 5.05,
           "importance": 5,
-          "relevance": 5,
+          "relevance": 4,
           "is_breaking": true,
           "is_top5": false,
           "estimated_seconds": 20,
           "sources": [
             {
-              "source": "The Guardian",
-              "headline": "Ukraine war briefing: Moscow car bomb kills Russian ammunition chief – reports",
-              "summary": "A car bomb in Moscow has killed the Russian ammunition chief, a high-ranking military officer, according to reports. The attack comes as Ukrainian forces continue to strike deep into Russian territory, causing widespread disruption and panic buying of fuel.",
-              "url": "https://www.theguardian.com/world/2026/jun/10/ukraine-war-briefing-moscow-car-bomb-kills-russian-ammunition-chief-reports",
+              "source": "Denník N",
+              "headline": "Putin sľuboval Rusom rýchle a ľahké víťazstvo. Jeho pád sa blíži",
+              "summary": "Putin sľuboval Rusom rýchle a ľahké víťazstvo. Jeho pád sa blíži, pričom susedia Ruska sa pripravujú na chaos.",
+              "url": "https://dennikn.sk/5382823/putin-sluboval-rusom-rychle-a-lahke-vitazstvo-jeho-pad-sa-blizi/",
               "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T01:01:18Z",
-              "image_url": "https://media.guim.co.uk/d34048e73d4df81250392997e455dd1776b7e316/852_0_4260_3408/500.jpg",
+              "is_subscription": true,
+              "published": "2026-06-10T04:33:45+00:00",
+              "image_url": "https://img.projektn.sk/wp-static/2026/06/acmejpg.jpg?w=450&amp;h=300&amp;fit=crop&amp;fm=jpg&amp;q=85",
+              "language": "sk"
+            }
+          ]
+        }
+      ]
+    },
+    "global": {
+      "label": "Global",
+      "emoji": "🌍",
+      "accent": "#F59E0B",
+      "story_count": 2,
+      "stories": [
+        {
+          "id": "4b6eccd4-0f4c-4f28-8b4d-265128497889",
+          "cluster_id": "85b5d18472fde980",
+          "topic": "US Expands Chinese Tech Companies List",
+          "category": "global",
+          "synthesis": "The US has expanded its list of Chinese tech companies that pose a national-security risk, adding several well-known companies to the annually updated list. This move is part of the US government's efforts to counter China's military and technological advancements. The list now includes more companies that allegedly assist Beijing's military.",
+          "has_depth": true,
+          "score": 5.5,
+          "importance": 5,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 28,
+          "sources": [
+            {
+              "source": "WSJ World",
+              "headline": "U.S. Expands List of Chinese Tech Companies It Says Assist Beijing’s Military",
+              "summary": "The U.S. has expanded its list of Chinese tech companies it says assist Beijing's military, adding several well-known companies to the list. The companies were added to the list as part of the U.S. government's efforts to counter China's military and technological advancements.",
+              "url": "https://www.wsj.com/politics/national-security/u-s-expands-list-of-chinese-tech-companies-it-says-assists-beijings-military-a2c6c6b9",
+              "angle": "news",
+              "is_subscription": true,
+              "published": "2026-06-09T10:10:00+00:00",
+              "image_url": "https://images.wsj.net/im-99029602",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "cf71ed64-04a7-462e-9e76-420a989cc5c1",
+          "cluster_id": "b485adc1ed70ae50",
+          "topic": "Iran's Attack on Israel",
+          "category": "global",
+          "synthesis": "Iran's attack on Israel reveals its new and aggressive regional ambitions, particularly in its willingness to protect Hezbollah. This move indicates a significant shift in Iran's risk appetite, which didn't exist before the war. The attack showcases Iran's expanding influence in the region.",
+          "has_depth": true,
+          "score": 5.5,
+          "importance": 5,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 21,
+          "sources": [
+            {
+              "source": "WSJ World",
+              "headline": "Iran’s Attack on Israel Reveals New and Aggressive Regional Ambitions",
+              "summary": "The move to protect Hezbollah shows an appetite for risk that didn’t exist before the war. Iran’s attack on Israel reveals new and aggressive regional ambitions.",
+              "url": "https://www.wsj.com/world/middle-east/irans-attack-on-israel-reveals-new-and-aggressive-regional-ambitions-46a63383",
+              "angle": "news",
+              "is_subscription": true,
+              "published": "2026-06-09T00:00:00+00:00",
+              "image_url": "https://images.wsj.net/im-91347325",
               "language": "en"
             }
           ]
         }
       ]
+    },
+    "economy": {
+      "label": "Economy & Finance",
+      "emoji": "📈",
+      "accent": "#6B7280",
+      "story_count": 1,
+      "stories": [
+        {
+          "id": "26ae6164-813e-4d98-900c-2c0f7cbc8150",
+          "cluster_id": "494142132940d45f",
+          "topic": "US Strikes Iran",
+          "category": "economy",
+          "synthesis": "The US launched military strikes against Iran, raising concerns about renewed clashes and their impact on global shipping. Oil prices rose as a result, and the conflict has also affected China's economy. The situation remains tense with both sides exchanging attacks.",
+          "has_depth": true,
+          "score": 5.5,
+          "importance": 5,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 43,
+          "sources": [
+            {
+              "source": "CNBC",
+              "headline": "Oil choppy after U.S. completes Iran strikes following Apache helicopter attack",
+              "summary": "Oil prices rose after the U.S. launched military strikes against Iran, raising concerns that renewed clashes may threaten shipping through the Strait of Hormuz. The strikes were completed following an Apache helicopter attack.",
+              "url": "https://www.cnbc.com/2026/06/10/oil-price-us-completes-iran-strikes-after-apache-helicopter-attack.html",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-10T08:58:46+00:00",
+              "image_url": null,
+              "language": "en"
+            },
+            {
+              "source": "CNBC",
+              "headline": "Tehran targets Bahrain, Kuwait and Jordan after U.S. strikes Iranian assets",
+              "summary": "The latest clash with Iran over the Strait of Hormuz came as President Donald Trump repeated that a deal with Tehran could be reached within days. Tehran has targeted Bahrain, Kuwait and Jordan after the U.S. strikes.",
+              "url": "https://www.cnbc.com/2026/06/09/trump-iran-helicopter-hormuz-strait.html",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-10T04:25:55+00:00",
+              "image_url": null,
+              "language": "en"
+            },
+            {
+              "source": "CNBC",
+              "headline": "China May wholesale inflation hits near 4-year high on Iran war-led higher input costs, AI boom",
+              "summary": "The Middle East conflict has given China's economy a reflationary boost as energy and raw material disruptions deepened. China's wholesale inflation has hit a near 4-year high due to the Iran war.",
+              "url": "https://www.cnbc.com/2026/06/10/china-cpi-ppi-inflation-may-consumer-prices-producer-oil-iran-war-ai-tech-.html",
+              "angle": "data",
+              "is_subscription": false,
+              "published": "2026-06-10T04:13:20+00:00",
+              "image_url": null,
+              "language": "en"
+            }
+          ]
+        }
+      ],
+      "market_snapshot": {
+        "EURUSD": {
+          "value": 1.1555,
+          "delta": -0.0054,
+          "pct": -0.47
+        },
+        "EURCZK": {
+          "value": 24.1757,
+          "delta": -0.0272,
+          "pct": -0.11
+        },
+        "SP500": {
+          "value": 7386.65,
+          "delta": -223.13,
+          "pct": -2.93
+        },
+        "DAX": {
+          "value": 24292.61,
+          "delta": -503.33,
+          "pct": -2.03
+        },
+        "BTCUSD": {
+          "value": 60882.36,
+          "delta": 14.946,
+          "pct": 0.02
+        }
+      }
     },
     "tech": {
       "label": "Tech",
       "emoji": "💻",
       "accent": "#7C3AED",
-      "story_count": 4,
+      "story_count": 2,
       "stories": [
         {
-          "id": "ce361a64-d3a2-444b-88ff-48731f601184",
-          "cluster_id": "79d3c2f223b21b49",
-          "topic": "Google AI Liability",
-          "category": "tech",
-          "synthesis": "A German court has ruled that Google is liable for false answers in its AI-powered search results, specifically in the 'Knowledge Graph' section. This decision has significant implications for the tech giant's AI liability and potential consequences for its users. The ruling sets a precedent for future cases involving AI-generated content.",
-          "has_depth": true,
-          "score": 5.5,
-          "importance": 5,
-          "relevance": 5,
-          "is_breaking": true,
-          "is_top5": false,
-          "estimated_seconds": 27,
-          "sources": [
-            {
-              "source": "Hacker News",
-              "headline": "German ruling declares Google liable for false answers in AI Overviews",
-              "summary": "A German court has ruled that Google is liable for false answers in its AI-powered search results, specifically in the 'Knowledge Graph' section. This decision has significant implications for the tech giant's AI liability and potential consequences for its users.",
-              "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T01:44:13+00:00",
-              "image_url": null,
-              "language": "en"
-            }
-          ]
-        },
-        {
-          "id": "50d40cbf-0f65-4da6-a8a9-bad3768b179f",
-          "cluster_id": "1253f28535b7f21f",
-          "topic": "Apple Vision Pro",
-          "category": "tech",
-          "synthesis": "Apple's Vision Pro headset has received an update with AI capabilities in VisionOS 27, potentially paving the way for future smart glasses. The update includes several new features and improvements. These advancements aim to enhance the user experience and functionality of the headset.",
-          "has_depth": true,
-          "score": 5.5,
-          "importance": 5,
-          "relevance": 5,
-          "is_breaking": true,
-          "is_top5": false,
-          "estimated_seconds": 20,
-          "sources": [
-            {
-              "source": "CNET",
-              "headline": "Apple's Vision Pro Sees the World With AI in VisionOS 27",
-              "summary": "The latest VisionOS updates give Apple's headset a few things that future glasses could also add. There are other interesting additions, too.",
-              "url": "https://www.cnet.com/tech/computing/apple-visionos-wwdc-2026/",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-10T01:05:00+00:00",
-              "image_url": "https://www.cnet.com/a/img/resize/ab0090cc099c46863e5074da59f7abe91e6a3812/hub/2025/10/20/ac16bb35-d84c-4c9a-8968-cc8368514e84/p1024950-mp4-00-00-10-56-still001.jpg?auto=webp&fit=crop&height=614&width=1092",
-              "language": "en"
-            }
-          ]
-        },
-        {
-          "id": "4b95e8e4-484b-41a2-aaa8-08df03585c27",
+          "id": "81666e51-4e2b-4df5-a09d-32c34725db6d",
           "cluster_id": "92c453485c8841ee",
-          "topic": "Ukraine Drones",
+          "topic": "Ukraine drone production",
           "category": "tech",
-          "synthesis": "Ukraine aims to become the world's largest drone and robot producer, potentially surpassing China, Russia, and the US combined, with the help of allied funding. The country plans to produce over 30 million units annually within years. This expansion is expected to enable deep strike operations inside Russia.",
+          "synthesis": "Ukraine aims to become the world's largest drone and robot producer, potentially surpassing China, Russia, and the US combined, with the help of allied funding. The country's goal is to produce over 30 million units annually within years. This move is part of Ukraine's strategy to expand its military capabilities, particularly in deep strike operations inside Russia.",
           "has_depth": true,
           "score": 5.5,
           "importance": 5,
           "relevance": 5,
           "is_breaking": true,
           "is_top5": false,
-          "estimated_seconds": 24,
+          "estimated_seconds": 29,
           "sources": [
             {
               "source": "TechRadar",
               "headline": "'More than any other country in the world' - Ukraine wants to be the biggest drone and robot producer worldwide, outstripping China, Russia, and the US combined —Kyiv claims it could build more than 30 million units annually within years",
-              "summary": "Ukraine wants to be the biggest drone and robot producer worldwide, outstripping China, Russia, and the US combined —Kyiv claims it could build more than 30 million units annually within years",
+              "summary": "'More than any other country in the world' - Ukraine wants to be the biggest drone and robot producer worldwide, outstripping China, Russia, and the US combined —Kyiv claims it could build more than 30 million units annually within years",
               "url": "https://www.techradar.com/pro/more-than-any-other-country-in-the-world-ukraine-wants-to-be-the-biggest-drone-and-robot-producer-worldwide-outstripping-china-russia-and-the-us-combined-kyiv-could-build-more-than-30-million-units-annually-within-years",
               "angle": "news",
               "is_subscription": false,
@@ -918,28 +781,28 @@
           ]
         },
         {
-          "id": "a087dd30-9009-493c-aff3-8faffae99889",
-          "cluster_id": "9b2f2f6c7d08fabb",
-          "topic": "AI Astrophysics",
+          "id": "e4166a98-6b23-4bb2-bc08-61cd1414ecf0",
+          "cluster_id": "59443428d032183c",
+          "topic": "How Justin Ernest invested nearly $500M into hot",
           "category": "tech",
-          "synthesis": "Researchers warn that AI tools may lead to a decline in astrophysics, threatening the careers of thousands of scientists. This shift could result from AI's potential to weaken scientific reasoning and transform research, publishing, training, and academic culture. ",
+          "synthesis": "Justin Ernest, founder of Sabertooth VC, invested nearly $500M in startups like Anthropic, Anduril, and SpaceX without a traditional VC fund. He achieved this by leveraging a captive network of limited partners. This approach allowed him to bypass the typical year-long process of raising a formal venture fund.",
           "has_depth": true,
           "score": 5.5,
           "importance": 5,
           "relevance": 5,
           "is_breaking": true,
           "is_top5": false,
-          "estimated_seconds": 20,
+          "estimated_seconds": 28,
           "sources": [
             {
-              "source": "TechRadar",
-              "headline": "'AI tools could lead to nothing less than the death of astrophysics': Researchers predict bleak future for thousands who study black holes, galaxies, and supernovae",
-              "summary": "Researchers predict that AI tools could lead to the death of astrophysics, as they may weaken scientific reasoning and transform research, publishing, training, and academic culture worldwide.",
-              "url": "https://www.techradar.com/pro/ai-tools-could-lead-to-nothing-less-than-the-death-of-astrophysics-researchers-predict-bleak-future-for-thousands-who-study-black-holes-galaxies-and-supernovae",
+              "source": "TechCrunch",
+              "headline": "How Justin Ernest invested nearly $500M into hot startups without a traditional VC fund",
+              "summary": "Justin Ernest, the founder of Sabertooth VC, has invested nearly $500M in startups like Anthropic, Anduril, and SpaceX without a traditional VC fund. Instead of spending a year raising a formal venture fund, Ernest used a captive network of limited partners to invest in these companies.",
+              "url": "https://techcrunch.com/2026/06/09/how-justin-ernest-invested-nearly-500m-into-hot-startups-without-a-traditional-vc-fund/",
               "angle": "news",
               "is_subscription": false,
-              "published": "2026-06-09T22:35:00+00:00",
-              "image_url": "https://cdn.mos.cms.futurecdn.net/8i8FJ3ZW2KdH2rrSJdDqkX-1280-80.jpg",
+              "published": "2026-06-09T23:17:51+00:00",
+              "image_url": null,
               "language": "en"
             }
           ]
@@ -950,15 +813,42 @@
       "label": "HR & Management",
       "emoji": "👥",
       "accent": "#0891B2",
-      "story_count": 1,
+      "story_count": 4,
       "stories": [
         {
-          "id": "71a41111-e0cb-4e63-8094-1e12665aa9cd",
-          "cluster_id": "7ef6f38cf356c0e6",
-          "topic": "AI IPO wave",
+          "id": "ae11fc20-2339-456e-98df-b89eee303939",
+          "cluster_id": "00772838eb94f5cc",
+          "topic": "Video Intelligence Layer for AI",
           "category": "hr",
-          "synthesis": "The AI IPO wave is on the horizon with OpenAI, Meta AI, and Google DeepMind set to go public, testing Wall Street's appetite for these tech companies.",
-          "has_depth": false,
+          "synthesis": "Plot, a startup backed by Alexis Ohanian, is developing a 'Video Intelligence Layer' for AI to help brands identify untagged appearances in social video. The company has raised $10 million in funding to support its efforts. This technology aims to improve video content analysis and management for businesses.",
+          "has_depth": true,
+          "score": 5.5,
+          "importance": 5,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 26,
+          "sources": [
+            {
+              "source": "Inc. Magazine",
+              "headline": "Forget Text: Why Alexis Ohanian Is Backing a Startup Building the ‘Video Intelligence Layer’ for AI",
+              "summary": "Forget Text: Why Alexis Ohanian Is Backing a Startup Building the ‘Video Intelligence Layer’ for AI. Plot is developing a platform that can identify and tag untagged appearances in social video, helping brands better understand their online presence.",
+              "url": "https://www.inc.com/ashley-couto/alexis-ohanian-startup-video-intelligence-layer-ai-plot/91357436",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T20:18:47+00:00",
+              "image_url": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/06/alexis-ohanian-ai-inc.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "6847bc84-21de-46af-9081-fca1f193d502",
+          "cluster_id": "0fa12601f3374bbb",
+          "topic": "Databricks Valuation and AI",
+          "category": "hr",
+          "synthesis": "Databricks is aiming for a $175 billion valuation, with its CRO stating they're building a trillion-dollar company. This valuation is a significant milestone for the AI company, which is looking to its next funding round rather than an IPO. Databricks is focusing on its growth and expansion.",
+          "has_depth": true,
           "score": 5.5,
           "importance": 5,
           "relevance": 5,
@@ -967,76 +857,257 @@
           "estimated_seconds": 20,
           "sources": [
             {
-              "source": "Fast Company",
-              "headline": "The AI IPO wave is about to test Wall Street’s appetite",
-              "summary": "The AI IPO rush is here. With OpenAI's announcement late Monday that it had confidentially filed for an IPO, the three biggest AI companies are all in line to go public.",
-              "url": "https://www.fastcompany.com/91556514/the-ai-ipo-wave-is-about-to-test-wall-streets-appetite",
+              "source": "Inc. Magazine",
+              "headline": "Databricks Is Eyeing a $175 Billion Valuation. Its CRO Says They’re Building a Trillion-Dollar Company",
+              "summary": "Databricks Is Eyeing a $175 Billion Valuation. Its CRO Says They’re Building a Trillion-Dollar Company",
+              "url": "https://www.inc.com/moses-jeanfrancois/databricks-eyes-175-billion-valuation-cro-says-they-are-building-trillion-dollar-company/91358449",
               "angle": "news",
               "is_subscription": false,
-              "published": "2026-06-09T16:30:08+00:00",
-              "image_url": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/06/p-1-open-ai-ipo.png",
+              "published": "2026-06-09T19:33:02+00:00",
+              "image_url": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/06/databricks-funding-series-ali-ghodsi-inc-2279132497.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "b409168f-de20-445d-8944-db9dddcb179b",
+          "cluster_id": "f55f0d5fde711950",
+          "topic": "Nvidia AI Collaboration and Multitrillion-Dollar",
+          "category": "hr",
+          "synthesis": "Nvidia CEO Jensen Huang has announced a new multitrillion-dollar AI collaboration with an unexpected partner, aiming to integrate humanoids into daily life. The partnership seeks to advance AI capabilities and bring human-like robots into various industries. This move is expected to revolutionize the way humans interact with technology.",
+          "has_depth": true,
+          "score": 5.5,
+          "importance": 5,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 22,
+          "sources": [
+            {
+              "source": "Inc. Magazine",
+              "headline": "Nvidia CEO Jensen Huang Just Announced a New Multitrillion-Dollar AI Collaboration With an Unexpected Partner",
+              "summary": "Nvidia CEO Jensen Huang Just Announced a New Multitrillion-Dollar AI Collaboration With an Unexpected Partner. The tech giant wants to integrate humanoids into your day-to-day life.",
+              "url": "https://www.inc.com/moses-jeanfrancois/nvidia-ceo-jensen-huang-announced-a-new-multi-trillion-dollar-collaboration-unexpected-partner/91357915",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T18:05:00+00:00",
+              "image_url": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/06/lg-nvidia-humanoid-robots-inc.jpg",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "3c85f2c9-e243-4a04-a852-31e9c336d36d",
+          "cluster_id": "d40c1b303b117f68",
+          "topic": "Anthropic Mythos-Class Model Release",
+          "category": "hr",
+          "synthesis": "Anthropic has released a powerful Mythos-Class model, Claude Fable 5, to the public with safeguards in place. This model is more capable than any previous public release and excels in software engineering, knowledge work, and vision tasks.",
+          "has_depth": true,
+          "score": 5.5,
+          "importance": 5,
+          "relevance": 5,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 31,
+          "sources": [
+            {
+              "source": "Inc. Magazine",
+              "headline": "Anthropic Just Released a Powerful Mythos-Class Model to the Public—With Some Key Safeguards",
+              "summary": "Anthropic Just Released a Powerful Mythos-Class Model to the Public—With Some Key Safeguards. Meet Claude Fable 5, Anthropic’s version of Claude Mythos for everyday users.",
+              "url": "https://www.inc.com/ben-sherry/anthropic-just-released-claude-fable-5-mythos-class-model-to-the-public-with-key-restrictions/91357769",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T17:00:43+00:00",
+              "image_url": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/06/anthropic-claude-fable-5-mythos-inc-2276530952.jpg",
+              "language": "en"
+            },
+            {
+              "source": "Fast Company",
+              "headline": "Anthropic releases a version of its vaunted Mythos model to developers",
+              "summary": "Anthropic releases a version of its vaunted Mythos model to developers. The AI startup said Claude Fable 5 is more capable than any other model it has released to the public, showing outstanding performance in software engineering, knowledge work, and vision tasks.",
+              "url": "https://www.fastcompany.com/91556393/anthropic-mythos-developer-version",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T17:00:00+00:00",
+              "image_url": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/06/p-91556393-anthropic-releases-a-version-of-its-vaunted-mythos-model-to-developers.png",
               "language": "en"
             }
           ]
         }
       ]
     },
-    "health": {
-      "label": "Health & Lifestyle",
-      "emoji": "🏃",
-      "accent": "#059669",
-      "story_count": 2,
+    "europe": {
+      "label": "Europe & Defense",
+      "emoji": "🇪🇺",
+      "accent": "#003399",
+      "story_count": 3,
       "stories": [
         {
-          "id": "0d76f7ff-b49f-4946-965f-7ae4b80a61c4",
-          "cluster_id": "ddd69cfb806adaaa",
-          "topic": "cholesterol drug",
-          "category": "health",
-          "synthesis": "Scientists have made a breakthrough in treating high cholesterol with a one-time drug that has shown promising results in a recent clinical trial.",
+          "id": "9e6dafc2-cd4b-4664-8c85-c355eaad0605",
+          "cluster_id": "05c41301d70897a8",
+          "topic": "HIMARS for France",
+          "category": "europe",
+          "synthesis": "Lockheed Martin has offered France a 18-month timeline to replace its legacy LRU launchers with HIMARS systems, as part of a €600 million contract. This move aims to modernize France's artillery capabilities. HIMARS is a US-made multiple launch rocket system.",
           "has_depth": true,
-          "score": 5.5,
+          "score": 5.05,
           "importance": 5,
-          "relevance": 5,
+          "relevance": 4,
           "is_breaking": true,
           "is_top5": false,
-          "estimated_seconds": 20,
+          "estimated_seconds": 21,
           "sources": [
             {
-              "source": "Men's Health",
-              "headline": "Scientists are Inventing a One-Time Drug to Permanently Fix High Cholesterol. It’s Actually Working.",
-              "summary": "Scientists are Inventing a One-Time Drug to Permanently Fix High Cholesterol. It’s Actually Working.",
-              "url": "https://www.menshealth.com/health/a71515583/gene-editing-high-cholesterol-treatment/",
+              "source": "Breaking Defense",
+              "headline": "Lockheed pitches HIMARS for France, with 18-month timeline offer",
+              "summary": "Lockheed pitches HIMARS for France, with 18-month timeline offer. The company is looking to replace France's legacy LRU launchers with the HIMARS system, which has been allocated €600 million.",
+              "url": "https://breakingdefense.com/2026/06/lockheed-pitches-himars-for-france-with-18-month-timeline-offer/",
               "angle": "news",
               "is_subscription": false,
-              "published": "2026-06-07T15:15:52+00:00",
-              "image_url": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1945563728-1-6924bd2de0724.jpg",
+              "published": "2026-06-10T06:15:00+00:00",
+              "image_url": "https://breakingdefense.com/wp-content/uploads/sites/13/2024/02/7627811-1024x566.jpg",
               "language": "en"
             }
           ]
         },
         {
-          "id": "b6fa966c-3b79-457d-80d4-a3aa6564e780",
-          "cluster_id": "17d6c46e79dc5021",
-          "topic": "atherosclerosis",
-          "category": "health",
-          "synthesis": "Researchers are exploring a gene therapy that targets PCSK9 to profoundly lower lipids, potentially marking the beginning of the end of atherosclerosis. This early trial aims to investigate the efficacy of this novel approach. The results could have significant implications for the treatment of atherosclerosis.",
+          "id": "a8875c42-5aa2-46a1-9022-08d27f78610f",
+          "cluster_id": "85d4b1603383edb3",
+          "topic": "US-Iran conflict",
+          "category": "europe",
+          "synthesis": "The US launched retaliatory strikes against Iran after a US helicopter was downed, with President Donald Trump seeking a deal to end the war. The strikes follow a pattern of sporadic military action by the US against Iran since February. The US aims to negotiate a deal to end the conflict.",
           "has_depth": true,
-          "score": 5.5,
+          "score": 5.05,
           "importance": 5,
-          "relevance": 5,
+          "relevance": 4,
           "is_breaking": true,
           "is_top5": false,
-          "estimated_seconds": 25,
+          "estimated_seconds": 45,
           "sources": [
             {
-              "source": "Peter Attia",
-              "headline": "The beginning of the end of atherosclerosis?",
-              "summary": "An early trial for a gene therapy that targets PCSK9 and profoundly lowers lipids is underway, offering hope for a new treatment for atherosclerosis. This innovative approach has the potential to revolutionize the way we manage this condition.",
-              "url": "https://peterattiamd.com/the-beginning-of-the-end-of-atherosclerosis/",
+              "source": "Politico Europe",
+              "headline": "US launches retaliatory strikes against Iran after downing of helicopter",
+              "summary": "President Donald Trump ordered the response as he seeks a deal to end the war. The US launched retaliatory strikes against Iran after a US helicopter was downed in the Strait of Hormuz.",
+              "url": "https://www.politico.com/news/2026/06/09/us-retaliatory-strikes-iran-00955278?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T22:52:45+00:00",
+              "image_url": null,
+              "language": "en"
+            },
+            {
+              "source": "Politico Europe",
+              "headline": "Trump thinks Iran deal ‘still close’ despite retaliatory strikes over downed helicopter",
+              "summary": "The president has sporadically threatened additional military action since taking out Iran’s leadership in February, but has avoided full-scale attacks. Trump thinks Iran deal ‘still close’ despite retaliatory strikes over downed helicopter.",
+              "url": "https://www.politico.com/news/2026/06/09/trump-thinks-iran-deal-still-close-despite-retaliatory-strikes-over-downed-helicopter-00955250?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T22:11:16+00:00",
+              "image_url": null,
+              "language": "en"
+            },
+            {
+              "source": "Defense News",
+              "headline": "US launches new strikes on Iran after helicopter downed",
+              "summary": "The U.S. launched strikes against Iran on Tuesday after Trump said Tehran had shot down a U.S. Apache helicopter in the Strait of Hormuz. The strikes were in response to the downing of the helicopter.",
+              "url": "https://www.defensenews.com/news/your-military/2026/06/09/us-launches-new-strikes-on-iran-after-helicopter-downed/",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T21:51:07+00:00",
+              "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/archetype/SPFJJKSVCRA3NITE3CYGVQCCLY.JPG",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "eeab497c-8c0e-40b7-9e32-efe25023bf56",
+          "cluster_id": "0fae093b5d949c6e",
+          "topic": "Rotterdam World Cup",
+          "category": "europe",
+          "synthesis": "Ukrainian President Volodymyr Zelenskyy discussed various topics in a wide-ranging interview, including Russia, drone warfare, and his interactions with world leaders.",
+          "has_depth": true,
+          "score": 5.05,
+          "importance": 5,
+          "relevance": 4,
+          "is_breaking": true,
+          "is_top5": false,
+          "estimated_seconds": 20,
+          "sources": [
+            {
+              "source": "The Guardian",
+              "headline": "‘They are isolated … they are alone’: Zelenskyy on Russia, Putin’s lies – and fighting back",
+              "summary": "In a wide-ranging interview, Zelenskyy expressed his views on Russia and Putin's lies, stating that Ukraine is prepared to share its experience of drone warfare with the west.",
+              "url": "https://www.theguardian.com/world/ng-interactive/2026/jun/09/volodymyr-zelenskyy-interview-russia-putin-drone-warfare-ukraine",
+              "angle": "news",
+              "is_subscription": false,
+              "published": "2026-06-09T05:00:46Z",
+              "image_url": "https://media.guim.co.uk/5e9862dd09729d700d6bd450389bdd06f0d48a7d/0_980_5464_4369/500.jpg",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    "random": {
+      "label": "Random",
+      "emoji": "🎲",
+      "accent": "#EC4899",
+      "story_count": 1,
+      "stories": [
+        {
+          "id": "750d8c41-785c-4bd4-b217-16f3b8ce7c71",
+          "topic": "The Strange History of Lorem Ipsum: How Cicero’s Words Became the World’s Favorite Placeholder Text",
+          "category": "random",
+          "synthesis": "Though seldom heard these days, the term “desktop publishing” once opened a great many eyes to the promise of the personal computer. It meant that one could create a publication without owning a press or contracting with an outfit that did. Indeed, the whole process of writing, design, and printing could take place on one’s […]",
+          "hook": "Cicero's words became the world's favorite placeholder text, a strange and fascinating tale of language and legacy.",
+          "has_depth": true,
+          "is_breaking": false,
+          "is_top5": false,
+          "score": 0.0,
+          "estimated_seconds": 90,
+          "sources": [
+            {
+              "source": "Open Culture",
+              "headline": "The Strange History of Lorem Ipsum: How Cicero’s Words Became the World’s Favorite Placeholder Text",
+              "summary": "Cicero's words became the world's favorite placeholder text, a strange and fascinating tale of language and legacy.",
+              "url": "https://www.openculture.com/2026/06/the-strange-history-of-lorem-ipsum.html",
+              "angle": "feature",
+              "is_subscription": false,
+              "published": "2026-06-09T09:00:01+00:00",
+              "image_url": "https://i.ytimg.com/vi/kL1PDqzqhM4/maxresdefault.jpg",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    "learning": {
+      "label": "Learning",
+      "emoji": "📚",
+      "accent": "#6366F1",
+      "story_count": 1,
+      "stories": [
+        {
+          "id": "1c8dce9b-e307-4c89-b3bc-a4ab40596f55",
+          "topic": "What shape is the Earth?",
+          "category": "learning",
+          "domain": "physics",
+          "synthesis": "Aeon's article 'What shape is the Earth?' tells the story of how scientists overcame the challenge of determining Earth's shape, highlighting the importance of measurement in scientific progress. By exploring the history of this challenge, the article reveals the value of perseverance and the power of human ingenuity in advancing our understanding of the world.",
+          "hook": "Discover the fascinating story of how scientists determined the true shape of Earth, revealing the value of measurement to scientific progress.",
+          "has_depth": true,
+          "is_breaking": false,
+          "is_top5": false,
+          "score": 0.0,
+          "estimated_seconds": 120,
+          "sources": [
+            {
+              "source": "Aeon",
+              "headline": "What shape is the Earth?",
+              "summary": "Aeon's article 'What shape is the Earth?' tells the story of how scientists overcame the challenge of determining Earth's shape, highlighting the importance of measurement in scientific progress. By exploring the history of this challenge, the article reveals the value of perseverance and the power of human ingenuity in advancing our understanding of the world.",
+              "url": "https://aeon.co/essays/why-did-measuring-earths-true-shape-matter-for-science",
               "angle": "analysis",
               "is_subscription": false,
-              "published": "2026-06-06T11:00:00+00:00",
-              "image_url": null,
+              "published": "2026-06-08T10:00:00+00:00",
+              "image_url": "https://images.aeonmedia.co/images/08cfa437-f506-451a-b888-d6a267e1130b/essay-final-skm-96_2_0026-copy.jpg?width=1200&amp;quality=75&amp;format=auto",
               "language": "en"
             }
           ]
@@ -1047,36 +1118,8 @@
       "label": "Sport",
       "emoji": "🏒⚽",
       "accent": "#1DB954",
-      "story_count": 1,
-      "stories": [
-        {
-          "id": "ab8ead89-c484-419c-86f6-f53c15bef883",
-          "cluster_id": "2f1d794c25da155a",
-          "topic": "Fifa World Cup",
-          "category": "sport",
-          "synthesis": "Fifa's control over the World Cup is being questioned after referee Omar Artan was denied entry to the United States, raising concerns about staff and supporters being turned back. This incident has sparked worries about the organization's ability to manage the tournament. The situation has led to speculation about the World Cup's overall management.",
-          "has_depth": true,
-          "score": 5.3887,
-          "importance": 5,
-          "relevance": 4,
-          "is_breaking": true,
-          "is_top5": false,
-          "estimated_seconds": 28,
-          "sources": [
-            {
-              "source": "BBC Sport",
-              "headline": "Does referee case show Fifa has lost control of its own World Cup?",
-              "summary": "Fifa has been accused of losing control of its own World Cup after a referee was denied entry to the United States. The decision to bar Omar Artan has sparked concerns about the treatment of staff and supporters.",
-              "url": "https://www.bbc.com/sport/football/articles/clyr6drdl79o?at_medium=RSS&at_campaign=rss",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-09T17:55:45+00:00",
-              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2b66/live/c8b5be70-6419-11f1-b8c4-d17e7970dcab.jpg",
-              "language": "en"
-            }
-          ]
-        }
-      ],
+      "story_count": 0,
+      "stories": [],
       "scoreboard": {
         "nhl": {
           "results": [
@@ -1426,164 +1469,6 @@
             "fixtures": [],
             "standings": []
           }
-        }
-      }
-    },
-    "europe": {
-      "label": "Europe & Defense",
-      "emoji": "🇪🇺",
-      "accent": "#003399",
-      "story_count": 1,
-      "stories": [
-        {
-          "id": "93615950-4185-4595-9ae7-943943440952",
-          "cluster_id": "18c38c4a45ce35b4",
-          "topic": "Ukraine Crimea",
-          "category": "europe",
-          "synthesis": "Ukraine's 'island strategy' is severely limiting Russia's ability to supply its occupied territories in Crimea, including fuel and munitions, prompting desperate measures from Russian commanders. The Ukrainian drone strikes have also led to a near-total cut-off of supplies to the peninsula, causing panic among Russian tourists.",
-          "has_depth": true,
-          "score": 4.6,
-          "importance": 4,
-          "relevance": 4,
-          "is_breaking": true,
-          "is_top5": false,
-          "estimated_seconds": 52,
-          "sources": [
-            {
-              "source": "EUobserver",
-              "headline": "Ukraine drones turning Crimea peninsula into an island (Ukraine Battlefield update, Day 1,566)",
-              "summary": "As Ukraine’s 'island strategy' for Crimea bites, Russian commanders are rerouting convoys, repainting trucks, and risking war crimes to keep fuel and munitions trickling to the front. Ukraine's drone strikes have turned Crimea into an island, cutting off supplies and causing chaos.",
-              "url": "https://euobserver.com/220844/ukraine-drones-turning-crimea-peninsula-into-an-island-ukraine-battlefield-update-day-1566/",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-09T14:21:05+00:00",
-              "image_url": "https://static.euobserver.com/2026/06/chongardetail-600x515.png",
-              "language": "en"
-            },
-            {
-              "source": "BBC Europe",
-              "headline": "Russia's fuel crisis intensifies as Ukraine steps up strikes on occupied territories",
-              "summary": "Kyiv has made it difficult for Moscow to provide military and civilian supplies to the territories it occupies, exacerbating a fuel crisis that is intensifying. Ukraine's strikes on occupied territories have disrupted the flow of fuel and other essential supplies.",
-              "url": "https://www.bbc.com/news/articles/cn75l36vdd8o?at_medium=RSS&at_campaign=rss",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-08T23:23:15+00:00",
-              "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d15c/live/a02730a0-635c-11f1-8e1d-bbbb1017d210.jpg",
-              "language": "en"
-            },
-            {
-              "source": "EUobserver",
-              "headline": "As Crimea faces near total cut-off, panicked Russian tourists cancel plans (Ukraine Battlefield update, Day 1,565)",
-              "summary": "Ukrainian drone strikes choking off fuel, bridges, and trains to Crimea, prompting pro-war Russian bloggers to turn on Putin, while tourists rush to cancel summer holidays on the peninsula. The near-total cut-off of supplies has caused panic among Russian tourists and those who support the war.",
-              "url": "https://euobserver.com/220640/as-crimea-risks-near-total-cut-off-panicked-russian-tourists-cancel-plans-ukraine-battlefield-update-day-1565/",
-              "angle": "news",
-              "is_subscription": false,
-              "published": "2026-06-08T14:59:03+00:00",
-              "image_url": "https://static.euobserver.com/2026/06/photo2026-05-3002-30-54-2-e1780309146271-600x380.jpg",
-              "language": "en"
-            }
-          ]
-        }
-      ]
-    },
-    "random": {
-      "label": "Random",
-      "emoji": "🎲",
-      "accent": "#EC4899",
-      "story_count": 1,
-      "stories": [
-        {
-          "id": "01d8bfe3-2525-4c48-a272-ce64c3780140",
-          "topic": "There Once Was a Man Called Curley",
-          "category": "random",
-          "synthesis": "There Once Was a Man Called Curley : In the village of Bellewstown, about 15 miles north of Dublin, Ireland, they still talk about what Barney Curley did back in 1975. It all happened during a horse race on the Hill of Crockafotha. It was just an amateur jockey race on a lazy summer day in a sleepy, remote town; it wasn’t meant […]",
-          "hook": "In certain dialects of Chinese, Japanese, Korean, and Vietnamese, the word for ‘four’ sounds very similar to the word for ‘death’, leading to a unique word game where speakers must carefully choose their words to avoid accidentally wishing death on themselves or others.",
-          "has_depth": true,
-          "is_breaking": false,
-          "is_top5": false,
-          "score": 0.0,
-          "estimated_seconds": 90,
-          "sources": [
-            {
-              "source": "Damn Interesting",
-              "headline": "There Once Was a Man Called Curley",
-              "summary": "In certain dialects of Chinese, Japanese, Korean, and Vietnamese, the word for ‘four’ sounds very similar to the word for ‘death’, leading to a unique word game where speakers must carefully choose their words to avoid accidentally wishing death on themselves or others.",
-              "url": "https://www.damninteresting.com/there-once-was-a-man-called-curley/",
-              "angle": "feature",
-              "is_subscription": false,
-              "published": "2025-09-06T14:50:32+00:00",
-              "image_url": null,
-              "language": "en"
-            }
-          ]
-        }
-      ]
-    },
-    "learning": {
-      "label": "Learning",
-      "emoji": "📚",
-      "accent": "#6366F1",
-      "story_count": 1,
-      "stories": [
-        {
-          "id": "d737d79e-a401-4b7c-90e4-ad7b805f3783",
-          "topic": "Dogs Could Be Humanity’s Best Friend in the Fight Against This Invasive Species",
-          "category": "learning",
-          "domain": "physics",
-          "synthesis": "Dogs are being trained to detect eggs of the spotted lanternfly, an invasive species that can cause significant damage to the environment. This innovative approach leverages the unique abilities of dogs to sniff out the eggs, making them a valuable asset in the fight against invasive species.",
-          "hook": "Dogs could be humanity's best friend in the fight against invasive species, thanks to their keen sense of smell and ability to detect eggs.",
-          "has_depth": true,
-          "is_breaking": false,
-          "is_top5": false,
-          "score": 0.0,
-          "estimated_seconds": 120,
-          "sources": [
-            {
-              "source": "Nautilus",
-              "headline": "Dogs Could Be Humanity’s Best Friend in the Fight Against This Invasive Species",
-              "summary": "Dogs are being trained to detect eggs of the spotted lanternfly, an invasive species that can cause significant damage to the environment. This innovative approach leverages the unique abilities of dogs to sniff out the eggs, making them a valuable asset in the fight against invasive species.",
-              "url": "https://nautil.us/dogs-could-be-humanitys-best-friend-in-the-fight-against-this-invasive-species-1281802/",
-              "angle": "analysis",
-              "is_subscription": false,
-              "published": "2026-06-09T14:17:34+00:00",
-              "image_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/06/Reese_HERO_b4d994.png?w=564",
-              "language": "en"
-            }
-          ]
-        }
-      ]
-    },
-    "economy": {
-      "label": "Economy & Finance",
-      "emoji": "📈",
-      "accent": "#6B7280",
-      "story_count": 0,
-      "stories": [],
-      "market_snapshot": {
-        "EURUSD": {
-          "value": 1.1559,
-          "delta": -0.005,
-          "pct": -0.43
-        },
-        "EURCZK": {
-          "value": 24.1515,
-          "delta": -0.0514,
-          "pct": -0.21
-        },
-        "SP500": {
-          "value": 7386.65,
-          "delta": -223.13,
-          "pct": -2.93
-        },
-        "DAX": {
-          "value": 24433.06,
-          "delta": -691.11,
-          "pct": -2.75
-        },
-        "BTCUSD": {
-          "value": 61469.5,
-          "delta": 602.086,
-          "pct": 0.99
         }
       }
     }
