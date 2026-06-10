@@ -209,22 +209,12 @@ body {
   border-radius: 3px 0 0 3px;
 }
 
-/* Card image */
-.card-img {
-  width: 100%; aspect-ratio: 16/9; object-fit: cover;
-  background: var(--bg3);
-  flex-shrink: 0;
+/* Card body (no images — text-first cards) */
+.card-body { padding: 11px 11px 9px 14px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+.card-source-meta {
+  font-size: 10px; color: var(--text3); font-weight: 500;
+  margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
-.card-img-placeholder {
-  width: 100%; aspect-ratio: 16/9;
-  background: var(--bg3);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 28px;
-  flex-shrink: 0;
-}
-
-/* Card body */
-.card-body { padding: 10px 10px 8px 13px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
 
 .card-cat-row { display: flex; align-items: center; gap: 5px; }
 .card-cat-dot { width: 7px; height: 7px; border-radius: 50%;
@@ -254,12 +244,18 @@ body {
   border-top: 1px solid var(--border);
   margin-top: auto;
 }
+.card-action-left { display: flex; align-items: center; gap: 12px; }
 .card-open-btn {
-  font-size: 11px; font-weight: 600; color: var(--text3);
+  font-size: 11px; font-weight: 700; color: var(--cat-color, var(--accent));
   background: none; border: none; cursor: pointer; padding: 2px 0;
   display: flex; align-items: center; gap: 3px;
 }
-.card-open-btn:active { color: var(--text); }
+.card-open-btn:active { opacity: 0.6; }
+.card-expand-btn {
+  font-size: 11px; font-weight: 600; color: var(--text3);
+  background: none; border: none; cursor: pointer; padding: 2px 0;
+}
+.card-expand-btn:active { color: var(--text); }
 .card-like-row { display: flex; gap: 6px; }
 .like-btn, .dislike-btn {
   background: none; border: none; cursor: pointer;
@@ -406,8 +402,16 @@ body {
   font-size: 11px; font-weight: 700; color: var(--text3);
   text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 10px;
 }
+.market-widget-title { display: flex; align-items: center; gap: 8px; }
+.market-alert-flag {
+  font-size: 10px; font-weight: 700; color: #FF4444;
+  background: rgba(204,34,34,0.14); padding: 1px 6px; border-radius: 4px;
+  letter-spacing: 0; text-transform: none;
+}
 .market-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-.market-cell { display: flex; flex-direction: column; gap: 2px; }
+.market-cell { display: flex; flex-direction: column; gap: 2px;
+  padding: 6px; border-radius: 8px; }
+.market-cell.alert { background: rgba(204,34,34,0.1); }
 .market-name  { font-size: 10px; color: var(--text3); font-weight: 600; letter-spacing: 0.05em; }
 .market-value { font-size: 14px; font-weight: 700; }
 .market-delta { font-size: 11px; font-weight: 500; }
@@ -417,6 +421,11 @@ body {
 /* ── Widget: sport scoreboard ────────────────────────────────────────────── */
 .sport-widget {
   margin: 12px 10px 0;
+}
+.sport-banner {
+  font-size: 12px; font-weight: 700; color: var(--text2);
+  text-transform: uppercase; letter-spacing: 0.06em;
+  padding: 4px 4px 10px;
 }
 .sport-league {
   background: var(--surface); border-radius: var(--radius);
@@ -437,8 +446,16 @@ body {
   padding: 5px 0; border-bottom: 1px solid var(--border); font-size: 13px;
 }
 .sport-result:last-child { border-bottom: none; }
-.sport-team   { flex: 1; }
-.sport-score  { font-weight: 700; padding: 0 8px; color: var(--text2); }
+.sport-date {
+  font-size: 10px; color: var(--text3); font-weight: 600;
+  width: 44px; flex-shrink: 0;
+}
+.sport-team   { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sport-score  { font-weight: 700; padding: 0 8px; color: var(--text2); flex-shrink: 0; }
+.sport-result.fixture { opacity: 0.7; }
+.sport-result.fixture .sport-score { font-size: 11px; font-weight: 600; }
+.sport-result.live { opacity: 1; }
+.sport-result.live .sport-score { color: #FF4444; }
 .sport-empty  { font-size: 12px; color: var(--text3); padding: 4px 0; }
 
 /* ── Loading & empty states ──────────────────────────────────────────────── */

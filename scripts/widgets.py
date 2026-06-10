@@ -25,6 +25,7 @@ from datetime import datetime, timezone, timedelta
 from typing import Any
 
 import httpx
+from dateutil import parser as dateparser
 
 _TIMEOUT = 15.0
 _UA = "Mozilla/5.0 DailyDigestBot/1.0"
@@ -41,6 +42,19 @@ ESPN_LEAGUES: dict[str, str] = {
 }
 ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer/{league}/scoreboard"
 ESPN_STANDINGS = "https://site.api.espn.com/apis/v2/sports/soccer/{league}/standings"
+
+# International tournaments, checked in priority order. When one of these is
+# actively running, it REPLACES the club leagues in the scoreboard (club
+# competitions are on their summer break during major international tournaments).
+ESPN_TOURNAMENTS: list[tuple[str, str]] = [
+    ("fifa.world",        "FIFA World Cup"),
+    ("uefa.euro",         "UEFA Euro"),
+    ("conmebol.america",  "Copa América"),
+    ("fifa.wwc",          "FIFA Women's World Cup"),
+]
+# A tournament counts as "active" if it has a match within this window of today.
+_TOURNAMENT_LOOKBACK_DAYS = 3
+_TOURNAMENT_LOOKAHEAD_DAYS = 12
 
 NHL_SCHEDULE = "https://api-web.nhle.com/v1/schedule/{date}"
 NHL_STANDINGS = "https://api-web.nhle.com/v1/standings/{date}"
@@ -83,6 +97,7 @@ def _nhl_results_today() -> list[dict[str, Any]]:
             home = g.get("homeTeam", {})
             away = g.get("awayTeam", {})
             games.append({
+                "date":       (g.get("gameDate") or g.get("startTimeUTC", ""))[:10],
                 "home":       home.get("placeName", {}).get("default", ""),
                 "home_score": home.get("score", 0),
                 "away":       away.get("placeName", {}).get("default", ""),
@@ -106,6 +121,7 @@ def _nhl_fixtures_today() -> list[dict[str, Any]]:
             away = g.get("awayTeam", {})
             start = g.get("startTimeUTC", "")
             fixtures.append({
+                "date":   (g.get("gameDate") or start)[:10],
                 "home":   home.get("placeName", {}).get("default", ""),
                 "away":   away.get("placeName", {}).get("default", ""),
                 "time":   start,
@@ -139,86 +155,129 @@ def build_nhl_widget() -> dict[str, Any]:
 
 # ─── Football (ESPN) ─────────────────────────────────────────────────────────
 
-def _espn_results(league_slug: str) -> list[dict[str, Any]]:
-    data = _get(ESPN_BASE.format(league=league_slug))
+def _team_name(competitor: dict[str, Any]) -> str:
+    team = competitor.get("team", {})
+    return (team.get("shortDisplayName")
+            or team.get("displayName")
+            or team.get("abbreviation")
+            or "")
+
+
+def _parse_espn_scoreboard(
+    data: dict | None,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Split one ESPN scoreboard payload into finished results + upcoming fixtures.
+
+    Returns (results, fixtures). Each result/fixture carries a `date`
+    (YYYY-MM-DD); fixtures also carry an ISO `time` so the PWA can show when a
+    match is/was played.
+    """
+    results: list[dict[str, Any]] = []
+    fixtures: list[dict[str, Any]] = []
     if not data:
-        return []
-    out = []
+        return results, fixtures
+
     for event in data.get("events", []):
         comp = event.get("competitions", [{}])[0]
         comps = comp.get("competitors", [])
-        status = comp.get("status", {}).get("type", {}).get("state", "")
-        if status != "post":
-            continue
         if len(comps) < 2:
             continue
+        state = comp.get("status", {}).get("type", {}).get("state", "")
+        iso = event.get("date", "") or comp.get("date", "")
+        day = iso[:10] if iso else ""
         home = next((c for c in comps if c.get("homeAway") == "home"), comps[0])
         away = next((c for c in comps if c.get("homeAway") == "away"), comps[1])
-        out.append({
-            "home":       home.get("team", {}).get("shortDisplayName", ""),
-            "home_score": int(home.get("score", 0)),
-            "away":       away.get("team", {}).get("shortDisplayName", ""),
-            "away_score": int(away.get("score", 0)),
-            "status":     "final",
-        })
-    return out
+
+        if state == "post":
+            results.append({
+                "date":       day,
+                "home":       _team_name(home),
+                "home_score": int(home.get("score", 0) or 0),
+                "away":       _team_name(away),
+                "away_score": int(away.get("score", 0) or 0),
+                "status":     "final",
+            })
+        elif state in ("pre", "in"):
+            fixtures.append({
+                "date":   day,
+                "time":   iso,
+                "home":   _team_name(home),
+                "away":   _team_name(away),
+                "live":   state == "in",
+            })
+    return results, fixtures
 
 
-def _espn_fixtures(league_slug: str) -> list[dict[str, Any]]:
-    data = _get(ESPN_BASE.format(league=league_slug))
+def _event_within_window(data: dict | None) -> bool:
+    """True if the payload has any match within the active-tournament window."""
     if not data:
-        return []
-    out = []
+        return False
+    now = datetime.now(timezone.utc)
+    lo = now - timedelta(days=_TOURNAMENT_LOOKBACK_DAYS)
+    hi = now + timedelta(days=_TOURNAMENT_LOOKAHEAD_DAYS)
     for event in data.get("events", []):
-        comp = event.get("competitions", [{}])[0]
-        comps = comp.get("competitors", [])
-        status = comp.get("status", {}).get("type", {}).get("state", "")
-        if status != "pre":
+        iso = event.get("date", "")
+        if not iso:
             continue
-        if len(comps) < 2:
+        try:
+            dt = dateparser.parse(iso)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+        except (ValueError, TypeError, OverflowError):
             continue
-        home = next((c for c in comps if c.get("homeAway") == "home"), comps[0])
-        away = next((c for c in comps if c.get("homeAway") == "away"), comps[1])
-        out.append({
-            "home": home.get("team", {}).get("shortDisplayName", ""),
-            "away": away.get("team", {}).get("shortDisplayName", ""),
-            "time": event.get("date", ""),
-        })
-    return out
+        if lo <= dt <= hi:
+            return True
+    return False
 
 
-def _espn_standings(league_slug: str) -> list[dict[str, Any]]:
-    data = _get(ESPN_STANDINGS.format(league=league_slug))
-    if not data:
-        return []
-    entries = (
-        data.get("standings", {})
-            .get("entries", [])
-    )[:5]
-    out = []
-    for e in entries:
-        stats_list = e.get("stats", [])
-        def stat(name: str) -> Any:
-            return next((s["value"] for s in stats_list if s.get("name") == name), 0)
-        out.append({
-            "team":    e.get("team", {}).get("shortDisplayName", ""),
-            "points":  int(stat("points")),
-            "played":  int(stat("gamesPlayed")),
-            "gd":      int(stat("pointDifferential")),
-        })
-    return out
+def _active_tournament() -> tuple[str, str, dict] | None:
+    """Return (slug, display_name, raw_payload) for an active tournament, else None."""
+    for slug, name in ESPN_TOURNAMENTS:
+        data = _get(ESPN_BASE.format(league=slug))
+        time.sleep(0.3)
+        if _event_within_window(data):
+            return slug, name, data
+    return None
 
 
 def build_football_widget() -> dict[str, Any]:
-    widget: dict[str, Any] = {}
-    for label, slug in ESPN_LEAGUES.items():
-        widget[label] = {
-            "results":  _espn_results(slug),
-            "fixtures": _espn_fixtures(slug),
-            "standings": _espn_standings(slug),
+    """Football scoreboard.
+
+    During a major international tournament (e.g. the World Cup), the domestic
+    club leagues are on break, so we show the tournament instead. Otherwise we
+    show the club leagues and silently drop any that are off-season (no recent
+    results AND no upcoming fixtures).
+    """
+    tour = _active_tournament()
+    if tour:
+        slug, name, data = tour
+        results, fixtures = _parse_espn_scoreboard(data)
+        print(f"    tournament mode: {name} "
+              f"({len(results)} results, {len(fixtures)} fixtures)")
+        return {
+            "mode":        "tournament",
+            "competition": name,
+            "sections": [{
+                "code":     slug,
+                "name":     name,
+                "results":  results[:12],
+                "fixtures": fixtures[:12],
+            }],
         }
+
+    sections: list[dict[str, Any]] = []
+    for label, slug in ESPN_LEAGUES.items():
+        results, fixtures = _parse_espn_scoreboard(_get(ESPN_BASE.format(league=slug)))
         time.sleep(0.3)   # light throttle — unofficial API
-    return widget
+        if not results and not fixtures:
+            continue      # league on break — don't show an empty card
+        sections.append({
+            "code":     label,
+            "name":     label,
+            "results":  results[:5],
+            "fixtures": fixtures[:5],
+        })
+    return {"mode": "leagues", "sections": sections}
 
 
 # ─── Market snapshot ─────────────────────────────────────────────────────────

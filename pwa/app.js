@@ -232,6 +232,9 @@ function makeCard(story) {
   const isRandom   = cat === 'random';
   const isLearning = cat === 'learning';
   const isRead   = readSet.has(story.id);
+  const srcCount = story.sources?.length || 0;
+  const primary  = story.sources?.[0] || null;
+  const primaryUrl = primary?.url || null;
 
   const card = document.createElement('div');
   card.className = 'story-card' +
@@ -246,30 +249,26 @@ function makeCard(story) {
   if (isRandom)   specialHeader = `<div class="card-random-header">🎲 Today's Surprise</div>`;
   if (isLearning) specialHeader = `<div class="card-learning-header">📚 Learn Something</div>`;
 
-  // Image / placeholder
-  const imgSrc = story.sources?.[0]?.image_url;
-  const imgEl = imgSrc
-    ? `<img class="card-img" src="${escHtml(imgSrc)}" alt="" loading="lazy" onerror="this.parentNode.replaceChild(Object.assign(document.createElement('div'),{className:'card-img-placeholder',textContent:'${CAT_EMOJIS[cat]||'📰'}'}),this)">`
-    : `<div class="card-img-placeholder">${CAT_EMOJIS[cat] || '📰'}</div>`;
-
-  // Badges
+  // Badges (no "N sources" badge here — shown in the action row instead)
   let badges = '';
   if (story.is_top5)    badges += `<span class="badge badge-top5">⭐ Top Story</span>`;
   if (story.is_breaking)badges += `<span class="badge badge-breaking">🔴 Breaking</span>`;
-  const srcCount = story.sources?.length || 0;
-  if (srcCount > 1) badges += `<span class="badge badge-sources">${srcCount} sources</span>`;
 
   // Domain pill for learning
   const domainPill = isLearning && story.domain
-    ? `<span class="card-domain-pill">${story.domain}</span>` : '';
+    ? `<span class="card-domain-pill">${escHtml(story.domain)}</span>` : '';
 
   // Hook line
   const hookLine = (isRandom || isLearning) && story.hook
     ? `<div class="card-hook">${escHtml(story.hook)}</div>` : '';
 
+  // Source line under the title
+  const sourceMeta = primary
+    ? `<div class="card-source-meta">${escHtml(primary.source)}${primary.is_subscription ? ' 💎' : ''}${srcCount > 1 ? ` · ${srcCount} sources` : ''}</div>`
+    : '';
+
   card.innerHTML = `
     ${specialHeader}
-    ${imgEl}
     <div class="card-body">
       <div class="card-cat-row">
         <div class="card-cat-dot"></div>
@@ -278,12 +277,14 @@ function makeCard(story) {
       </div>
       <div class="card-title">${escHtml(story.topic)}</div>
       ${hookLine}
+      ${sourceMeta}
       ${badges ? `<div class="card-badges">${badges}</div>` : ''}
     </div>
     <div class="card-actions">
-      <button class="card-open-btn" data-action="expand">
-        ${srcCount} source${srcCount !== 1 ? 's' : ''} ▾
-      </button>
+      <div class="card-action-left">
+        <button class="card-open-btn" data-action="open">Read ↗</button>
+        ${srcCount > 1 ? `<button class="card-expand-btn" data-action="expand">${srcCount} sources ▾</button>` : ''}
+      </div>
       <div class="card-like-row">
         <button class="like-btn" data-action="like" title="Like">👍</button>
         <button class="dislike-btn" data-action="dislike" title="Dislike">👎</button>
@@ -308,23 +309,24 @@ function makeCard(story) {
       `).join('')}
     </div>`;
 
-  // Events
+  // Open the primary article (used by tapping the card or the "Read" button)
+  function openPrimary() {
+    if (primaryUrl) window.open(primaryUrl, '_blank', 'noopener');
+    if (primary) Analytics.logArticleOpen(story, primary);
+    if (isRandom)   Analytics.logSpecialOpen('random');
+    if (isLearning) Analytics.logSpecialOpen('learning');
+    markRead();
+  }
+  function markRead() {
+    if (readSet.has(story.id)) return;
+    readSet.add(story.id);
+    card.classList.add('read');
+    sinkReadCards();
+  }
+
   card.addEventListener('click', e => {
     const action = e.target.closest('[data-action]')?.dataset.action;
-    if (action === 'expand') {
-      const list = card.querySelector('.card-sources-list');
-      const btn  = card.querySelector('.card-open-btn');
-      const open = list.classList.toggle('open');
-      btn.textContent = open ? 'Close ▴' : `${srcCount} source${srcCount !== 1 ? 's' : ''} ▾`;
-      if (!isRead) {
-        readSet.add(story.id);
-        card.classList.add('read');
-        sinkReadCards();
-      }
-      if (isRandom)   Analytics.logSpecialOpen('random');
-      if (isLearning) Analytics.logSpecialOpen('learning');
-      return;
-    }
+
     if (action === 'like' || action === 'dislike') {
       const btn = e.target.closest('[data-action]');
       btn.classList.toggle('voted');
@@ -332,14 +334,23 @@ function makeCard(story) {
       showToast(action === 'like' ? 'More like this 👍' : 'Less like this 👎');
       return;
     }
-    // Open link tap on source-open anchor
+    if (action === 'expand') {
+      const list = card.querySelector('.card-sources-list');
+      const btn  = card.querySelector('.card-expand-btn');
+      const open = list.classList.toggle('open');
+      if (btn) btn.textContent = open ? 'Hide sources ▴' : `${srcCount} sources ▾`;
+      return;   // expanding to compare sources does NOT mark read
+    }
+    // Tapped a specific source link — let the <a> open it, just log + mark read.
     const anchor = e.target.closest('a.source-open');
     if (anchor) {
       const src = story.sources?.find(s => s.source === anchor.dataset.source);
       if (src) Analytics.logArticleOpen(story, src);
-      if (!isRead) { readSet.add(story.id); card.classList.add('read'); sinkReadCards(); }
+      markRead();
       return;
     }
+    // Anywhere else on the card → open the primary article.
+    openPrimary();
   });
 
   return card;
@@ -361,19 +372,13 @@ function renderDayView() {
   document.getElementById('day-view').style.display   = '';
   document.getElementById('week-month-view').style.display = 'none';
 
-  // Inject market widget in economy if economy stories exist
-  const econBlock = digest?.categories?.economy;
-  if (econBlock?.market_snapshot) {
-    const widget = makeMarketWidget(econBlock.market_snapshot);
-    if (widget) grid.parentElement.insertBefore(widget, grid);
-  }
-
   const stories = visibleStories();
   if (!stories.length) {
     grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">
       <div class="empty-icon">📭</div>
       <p>No stories match the current filter</p>
     </div>`;
+    renderWidgets();   // still show sport/market below an empty grid
     return;
   }
 
@@ -381,6 +386,25 @@ function renderDayView() {
   const shuffled = [...stories].sort(() => Math.random() - 0.5);
   shuffled.forEach(story => grid.appendChild(makeCard(story)));
   sinkReadCards();
+
+  // Sport + market live at the BOTTOM of the day view, rendered exactly once.
+  renderWidgets();
+}
+
+// Remove any previously-rendered widgets, then append sport + market once,
+// at the bottom of the day view (after the cards grid). This is the single
+// place widgets get inserted — prevents the duplicate-widget bug.
+function renderWidgets() {
+  const dayView = document.getElementById('day-view');
+  dayView.querySelectorAll('.sport-widget, .market-widget').forEach(el => el.remove());
+
+  const sport = makeSportWidget();
+  if (sport) dayView.appendChild(sport);
+
+  const econBlock = digest?.categories?.economy;
+  const market = econBlock?.market_snapshot
+    ? makeMarketWidget(econBlock.market_snapshot) : null;
+  if (market) dayView.appendChild(market);
 }
 
 // ── Week / Month view ──────────────────────────────────────────────────────
@@ -420,25 +444,33 @@ function renderCurrentView() {
 }
 
 // ── Market widget ──────────────────────────────────────────────────────────
+const MARKET_DROP_ALERT = -1.5;   // % daily move that earns a "!" warning
+
 function makeMarketWidget(snapshot) {
   if (!snapshot || !Object.keys(snapshot).length) return null;
   const LABELS = {
     EURUSD:'EUR/USD', EURCZK:'EUR/CZK', SP500:'S&P 500',
     DAX:'DAX', PX:'PX', BTCUSD:'BTC',
   };
+  let anyAlert = false;
   const div = document.createElement('div');
   div.className = 'market-widget';
   const cells = Object.entries(snapshot).map(([k, v]) => {
+    const pct   = typeof v.pct === 'number' ? v.pct : 0;
     const sign  = v.delta >= 0 ? '+' : '';
     const cls   = v.delta >= 0 ? 'up' : 'down';
-    return `<div class="market-cell">
+    const alert = pct <= MARKET_DROP_ALERT;
+    if (alert) anyAlert = true;
+    return `<div class="market-cell${alert ? ' alert' : ''}">
       <div class="market-name">${LABELS[k] || k}</div>
       <div class="market-value">${formatNum(v.value, k)}</div>
-      <div class="market-delta ${cls}">${sign}${v.pct?.toFixed(2)}%</div>
+      <div class="market-delta ${cls}">${alert ? '! ' : ''}${sign}${pct.toFixed(2)}%</div>
     </div>`;
   }).join('');
-  div.innerHTML = `<div class="market-widget-title">Market Snapshot</div>
-                   <div class="market-grid">${cells}</div>`;
+  div.innerHTML = `<div class="market-widget-title">
+      Market Snapshot${anyAlert ? ' <span class="market-alert-flag">! sharp drop</span>' : ''}
+    </div>
+    <div class="market-grid">${cells}</div>`;
   return div;
 }
 
@@ -450,61 +482,88 @@ function formatNum(val, ticker) {
 }
 
 // ── Sport widget ───────────────────────────────────────────────────────────
-function injectSportWidget() {
-  const sportBlock = digest?.categories?.sport;
-  if (!sportBlock?.scoreboard) return;
-  const grid = document.getElementById('cards-grid');
+const FB_LEAGUE_NAMES = {
+  PL:'🏴 Premier League', BL1:'🇩🇪 Bundesliga', SA:'🇮🇹 Serie A',
+  PD:'🇪🇸 La Liga', FL1:'🇫🇷 Ligue 1', CL:'🏆 Champions League', MLS:'🇺🇸 MLS',
+};
 
-  const widget = document.createElement('div');
-  widget.className = 'sport-widget';
-  widget.style.gridColumn = '1 / -1';
+function fmtDay(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (isNaN(d)) return iso;
+  return d.toLocaleDateString(undefined, { month:'short', day:'numeric' });
+}
+function fmtTime(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (isNaN(d)) return '';
+  return d.toLocaleTimeString([], { hour:'2-digit', minute:'2-digit' });
+}
 
-  const sb = sportBlock.scoreboard;
+function resultRow(home, hs, away, as, date) {
+  return `<div class="sport-result">
+    ${date ? `<span class="sport-date">${fmtDay(date)}</span>` : ''}
+    <span class="sport-team">${escHtml(home)}</span>
+    <span class="sport-score">${hs}–${as}</span>
+    <span class="sport-team" style="text-align:right">${escHtml(away)}</span>
+  </div>`;
+}
+function fixtureRow(home, away, date, time, live) {
+  const when = live ? 'LIVE' : (fmtTime(time) || 'TBD');
+  return `<div class="sport-result fixture${live ? ' live' : ''}">
+    ${date ? `<span class="sport-date">${fmtDay(date)}</span>` : ''}
+    <span class="sport-team">${escHtml(home)}</span>
+    <span class="sport-score">${when}</span>
+    <span class="sport-team" style="text-align:right">${escHtml(away)}</span>
+  </div>`;
+}
+
+function makeSportWidget() {
+  const sb = digest?.categories?.sport?.scoreboard;
+  if (!sb) return null;
+
   const leagues = [];
 
+  // NHL
   if (sb.nhl) {
     const results = sb.nhl.results || [];
     const today   = sb.nhl.today   || [];
     let html = '';
-    results.forEach(r => {
-      html += `<div class="sport-result">
-        <span class="sport-team">${r.away}</span>
-        <span class="sport-score">${r.away_score}–${r.home_score}</span>
-        <span class="sport-team" style="text-align:right">${r.home}</span>
-      </div>`;
-    });
-    today.forEach(f => {
-      const t = f.time ? new Date(f.time).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}) : '';
-      html += `<div class="sport-result" style="opacity:.6">
-        <span class="sport-team">${f.away}</span>
-        <span class="sport-score" style="font-size:11px">${t||'TBD'}</span>
-        <span class="sport-team" style="text-align:right">${f.home}</span>
-      </div>`;
-    });
-    if (!html) html = '<div class="sport-empty">No games today</div>';
-    leagues.push({ name: '🏒 NHL', html });
+    results.forEach(r => html += resultRow(r.away, r.away_score, r.home, r.home_score, r.date));
+    today.forEach(f => html += fixtureRow(f.away, f.home, f.date, f.time, false));
+    if (html) leagues.push({ name: '🏒 NHL', html });
   }
 
-  if (sb.football) {
-    const LEAGUE_NAMES = { PL:'🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League', BL1:'🇩🇪 Bundesliga',
-      SA:'🇮🇹 Serie A', PD:'🇪🇸 La Liga', FL1:'🇫🇷 Ligue 1',
-      CL:'🏆 Champions League', MLS:'🇺🇸 MLS' };
-    Object.entries(sb.football).forEach(([code, data]) => {
-      const results = (data.results || []).slice(0, 5);
+  // Football — either tournament mode (World Cup etc.) or club leagues.
+  const fb = sb.football;
+  if (fb && Array.isArray(fb.sections)) {
+    fb.sections.forEach(sec => {
       let html = '';
-      results.forEach(r => {
-        html += `<div class="sport-result">
-          <span class="sport-team">${r.home}</span>
-          <span class="sport-score">${r.home_score}–${r.away_score}</span>
-          <span class="sport-team" style="text-align:right">${r.away}</span>
-        </div>`;
-      });
-      if (!html) html = '<div class="sport-empty">No recent results</div>';
-      leagues.push({ name: LEAGUE_NAMES[code] || code, html });
+      (sec.results  || []).forEach(r => html += resultRow(r.home, r.home_score, r.away, r.away_score, r.date));
+      (sec.fixtures || []).forEach(f => html += fixtureRow(f.home, f.away, f.date, f.time, f.live));
+      if (!html) return;
+      const name = fb.mode === 'tournament'
+        ? `⚽ ${sec.name}`
+        : (FB_LEAGUE_NAMES[sec.code] || sec.name || sec.code);
+      leagues.push({ name, html });
+    });
+  } else if (fb && typeof fb === 'object') {
+    // Backward-compat with the old {CODE: {results}} shape.
+    Object.entries(fb).forEach(([code, data]) => {
+      if (!data || !Array.isArray(data.results)) return;
+      let html = '';
+      data.results.slice(0, 5).forEach(r => html += resultRow(r.home, r.home_score, r.away, r.away_score, r.date));
+      if (html) leagues.push({ name: FB_LEAGUE_NAMES[code] || code, html });
     });
   }
 
-  widget.innerHTML = leagues.map((l, i) => `
+  if (!leagues.length) return null;
+
+  const widget = document.createElement('div');
+  widget.className = 'sport-widget';
+  const banner = fb?.mode === 'tournament' && fb.competition
+    ? `<div class="sport-banner">🏆 ${escHtml(fb.competition)}</div>` : '';
+  widget.innerHTML = banner + leagues.map((l, i) => `
     <div class="sport-league">
       <div class="sport-league-header" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('.sport-league-toggle').textContent=this.nextElementSibling.classList.contains('open')?'▴':'▾'">
         <span class="sport-league-name">${l.name}</span>
@@ -515,7 +574,7 @@ function injectSportWidget() {
       </div>
     </div>`).join('');
 
-  grid.insertBefore(widget, grid.firstChild);
+  return widget;
 }
 
 // ── Main article renderer ──────────────────────────────────────────────────
@@ -534,12 +593,7 @@ function renderArticles() {
     genAt.toLocaleString();
 
   buildFilters();
-  renderCurrentView();
-
-  // Inject widgets into day view after grid is built
-  if (currentView === 'day') {
-    injectSportWidget();
-  }
+  renderCurrentView();   // renderDayView() appends sport + market widgets itself
 
   Analytics.logDigestOpen();
 }
@@ -647,7 +701,6 @@ function initNav() {
       btn.classList.add('active');
       currentView = btn.dataset.view;
       renderCurrentView();
-      if (currentView === 'day') injectSportWidget();
     });
   });
 

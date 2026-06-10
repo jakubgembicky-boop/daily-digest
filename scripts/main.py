@@ -22,10 +22,11 @@ if hasattr(sys.stdout, "reconfigure"):
 if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
-from stats    import read_stats, reset_if_new_month, write_stats
-from fetch    import fetch_all_articles
-from cluster  import cluster_articles
-from score    import score_clusters
+from stats     import read_stats, reset_if_new_month, write_stats
+from fetch     import fetch_all_articles
+from cluster   import cluster_articles
+from categorize import categorize_clusters
+from score     import score_clusters
 from process  import process_top_stories
 from widgets  import build_sport_widget, build_market_snapshot
 from generate import generate_random, generate_learning
@@ -49,6 +50,11 @@ def main(dry_run: bool = False) -> None:
     print("[3/9] Clustering...")
     clusters = cluster_articles(articles)
     print(f"      {len(clusters)} clusters")
+
+    # 3.5 Re-categorize by topic (so an Iran story from a Slovak source is
+    #     filed under 'war'/'global', not 'slovakia').
+    print("[3.5] Re-categorizing by topic...")
+    clusters = categorize_clusters(clusters)
 
     # 4. Score
     print("[4/9] Scoring...")
