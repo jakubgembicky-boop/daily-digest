@@ -13,7 +13,7 @@ Pipeline:
 Usage:
   python build.py              # full run
   python build.py --dry-run    # fetch only, no Claude call (test sources)
-  python build.py --model claude-3-5-sonnet-20241022   # override model
+  python build.py --model claude-haiku-4-5   # override model
 """
 from __future__ import annotations
 
@@ -40,8 +40,9 @@ _PWA     = _SCRIPTS.parent / "pwa"
 _PROMPT  = _SCRIPTS / "prompt.md"
 
 # Default model — sonnet gives quality summaries at a reasonable cost
-_DEFAULT_MODEL = "claude-sonnet-4-5"
-_MAX_TOKENS    = 8192
+_DEFAULT_MODEL = "claude-sonnet-4-6"
+# Full digest JSON runs ~10-14K tokens; give generous headroom.
+_MAX_TOKENS    = 32000
 # Trim article list to this many chars to avoid blowing the context window
 _MAX_ARTICLES_CHARS = 120_000
 
@@ -107,13 +108,19 @@ def _extract_json(raw: str) -> str:
 
 
 def _call_claude(prompt: str, model: str) -> dict:
-    client  = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-    message = client.messages.create(
+    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    # Stream — required for large max_tokens to avoid HTTP timeouts
+    with client.messages.stream(
         model=model,
         max_tokens=_MAX_TOKENS,
         messages=[{"role": "user", "content": prompt}],
-    )
-    raw = message.content[0].text
+    ) as stream:
+        message = stream.get_final_message()
+    if message.stop_reason == "max_tokens":
+        raise ValueError(
+            f"Output truncated at {_MAX_TOKENS} tokens — raise _MAX_TOKENS"
+        )
+    raw = next(b.text for b in message.content if b.type == "text")
     return json.loads(_extract_json(raw))
 
 
