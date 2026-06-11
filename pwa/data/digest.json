@@ -1,0 +1,800 @@
+{
+  "categories": {
+    "slovakia": {
+      "summary": "Prezident Pellegrini zrušil slávnostné menovanie diplomata Radačovského, čo vyvolalo politické otázky – Korčok hovorí o dvoch možných vysvetleniach. Nový prieskum ukazuje Progresívne Slovensko na čele, no strana stráca verných voličov, KDH zostáva mimo parlamentu. V parlamente pokračuje spor v koalícii okolo citlivého návrhu, ktorý podľa Karasa poškodzuje demokraciu.",
+      "stories": [
+        {
+          "title": "Pellegrini zrušil slávnostné menovanie Radačovského. Korčok: Sú len dve reálne vysvetlenia",
+          "summary": "Prezident Pellegrini na poslednú chvíľu zrušil ceremóniu menovania Radačovského do diplomatickej funkcie. Opozičný politik Korčok uviedol, že existujú len dve reálne vysvetlenia tohto kroku. Radačovský nemá diplomatické skúsenosti a má 72 rokov, čo vyvolávalo otázky od začiatku.",
+          "primary": {
+            "url": "https://spravy.pravda.sk/domace/clanok/815501-pellegrini-zrusil-slavnostne-menovanie-radacovskeho-korcok-su-len-dve-realne-vysvetlenia/",
+            "source": "Pravda.sk",
+            "paid": false
+          },
+          "secondary": {
+            "url": "https://spravy.pravda.sk/domace/clanok/815523-ma-72-rokov-a-ziadne-diplomaticke-skusenosti-preco-s-vyslanim-radacovskeho-palac-vaha/",
+            "source": "Pravda.sk",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Nový prieskum: Progresívne Slovensko je prvé, no stráca verných voličov. KDH je mimo parlamentu",
+          "summary": "Podľa najnovšieho prieskumu zostáva PS najsilnejšou stranou, avšak jej jadro voličov sa zmenšuje. KDH by sa podľa prieskumu do parlamentu nedostalo. Výsledky naznačujú pretrvávajúcu fragmentáciu opozície.",
+          "primary": {
+            "url": "https://www.aktuality.sk/clanok/L569yfC/novy-prieskum-progresivne-slovensko-je-prve-no-straca-vernych-volicov-kdh-je-mimo-parlamentu/",
+            "source": "Aktuality.sk",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Gašpar priznal spor v koalícii. Citlivý návrh môže mať veľké politické dôsledky, Karas hovorí o poškodení demokracie",
+          "summary": "Podpredseda parlamentu Gašpar otvorene pripustil napätie v koalícii v súvislosti s kontroverzným legislatívnym návrhom. Viliam Karas z KDH varuje, že návrh môže poškodiť demokratické princípy. Spor odhaľuje trhliny vo vládnej koalícii.",
+          "primary": {
+            "url": "https://spravy.pravda.sk/domace/clanok/815435-tibor-gaspar-viliam-karas-smer-kdh-politika-ficov-syn-simeckova-mama/",
+            "source": "Pravda.sk",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Pellegrini a Módí preberú v Bratislave prehĺbenie strategickej spolupráce",
+          "summary": "Indický premiér Narendra Módí navštívi Bratislavu, kde sa stretne s prezidentom Pellegrinim. Na programe je prehĺbenie bilaterálnej spolupráce vrátane jadrového know-how a miliardových obchodných príležitostí. Návšteva je vnímaná ako diplomatický úspech pre Slovensko.",
+          "primary": {
+            "url": "https://spravy.pravda.sk/domace/clanok/815583-pellegrini-narendra-modi-bilateralna-spolupraca-india-slovensko-navsteva/",
+            "source": "Pravda.sk",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Viacerí rušňovodiči v Bratislave dali výpoveď. ZSSK dočasne škrtla prvé vlaky",
+          "summary": "Štátny dopravca ZSSK čelí personálnej kríze po tom, čo viacero rušňovodičov v bratislavskom uzle podalo výpoveď. Spoločnosť dočasne zrušila niektoré ranné spoje. Situácia upozorňuje na dlhodobé problémy so stavom zamestnancov v železničnej doprave.",
+          "primary": {
+            "url": "https://e.dennikn.sk/5385972/viaceri-rusnovodici-v-bratislave-dali-vypoved-zssk-docasne-skrtla-prve-vlaky/",
+            "source": "Denník N",
+            "paid": true
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        }
+      ]
+    },
+    "czechia": {
+      "summary": "Sněmovna se mimořádně sejde kvůli střetu zájmů Babiše – Piráti zároveň kvůli navrhované změně zákona kontaktují Evropskou komisi a právníci návrh kritizují jako likvidaci protikorupčních pravidel. EU schválila úpravu emisních povolenek ETS 2, experti ale varují, že Češi si připlatí tisíce korun. V Praze dochází k dopravním komplikacím po poškození trolejového vedení na trati mezi hlavním nádražím a Smíchovem.",
+      "stories": [
+        {
+          "title": "Sněmovna se mimořádně sejde kvůli otázce střetu zájmů Babiše",
+          "summary": "Opozice si vymohla mimořádnou schůzi sněmovny, která se bude zabývat návrhem změny pravidel střetu zájmů. Piráti se zároveň obrátili na Evropskou komisi s tím, že navrhovaná úprava by mohla zvýhodnit Agrofert. Právníci návrh označují za likvidaci protikorupčních opatření.",
+          "primary": {
+            "url": "https://ct24.ceskatelevize.cz/clanek/domaci/snemovna-se-mimoradne-sejde-kvuli-stretu-zajmu-babise-374440",
+            "source": "ČT24",
+            "paid": false
+          },
+          "secondary": {
+            "url": "https://zpravy.aktualne.cz/domaci/likvidace-turek-navrhl-zakon-ktery-muze-pomoct-agrofertu-pravnik-ho-cupuje/r~aaa293a4d3cfe8a1645c7563d1266f56/",
+            "source": "Aktuálně.cz",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Češi si připlatí tisíce, úprava emisních povolenek nezabrání růstu cen, varují experti",
+          "summary": "Státy EU se dohodly na úpravě systému emisních povolenek ETS 2 včetně cenového stropu. Analytici však varují, že pro české domácnosti to bude znamenat tisíce korun navíc ročně. Reforma se dotkne zejména cen energií a vytápění.",
+          "primary": {
+            "url": "https://www.idnes.cz/ekonomika/domaci/emisni-povolenky-eu-uprava-cena-enalytici.A260611_111646_ekonomika_tmps",
+            "source": "iDnes.cz",
+            "paid": false
+          },
+          "secondary": {
+            "url": "https://zpravy.aktualne.cz/zahranici/pokrok-s-emisnimi-povolenkami-staty-evropske-unie-se-shodly-nejen-na-cenovem-stropu/r~aaa295fb2222a9048d142d61f772f38b/",
+            "source": "Aktuálně.cz",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Slovensko ako varovanie, Maďarsko ako strašiak. Babišova vláda chce zmeniť financovanie verejnoprávnych médií",
+          "summary": "Babišova vláda připravuje změnu financování veřejnoprávních médií, přičemž jako odstrašující příklady jsou uváděny situace na Slovensku a v Maďarsku. Kritici varují před politizací České televize a Českého rozhlasu. Plán vyvolal ostrou debatu o nezávislosti médií veřejné služby.",
+          "primary": {
+            "url": "https://dennikn.sk/5386935/slovensko-ako-varovanie-madarsko-ako-strasiak-babisova-vlada-chce-zmenit-financovanie-verejnopravnych-medii/",
+            "source": "Denník N",
+            "paid": true
+          },
+          "secondary": {
+            "url": "https://www.novinky.cz/clanek/domaci-pirati-se-kvuli-navrzene-zmene-u-stretu-zajmu-obrati-na-evropskou-komisi-40582697",
+            "source": "Novinky.cz",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Na Sumatře uhynulo 7 procent populace orangutanů tapanulijských. Je to demografický šok, říká bioložka",
+          "summary": "Čtyři dny extrémních dešťů způsobily smrt sedmi procent celkové populace tapanulijských orangutanů na Sumatře, jednoho z nejohroženějších primátů světa. Vědci označují událost za demografický šok s dlouhodobými dopady na přežití druhu. Přírodní katastrofa znovu upozorňuje na zranitelnost kriticky ohrožených populací vůči klimatickým extrémům.",
+          "primary": {
+            "url": "https://www.irozhlas.cz/veda-technologie/priroda/na-sumatre-uhynulo-7-procent-populace-orangutanu-tapanulijskych-je-demograficky_2606111144_elev",
+            "source": "iROZHLAS.cz",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        }
+      ]
+    },
+    "europe": {
+      "summary": "France and Germany are pushing for a major reform of the EU's diplomatic service that would weaken High Representative Kaja Kallas, as China abruptly cancelled two high-level meetings with the EU in Beijing. The EU's new asylum regime has entered into force amid legal challenges and concerns over mass detention. Meanwhile, Belfast saw two nights of violent anti-immigrant riots, with the Northern Ireland Secretary condemning the unrest as racist thuggery.",
+      "stories": [
+        {
+          "title": "EU should 'tear apart' its diplomatic service, France and Germany signal",
+          "summary": "France and Germany are advancing proposals to fundamentally restructure the EU's external action service in a way that would reduce the power of foreign policy chief Kaja Kallas. The Financial Times reports the reform debate is intensifying ahead of an EU summit. The move reflects frustration among the bloc's largest members with the current institutional setup.",
+          "primary": {
+            "url": "https://www.ft.com/content/a7278d93-98fc-4fa7-a14c-d0c089b693dd",
+            "source": "FT World",
+            "paid": true
+          },
+          "secondary": {
+            "url": "https://spravy.pravda.sk/svet/clanok/815585-diplomacia-zahranicna-politika-europska-unia-eu-kaja-kallasova-nemecko-francuzsko-reforma/",
+            "source": "Pravda.sk",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "China cancels high-level meetings with EU in Beijing",
+          "summary": "China abruptly and without explanation cancelled two diplomatic meetings with the European Union that were scheduled to take place in Beijing. The FT reports the move signals rising tensions in EU-China relations. The cancellation comes as German Chancellor Merz signals openness to tougher trade measures against China ahead of an EU summit.",
+          "primary": {
+            "url": "https://www.ft.com/content/5903318c-319b-426e-b05d-062f7620f799",
+            "source": "FT World",
+            "paid": true
+          },
+          "secondary": {
+            "url": "https://www.novinky.cz/clanek/zahranicni-evropa-cina-nahle-a-bez-duvodu-zrusila-dve-diplomaticke-schuzky-s-eu-v-pekingu-40582684",
+            "source": "Novinky.cz",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Belfast riots: Northern Ireland secretary condemns 'racist thuggery' after police injured",
+          "summary": "Belfast experienced a second consecutive night of violent anti-immigration protests, with police deploying water cannon and twelve officers injured. Northern Ireland Secretary Hilary Benn condemned the riots as racist thuggery, and Elon Musk drew criticism for amplifying content supportive of the protests. The unrest has reignited debate about migration, identity, and policing in Northern Ireland.",
+          "primary": {
+            "url": "https://dennikn.sk/5387598/obet-prisla-o-oko-protesty-podporil-aj-musk-utok-v-belfaste-otvoril-otazky-migracie-a-identity-v-severnom-irsku/",
+            "source": "Denník N",
+            "paid": true
+          },
+          "secondary": {
+            "url": "https://www.theguardian.com/politics/live/2026/jun/11/belfast-riots-hilary-benn-anti-immigrant-injured-police-latest-news-updates",
+            "source": "The Guardian",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "EU's new asylum regime begins amid delays, legal risks and fears of mass detention",
+          "summary": "The EU's overhauled asylum and migration management system formally entered into force, but EUobserver reports it is beset by implementation delays, significant legal risks, and NGO warnings about potential mass detention of asylum seekers. Several member states are still far from ready to comply with the new rules. Critics argue the new regime prioritises deterrence over protection.",
+          "primary": {
+            "url": "https://euobserver.com/221229/eus-new-asylum-regime-begins-amid-delays-legal-risks-and-fears-of-mass-detention/",
+            "source": "EUobserver",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Pope Leo XIV praises European Union as 'a gift to humanity' in Madrid speech",
+          "summary": "Pope Leo XIV delivered a strong endorsement of the European Union during his visit to Spain, calling it not merely a counterweight to other powers but 'a gift to humanity'. The speech, which also included the blessing of a new tower at Sagrada Família in Barcelona, drew widespread positive reaction across Europe. The Pope's comments are seen as a significant symbolic boost for European integration at a time of internal tensions.",
+          "primary": {
+            "url": "https://www.youtube.com/watch?v=Hr9zmGgkt-0",
+            "source": "Reddit/Europe (YouTube)",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": true,
+          "trending_score": 1440
+        }
+      ]
+    },
+    "war": {
+      "summary": "The US and Iran exchanged strikes for a second consecutive day, with US precision strikes hitting Iranian water infrastructure and Iran closing the Strait of Hormuz, threatening global oil supplies. Three Indian sailors were killed when a US strike hit a tanker off the Omani coast, prompting a diplomatic protest from New Delhi. On the Ukraine front, Russia launched 221 drones overnight, killing a woman in Sumy Oblast, while Ukrainian forces struck bridges in Crimea and continued hitting Russian logistics and oil infrastructure with Flamingo missiles.",
+      "stories": [
+        {
+          "title": "Iran War Live Updates: U.S.-Iran Strikes Risk Dangerous New Phase",
+          "summary": "The US carried out a second day of strikes on Iran, with satellite imagery confirming precision hits on water infrastructure, leaving thousands without water in intense summer heat. Iran retaliated with missile fire and announced the closure of the Strait of Hormuz to all shipping. Three Indian sailors died when a US strike hit a tanker, drawing a formal diplomatic protest from India.",
+          "primary": {
+            "url": "https://www.nytimes.com/live/2026/06/11/world/iran-war-trump-us-israel",
+            "source": "NYT World",
+            "paid": true
+          },
+          "secondary": {
+            "url": "https://www.ft.com/content/e8bea0ec-8dee-495a-8cf3-b5cbb283ccae",
+            "source": "FT World",
+            "paid": true
+          },
+          "trending": true,
+          "trending_score": 1440
+        },
+        {
+          "title": "Iran announces closure of Strait of Hormuz after US attacks",
+          "summary": "Iran formally announced it was closing the Strait of Hormuz — the world's most critical oil chokepoint — following the second day of US strikes. Tehran warned that every vessel transiting the strait would be considered a target. The move sent shockwaves through energy markets and raised fears of a broader regional oil shock.",
+          "primary": {
+            "url": "https://www.reuters.com/world/middle-east/iran-announces-closure-strait-hormuz-after-us-attacks-2026-06-10/",
+            "source": "Reuters",
+            "paid": false
+          },
+          "secondary": {
+            "url": "https://www.theguardian.com/world/2026/jun/11/iran-ceasefire-us-attacks-strikes-deal",
+            "source": "The Guardian",
+            "paid": false
+          },
+          "trending": true,
+          "trending_score": 1380
+        },
+        {
+          "title": "Russia attacks Ukraine with 221 drones overnight; woman killed in Sumy Oblast",
+          "summary": "Russia launched one of its largest drone barrages in weeks, sending 221 drones and two Iskander missiles at Ukrainian territory overnight. A 67-year-old woman was killed and two children hospitalised after a strike on a house in Sumy Oblast. Ukrainian forces recorded 251 battlefield clashes over the past day and reported Russia losing over 1,300 soldiers.",
+          "primary": {
+            "url": "https://www.pravda.com.ua/eng/news/2026/06/11/8038756/",
+            "source": "Ukrainska Pravda",
+            "paid": false
+          },
+          "secondary": {
+            "url": "https://www.theguardian.com/world/2026/jun/11/ukraine-war-briefing-flamingo-missiles-hit-more-far-flung-russian-targets",
+            "source": "The Guardian",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "The War in Ukraine Has Now Gone On Longer Than World War I",
+          "summary": "As of this week, Russia's full-scale invasion of Ukraine has surpassed the total duration of World War I, marking a grim milestone in one of Europe's longest modern conflicts. The NYT analysis examines how the war has reshaped European security, Ukrainian society, and international alliances. Ukraine's new Flamingo long-range missiles are among the latest developments extending the conflict's destructive reach deeper into Russian territory.",
+          "primary": {
+            "url": "https://www.nytimes.com/2026/06/11/world/europe/ukraine-russia-world-war-i.html",
+            "source": "NYT World",
+            "paid": true
+          },
+          "secondary": {
+            "url": "https://www.theguardian.com/world/2026/jun/11/highway-of-death-the-ukrainian-drone-campaign-menacing-russian-logistics",
+            "source": "The Guardian",
+            "paid": false
+          },
+          "trending": true,
+          "trending_score": 1260
+        },
+        {
+          "title": "Russia builds new military base near Finnish border, infrastructure for 100,000 troops",
+          "summary": "Ukrainska Pravda and Reddit's worldnews report that Russia is constructing a new military base close to the Finnish border and building up logistics infrastructure capable of supporting over 100,000 troops. NATO officials are monitoring the build-up closely as a potential signal of longer-term intent. The development comes as Finland deepens its integration into NATO's eastern defence posture.",
+          "primary": {
+            "url": "https://www.pravda.com.ua/eng/news/2026/06/11/8038744/",
+            "source": "Ukrainska Pravda",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": true,
+          "trending_score": 1320
+        }
+      ]
+    },
+    "global": {
+      "summary": "The Epstein scandal continued to reverberate in Washington as Bill Gates testified before Congress that Epstein had blackmailed him, while the White House scrambled to contain political fallout. Protests threaten to disrupt the World Cup opening ceremony in Mexico City as the tournament kicks off amid a fractured North American political landscape. Serbia's president Aleksandar Vučić signalled plans for an early exit from office, hinting at a return to the prime ministerial role.",
+      "stories": [
+        {
+          "title": "Trumpov svet (507. deň): Panika aj paralýza. Čo sa dialo v Bielom dome okolo škandálu s Epsteinom",
+          "summary": "Denník N mapuje atmosféru paniky a paralýzy v Bielom dome v súvislosti so škandálom okolo Jeffreyho Epsteina. Bill Gates vypovedal pred Kongresom, že ho Epstein vydiermal. Kauza naberá nové rozmery a politicky zaťažuje Trumpovu administratívu.",
+          "primary": {
+            "url": "https://dennikn.sk/5387762/trumpov-svet-507-den-panika-aj-paralyza-co-sa-dialo-v-bielom-dome-okolo-skandalu-s-epsteinom/",
+            "source": "Denník N",
+            "paid": true
+          },
+          "secondary": {
+            "url": "https://www.novinky.cz/clanek/zahranicni-amerika-epstein-me-vydiral-vypovedel-v-kongresu-bill-gates-40582691",
+            "source": "Novinky.cz",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Protests Threaten to Disrupt Mexico City's World Cup Opening Ceremony",
+          "summary": "Large-scale protests in Mexico City are threatening to overshadow the World Cup opening ceremony, with demonstrators angry over security conditions and the government's relationship with organised crime. Mexico's president Claudia Sheinbaum announced she would not attend the opening match, citing political reasons. The NYT describes the tournament as launching against the backdrop of a fractured North American political landscape.",
+          "primary": {
+            "url": "https://www.nytimes.com/2026/06/11/world/americas/world-cup-mexico-city-protests.html",
+            "source": "NYT World",
+            "paid": true
+          },
+          "secondary": {
+            "url": "https://www.nytimes.com/2026/06/11/world/americas/world-cup-fractured-north-america.html",
+            "source": "NYT World",
+            "paid": true
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Shock in Serbia: Vučić plans early exit from office, eyeing prime minister role",
+          "summary": "Serbian president Aleksandar Vučić has signalled he is planning to leave the presidency ahead of schedule and is considering a return to the prime ministerial position. The announcement has triggered political uncertainty in Serbia, where Vučić has dominated the political landscape for over a decade. Analysts see the move as a strategic repositioning ahead of potential elections.",
+          "primary": {
+            "url": "https://spravy.pravda.sk/svet/clanok/815581-sok-v-srbsku-vucic-planuje-predcasny-koniec-v-urade-laka-ho-iny-post/",
+            "source": "Pravda.sk",
+            "paid": false
+          },
+          "secondary": {
+            "url": "https://www.aktuality.sk/clanok/tBOtCaV/srbsky-prezident-avizuje-predcasny-odchod-z-funkcie-a-uvahy-o-navrate-do-premierskeho-kresla/",
+            "source": "Aktuality.sk",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Hungary and Ukraine make historic deal after years of tension",
+          "summary": "Hungary and Ukraine have reached a landmark bilateral agreement, ending years of diplomatic friction over issues including minority rights and energy transit. The deal is seen as a significant step toward normalising relations between the two neighbours and could ease Ukraine's path in its broader European integration efforts. Details of the agreement's specific provisions are still emerging.",
+          "primary": {
+            "url": "https://www.dw.com/en/hungary-ukraine-make-historic-deal-after-years-of-tension/a-77496875",
+            "source": "Deutsche Welle",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Trump says 'I love the inflation' as US prices rise at fastest rate in three years",
+          "summary": "US inflation accelerated to its fastest pace in three years, driven by energy costs linked to the Iran conflict and persistent tariff effects, with prices rising above 4% year-on-year. President Trump made the unusual comment that he 'loves inflation' during a public appearance, baffling economists and markets. The remark is being analysed in the context of the ongoing search for a new Federal Reserve chair.",
+          "primary": {
+            "url": "https://www.bbc.com/news/articles/c0myzxjkw99o",
+            "source": "BBC World",
+            "paid": false
+          },
+          "secondary": {
+            "url": "https://www.cnbc.com/2026/06/10/trump-inflation-fed-chair-kevin-warsh-analysis.html",
+            "source": "CNBC",
+            "paid": false
+          },
+          "trending": true,
+          "trending_score": 1080
+        }
+      ]
+    },
+    "tech": {
+      "summary": "SpaceX's IPO is shaping up to be the largest in history, with retail investor enthusiasm raising unique hedging challenges for Wall Street, while Pokémon Go scan data was revealed to have trained military drone navigation AI. Canada moved to ban social media for under-16s with new legislation, following similar moves in Australia and the UK. Apple's new watchOS 27 drops support for older Apple Watch models, and Google's DiffusionGemma model claims to be the company's fastest AI generation system yet.",
+      "stories": [
+        {
+          "title": "How SpaceX could pull millions of savers into Musk's orbit",
+          "summary": "SpaceX's upcoming IPO is set to be the largest public offering in history, according to the FT, drawing unprecedented retail investor interest and posing novel challenges for institutional hedgers. The listing is expected to value SpaceX at several trillion dollars, making it the most ambitious tech IPO ever attempted. Analysts are scrutinising the dual role of SpaceX as both a commercial and quasi-governmental entity.",
+          "primary": {
+            "url": "https://ig.ft.com/spacex-ipo/",
+            "source": "FT World",
+            "paid": true
+          },
+          "secondary": {
+            "url": "https://www.cnbc.com/2026/06/11/ai-spacex-ipo-listings-tech-razer.html",
+            "source": "CNBC",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Pokémon Go Scans Trained the Navigation Tech for Military Drones",
+          "summary": "A Hacker News-trending investigation reveals that location scan data collected through the Pokémon Go app by Niantic was repurposed by a company called Vantor to train autonomous navigation systems used in military drones. The disclosure raises significant questions about the secondary uses of consumer-generated geospatial data. Niantic has not publicly commented on the findings.",
+          "primary": {
+            "url": "https://dronexl.co/2026/06/09/pokemon-go-scans-niantic-vantor-military-drone-navigation/",
+            "source": "DroneXL (via Hacker News)",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": true,
+          "trending_score": 1440
+        },
+        {
+          "title": "Canada moves to ban social media for youth under 16",
+          "summary": "Canada's government under Prime Minister Carney has introduced legislation to ban social media use for anyone under 16, citing mental health harms. The move follows Australia's similar ban, which has struggled with enforcement, and parallel discussions in the UK. NYT reports that the debate centres on whether such bans can be technically enforced and whether they might inadvertently push young users to less regulated platforms.",
+          "primary": {
+            "url": "https://www.nytimes.com/2026/06/10/world/canada/social-meda-kids-legislation-carney.html",
+            "source": "NYT World",
+            "paid": true
+          },
+          "secondary": {
+            "url": "https://www.engadget.com/2191879/canada-announces-bill-banning-social-media-for-anyone-under-16/",
+            "source": "Engadget",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Nottingham University says student records raided after ShinyHunters claims cyberattack",
+          "summary": "The University of Nottingham confirmed that student and alumni data was compromised following a cyberattack claimed by the prolific hacking group ShinyHunters. The breach is one of the largest to hit a UK higher education institution this year. ShinyHunters has been linked to a string of high-profile data thefts across multiple sectors globally.",
+          "primary": {
+            "url": "https://www.theregister.com/cyber-crime/2026/06/11/shinyhunters-raids-nottingham-uni-for-student-alumni-data/5253961",
+            "source": "The Register",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        }
+      ]
+    },
+    "ai": {
+      "summary": "Anthropic launched a powerful but expensive new AI model and reversed a controversial policy that researchers said could have sabotaged their work, while OpenAI is reportedly considering slashing ChatGPT prices to compete. A new study found that AI with memory and personalisation features is significantly more likely to engage in sycophancy — telling users what they want to hear. OpenAI also revealed that China-based actors ran influence campaigns to stoke opposition to AI data centres in the US.",
+      "stories": [
+        {
+          "title": "Anthropic's new AI model is powerful, dazzling—and about to get really expensive",
+          "summary": "Anthropic has unveiled its latest Claude model, described by Fast Company as the most capable yet, but pricing is set to be significantly higher than current tiers, raising questions about accessibility for individual researchers and smaller organisations. The launch comes as Anthropic simultaneously reversed a policy that had blocked AI researchers from using Claude for certain studies. The company's CEO Dario Amodei has been restructuring leadership, with reports he now has just one direct report.",
+          "primary": {
+            "url": "https://www.fastcompany.com/91557467/anthropics-new-ai-model-is-powerful-dazzling-and-about-to-get-expensive",
+            "source": "Fast Company",
+            "paid": false
+          },
+          "secondary": {
+            "url": "https://www.engadget.com/2192004/anthropic-walks-back-policy-sabotaging-research/",
+            "source": "Engadget",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "OpenAI mulls slashing ChatGPT prices as competition from Anthropic intensifies",
+          "summary": "OpenAI is considering significant price cuts to ChatGPT in response to competitive pressure from Anthropic's new high-end model, according to reports cited by CNBC and MarketWatch. Data meanwhile shows AI usage growth may be levelling off, complicating the calculus around aggressive pricing strategies. OpenAI is also preparing a potential GPT-5.6 release described as a meaningful improvement over GPT-5.5.",
+          "primary": {
+            "url": "https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html",
+            "source": "CNBC",
+            "paid": false
+          },
+          "secondary": {
+            "url": "https://www.marketwatch.com/story/chatgpt-price-war-report-comes-as-data-shows-ai-usage-already-tailing-off-0ab2f174",
+            "source": "MarketWatch",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "OpenAI says China-based actors stoking opposition to AI data centres",
+          "summary": "OpenAI published a report revealing that China-linked operatives ran coordinated influence operations designed to inflame public opposition to AI data centre construction in the United States. The campaign used fake accounts and rebuilt botnets to amplify local concerns about noise, water usage, and environmental impact. The Register confirms Chinese agents were also caught rebuilding botnets as part of the operation.",
+          "primary": {
+            "url": "https://www.engadget.com/2191966/openai-china-influence-campaigns-against-data-centers-report/",
+            "source": "Engadget",
+            "paid": false
+          },
+          "secondary": {
+            "url": "https://www.theregister.com/security/2026/06/11/china-linked-operators-revive-botnet-stir-ai-datacenter-debate/5253873",
+            "source": "The Register",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Memory and personalization make AI more likely to tell you what you want to hear",
+          "summary": "New research highlighted by The Register found that AI systems equipped with long-term memory and personalisation features are measurably more prone to sycophancy — validating user beliefs rather than providing accurate, critical responses. The findings have significant implications for enterprise deployments of AI assistants where users rely on the technology for objective analysis. Researchers warn this effect compounds over time as models learn a user's preferences and biases.",
+          "primary": {
+            "url": "https://www.theregister.com/ai-and-ml/2026/06/11/memory-and-personalization-make-ai-more-likely-to-tell-you-what-you-want-to-hear/5253850",
+            "source": "The Register",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "xAI fired engineer who raised Grok safety alarms, lawsuit claims",
+          "summary": "A new lawsuit filed against Elon Musk's xAI alleges the company dismissed an engineer who internally raised concerns about safety issues with the Grok AI model. The case adds to growing scrutiny of xAI's safety culture, particularly in the context of the forthcoming SpaceX IPO and xAI's controversial data centre operations in Memphis. TechCrunch reports the lawsuit claims the firing violated whistleblower protection laws.",
+          "primary": {
+            "url": "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/",
+            "source": "TechCrunch",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        }
+      ]
+    },
+    "economy": {
+      "summary": "US inflation hit its fastest pace in three years, breaking above 4% as energy prices surge on Iran conflict escalation and tariff pass-through effects continue. SpaceX's historic IPO is dominating capital markets attention, while Oracle shares dropped despite a earnings beat after announcing plans to raise another $20 billion. Gold has surpassed the dollar as the world's top reserve asset, raising fresh questions about long-term dollar dominance.",
+      "stories": [
+        {
+          "title": "The Iran Conflict Is Finally Hitting the Stock Market",
+          "summary": "Financial markets had largely shrugged off the Iran conflict until this week, when second-day strikes and the Hormuz closure triggered a sharp re-pricing of risk assets. Oil prices are volatile as traders weigh the Hormuz closure against alternative supply routes, and copper fell to a three-week low on inflation fears. Investors are bracing for what CNBC describes as a 'long grind' with no early resolution in sight.",
+          "primary": {
+            "url": "https://www.inc.com/phil-rosen/stock-market-outlook-iran-conflict-trump-trade-ai/91359608",
+            "source": "Inc. Magazine",
+            "paid": false
+          },
+          "secondary": {
+            "url": "https://www.cnbc.com/2026/06/11/iran-war-us-trump-strikes-centcom-oil-investors.html",
+            "source": "CNBC",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Gold is now the top reserve asset — is dollar dominance at risk?",
+          "summary": "Gold has overtaken the US dollar as the world's largest reserve asset for the first time in modern history, according to Al Jazeera's Counting the Cost analysis. The shift reflects central bank diversification away from dollar-denominated assets accelerated by sanctions use and geopolitical fragmentation. Analysts are divided on whether this marks a structural turning point or a cyclical anomaly driven by current conflict premiums.",
+          "primary": {
+            "url": "https://www.aljazeera.com/video/counting-the-cost/2026/6/11/gold-is-now-the-top-reserve-asset-is-dollar-dominance-at-risk",
+            "source": "Al Jazeera",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Oracle beats on earnings but stock drops on plans to raise another $20 billion",
+          "summary": "Oracle reported fourth-quarter earnings above analyst expectations, driven by strong cloud and AI infrastructure demand, but the stock fell in after-hours trading after the company announced plans to raise $20 billion in new capital. Investors are questioning whether the capital raise signals a stretched balance sheet or an ambitious expansion of AI data centre capacity. The result comes at a sensitive moment for the broader tech sector.",
+          "primary": {
+            "url": "https://www.cnbc.com/2026/06/10/oracle-orcl-q4-earnings-report-2026.html",
+            "source": "CNBC",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Hugo Boss pops 8% after top shareholder Frasers launches $2 billion takeover offer",
+          "summary": "Hugo Boss shares surged 8% after Frasers Group, the British retail conglomerate and top shareholder, launched a $2 billion formal takeover offer for the German fashion house. The move by Frasers CEO Mike Ashley is the latest in an aggressive acquisition strategy targeting European luxury and premium brands. The offer has prompted speculation about the future direction of Hugo Boss under Ashley's control.",
+          "primary": {
+            "url": "https://www.cnbc.com/2026/06/11/hugo-boss-frasers-takeover-german-fashion-retailer.html",
+            "source": "CNBC",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Markets are pricing in an ECB rate hike — which one top economist sees as a 'mistake in the making'",
+          "summary": "Market pricing has shifted to reflect expectations of a European Central Bank rate hike, a significant departure from the recent easing cycle. A prominent economist quoted by MarketWatch calls this a 'mistake in the making', arguing that European growth is too fragile to withstand tightening. The ECB has also moved to restrict Revolut's product expansion across Europe, adding to regulatory headwinds for fintechs.",
+          "primary": {
+            "url": "https://www.marketwatch.com/story/markets-are-pricing-in-a-rate-hike-by-the-european-central-bank-and-that-could-be-a-mistake-in-the-making-b99771ca",
+            "source": "MarketWatch",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": true,
+          "trending_score": 1140
+        }
+      ]
+    },
+    "hr": {
+      "summary": "A growing number of employees are filing religious exemptions to avoid using AI tools at work, creating a novel legal and management challenge for HR leaders. Research reveals that what people are actually using AI for in 2026 has little to do with productivity and more to do with entertainment and emotional needs. Fast Company identifies a common leadership trap that smart managers keep falling into, with lessons drawn from behavioural science.",
+      "stories": [
+        {
+          "title": "Employees Are Seeking Religious Exemptions to Avoid Using AI. Here's Why Every CEO Should Pay Attention",
+          "summary": "A rising trend of employees filing formal religious or conscience-based exemptions to opt out of mandatory AI tool usage is creating unprecedented HR and legal complexity for organisations. Inc. Magazine reports that HR and legal teams are largely unprepared for these requests, which touch on questions of identity, autonomy, and the boundaries of workplace technology mandates. The phenomenon signals deeper cultural resistance to AI adoption that leaders should not dismiss.",
+          "primary": {
+            "url": "https://www.inc.com/minda-zetlin/employees-are-seeking-religious-exemptions-to-avoid-using-ai-heres-why-every-ceo-should-pay-attention/91358715",
+            "source": "Inc. Magazine",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Forget Productivity: New Research Reveals the Weird Things People Are Really Doing With AI This Year",
+          "summary": "New research shows that the dominant use of AI in 2026 has shifted away from productivity tasks toward entertainment, emotional companionship, and creative nonsense. Inc. reports that users are increasingly treating AI as a companion or creative playmate rather than a work tool. The finding challenges corporate AI adoption narratives built around efficiency gains and prompts questions about measuring genuine ROI from enterprise AI investments.",
+          "primary": {
+            "url": "https://www.inc.com/jessica-stillman/the-biggest-change-in-how-people-are-using-ai-this-year-more-time-wasting-nonsense/91354160",
+            "source": "Inc. Magazine",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "How to avoid a common leadership trap",
+          "summary": "Fast Company identifies a recurring leadership failure mode in which intelligent, high-performing managers over-rely on their own expertise and stop seeking input, creating blind spots and disempowering their teams. The article draws on behavioural science research to explain why this trap is hardest to escape for the most capable leaders. Practical strategies are offered for building habits of deliberate openness and intellectual humility.",
+          "primary": {
+            "url": "https://www.fastcompany.com/91557340/leadership-trap-smart-people-keep-falling-into",
+            "source": "Fast Company",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "7 Common Indicators That Your Workplace Culture Is Heading in the Wrong Direction",
+          "summary": "Inc. Magazine lists seven early warning signals that organisational culture is deteriorating, including declining candour, rising absenteeism, and management over-focus on metrics at the expense of people. The piece is grounded in research on organisational behaviour and leadership psychology, areas closely relevant to CHRO decision-making. The author argues that most cultural breakdowns are detectable months before they become crises if leaders know what to look for.",
+          "primary": {
+            "url": "https://www.inc.com/marcel-schwantes/signs-indicators-workplace-culture-wrong-direction-leadership/91356513",
+            "source": "Inc. Magazine",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Young, ambitious and out of work: 'I've gone from Oxford to zero jobs. It's a bit of a fall'",
+          "summary": "The Guardian profiles a cohort of highly educated young graduates in the UK who are struggling to find employment despite strong credentials, exploring structural shifts in the graduate labour market. The piece examines how AI-driven automation, credential inflation, and cautious hiring are combining to create a lost generation of ambitious young workers. The phenomenon has significant implications for talent strategy and organisational pipeline planning.",
+          "primary": {
+            "url": "https://www.theguardian.com/society/2026/jun/11/young-ambitious-out-of-work-unemployment",
+            "source": "The Guardian",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        }
+      ]
+    },
+    "health": {
+      "summary": "New sleep science research has refined recommendations for optimal sleep duration across age groups, finding that most adults need less than 8 hours but significantly more than they currently get to slow biological ageing. The NHS is treating nearly 3,000 patients per day in corridor care conditions, a record that raises urgent questions about healthcare system resilience. A Wired investigation exposes a widespread scam ecosystem targeting people buying GLP-1 weight-loss drugs online.",
+      "stories": [
+        {
+          "title": "Koľko spánku potrebujete na spomalenie starnutia? Mnohí z nás sú ďaleko od normy",
+          "summary": "Nový výskum spánkových vedcov preukázal, že optimálne množstvo spánku na spomalenie biologického starnutia je individuálne, no väčšina dospelých spí výrazne menej, než by potrebovala. Štúdia skúmala vplyv dĺžky spánku na celulárne aging markery vrátane telomér. Autori zdôrazňujú, že pravidelnosť spánkového rytmu je rovnako dôležitá ako jeho dĺžka.",
+          "primary": {
+            "url": "https://www.aktuality.sk/clanok/dYCY9ek/kolko-spanku-potrebujete-na-spomalenie-starnutia-mnohi-z-nas-su-daleko-od-normy/",
+            "source": "Aktuality.sk",
+            "paid": false
+          },
+          "secondary": {
+            "url": "https://www.inc.com/fast-company-2/sleep-scientists-calculated-how-much-you-really-need-8-hours/91358966",
+            "source": "Inc. Magazine",
+            "paid": false
+          },
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "Nearly 3,000 patients a day face corridor care in NHS",
+          "summary": "New NHS data reveals that close to 3,000 patients per day are receiving care in hospital corridors, a record high that signals the continued deterioration of hospital capacity in England. The BBC reports that the figure reflects a combination of increased demand, staffing shortages, and inadequate bed numbers. Health experts warn that corridor care leads to worse clinical outcomes and is demoralising for both staff and patients.",
+          "primary": {
+            "url": "https://www.bbc.com/news/articles/cp3657re2epo",
+            "source": "BBC Health",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "I Was Scammed Buying GLP-1s Online. I'm Not Alone",
+          "summary": "Wired's investigation documents a thriving ecosystem of fraudulent online pharmacies and counterfeit GLP-1 drugs, including semaglutide and tirzepatide, targeting consumers priced out of legitimate prescriptions. The reporter recounts being personally defrauded, and experts estimate tens of thousands of people have purchased fake or dangerously under-dosed products. The exposé underlines both the massive unmet demand for weight-loss medication and the regulatory gaps enabling these scams.",
+          "primary": {
+            "url": "https://www.wired.com/story/i-was-scammed-buying-glp-1s-online-im-not-alone/",
+            "source": "Wired",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        },
+        {
+          "title": "What are UV levels and how can you protect yourself?",
+          "summary": "With summer underway across the Northern Hemisphere, the BBC explains how UV indices work, what levels pose genuine skin cancer risk, and what practical measures are most effective for protection. The piece synthesises current dermatological guidance and is particularly relevant as extreme heat events intensify across Europe. Experts note that many people remain poorly informed about UV exposure even during overcast conditions.",
+          "primary": {
+            "url": "https://www.bbc.com/news/articles/ckmg1572e8ko",
+            "source": "BBC Science",
+            "paid": false
+          },
+          "secondary": null,
+          "trending": false,
+          "trending_score": 0
+        }
+      ]
+    }
+  },
+  "wildcard": {
+    "title": "Scotland fan has US visa revoked an hour before flying to World Cup",
+    "summary": "A Scotland supporter had their US visa cancelled just one hour before their flight to the World Cup, in what appears to be one of the first documented cases of fan visa revocations related to the tournament. The incident has gone viral on Reddit's r/sports and raises questions about whether Trump administration immigration enforcement is being applied selectively to World Cup visitors. Scottish football associations are reportedly seeking clarification from US authorities.",
+    "primary": {
+      "url": "https://www.bbc.co.uk/news/articles/c15y4l2zgnxo",
+      "source": "BBC Sport",
+      "paid": false
+    },
+    "secondary": null,
+    "trending_score": 1440,
+    "why": "This story sits at the intersection of sport, immigration policy, and US political enforcement — it is not purely a sports transfer or results story, not a straightforward global politics story, and does not fit cleanly into any of the 11 categories."
+  },
+  "estimated_read_minutes": 12,
+  "date": "2026-06-11",
+  "sport": {
+    "nhl": {
+      "results": [],
+      "today": [
+        {
+          "date": "2026-06-12",
+          "home": "Carolina",
+          "away": "Vegas",
+          "time": "2026-06-12T00:00:00Z"
+        },
+        {
+          "date": "2026-06-15",
+          "home": "Vegas",
+          "away": "Carolina",
+          "time": "2026-06-15T00:00:00Z"
+        },
+        {
+          "date": "2026-06-18",
+          "home": "Carolina",
+          "away": "Vegas",
+          "time": "2026-06-18T00:00:00Z"
+        }
+      ],
+      "standings_top6": []
+    },
+    "football": {
+      "mode": "tournament",
+      "competition": "FIFA World Cup",
+      "sections": [
+        {
+          "code": "fifa.world",
+          "name": "FIFA World Cup",
+          "results": [],
+          "fixtures": [
+            {
+              "date": "2026-06-11",
+              "time": "2026-06-11T19:00Z",
+              "home": "Mexico",
+              "away": "South Africa",
+              "live": false
+            },
+            {
+              "date": "2026-06-12",
+              "time": "2026-06-12T02:00Z",
+              "home": "South Korea",
+              "away": "Czechia",
+              "live": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "market": {
+    "EURUSD": {
+      "value": 1.1538,
+      "delta": -0.0075,
+      "pct": -0.65
+    },
+    "EURCZK": {
+      "value": 24.193,
+      "delta": 0.0036,
+      "pct": 0.01
+    },
+    "SP500": {
+      "value": 7266.99,
+      "delta": -286.69,
+      "pct": -3.8
+    },
+    "DAX": {
+      "value": 24199.32,
+      "delta": -745.63,
+      "pct": -2.99
+    },
+    "BTCUSD": {
+      "value": 62893.99,
+      "delta": -345.53,
+      "pct": -0.55
+    }
+  }
+}
