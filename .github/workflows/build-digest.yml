@@ -1,9 +1,9 @@
 name: Build Daily Digest
 
 on:
-  schedule:
-    - cron: '30 5 * * *'   # 05:30 UTC daily
-  workflow_dispatch:         # manual trigger from GitHub UI
+  # schedule:
+  #   - cron: '30 5 * * *'   # 05:30 UTC daily — paused (cost review)
+  workflow_dispatch:           # manual trigger from GitHub UI
 
 permissions:
   contents: write   # to commit digest.json + monthly_stats.json back to the repo
